@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Website</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGASI -->
+
+    <nav class="navigasi">
+      <div class="wadah">
+        <!-- LOGO -->
+
+        <a href="#" class="logo"> PLACE ORDER </a>
+
+        <!-- MENU DESKTOP -->
+
+        <div class="menu">
+          <a href="#" class="tautan-menu"> Platform </a>
+
+          <a href="#" class="tautan-menu"> Source </a>
+
+          <a href="#" class="tautan-menu"> Solutions </a>
+
+          <!-- DROPDOWN DESKTOP -->
+
+          <div class="menu-dropdown">
+            <a href="#" class="tautan-menu tautan-dropdown">
+              Resources
+
+              <span class="panah"> ⌄ </span>
+            </a>
+
+            <!-- JENDELA BESAR -->
+
+            <div class="jendela">
+              <div class="isi-jendela">
+                <!-- KOLOM 1 -->
+                <div class="kolom-jendela">
+                  <h3>Get started</h3>
+
+                  <a href="#"> Templates </a>
+
+                  <a href="#"> Made in Webflow </a>
+
+                  <a href="#"> Hire a Certified Partner </a>
+
+                  <a href="#"> Developers </a>
+                </div>
+
+                <!-- KOLOM 2 -->
+
+                <div class="kolom-jendela">
+                  <h3>Learn</h3>
+
+                  <a href="#"> Webflow University </a>
+
+                  <a href="#"> Blog </a>
+
+                  <a href="#"> Webinars & ebooks </a>
+
+                  <a href="#"> The Webflow Way </a>
+                </div>
+
+                <!-- KOLOM 3 -->
+
+                <div class="kolom-jendela">
+                  <h3>Discover</h3>
+
+                  <a href="#"> Customer stories </a>
+
+                  <a href="#"> Our Community </a>
+
+                  <a href="#"> Partner with Webflow </a>
+
+                  <a href="#"> Assessment </a>
+                </div>
+
+                <!-- KOLOM 4 -->
+
+                <div class="kolom-jendela">
+                  <h3>Get help</h3>
+
+                  <a href="#"> Support </a>
+
+                  <a href="#"> Join the Community </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="tautan-menu"> Enterprise </a>
+
+          <a href="#" class="tautan-menu"> Pricing </a>
+        </div>
+
+        <!-- MENU KANAN DESKTOP -->
+
+        <div class="menu-kanan">
+          <a href="#" class="masuk"> Log in </a>
+
+          <a href="#" class="kontak"> Contact Sales </a>
+
+          <a href="#" class="tombol"> Start for free </a>
+        </div>
+
+        <!-- TOMBOL HAMBURGER -->
+
+        <button
+          class="tombol-hamburger"
+          id="tombolHamburger"
+          aria-label="Buka menu"
+        >
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- BACKDROP -->
+
+    <div class="lapisan" id="lapisan"></div>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+      <!-- HEADER SIDEBAR -->
+
+      <div class="kepala-sidebar">
+        <a href="#" class="logo-sidebar"> PLACE ORDER </a>
+
+        <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup menu">
+          ×
+        </button>
+      </div>
+
+      <!-- ISI SIDEBAR -->
+
+      <div class="isi-sidebar">
+        <a href="#"> Platform </a>
+
+        <a href="#"> Source </a>
+
+        <a href="#"> Solutions </a>
+
+        <!-- ACCORDION RESOURCES -->
+
+        <div class="dropdown-sidebar">
+          <button class="tombol-dropdown-sidebar" id="tombolDropdownSidebar">
+            Resources
+
+            <span id="panahSidebar"> + </span>
+          </button>
+
+          <!-- ISI DROPDOWN -->
+
+          <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
+            <h4>Get started</h4>
+
+            <a href="#"> Templates </a>
+
+            <a href="#"> Made in Webflow </a>
+
+            <a href="#"> Developers </a>
+
+            <h4>Learn</h4>
+
+            <a href="#"> Webflow University </a>
+
+            <a href="#"> Blog </a>
+
+            <a href="#"> Webinars & ebooks </a>
+
+            <h4>Discover</h4>
+
+            <a href="#"> Customer stories </a>
+
+            <a href="#"> Our Community </a>
+
+            <a href="#"> Partner with Webflow </a>
+
+            <h4>Get help</h4>
+
+            <a href="#"> Support </a>
+
+            <a href="#"> Join the Community </a>
+          </div>
+        </div>
+
+        <a href="#"> Enterprise </a>
+
+        <a href="#"> Pricing </a>
+
+        <div class="garis-sidebar"></div>
+
+        <a href="#"> Log in </a>
+
+        <a href="#"> Contact Sales </a>
+
+        <a href="#" class="tombol-sidebar"> Start for free </a>
+      </div>
+    </aside>
+
+    <!-- KONTEN -->
+
+    <!--START HERO SECTION -->
+    <!-- Bagian Hero / Pahlawan Utama -->
+    <section class="bagian-pahlawan">
+      <!-- Dekorasi Latar Belakang Lengkungan -->
+      <div class="dekorasi-latar-1"></div>
+      <div class="dekorasi-latar-2"></div>
+
+      <div class="wadah-utama">
+        <!-- Area Konten Utama Hero -->
+        <div class="konten-pahlawan">
+          <!-- Sisi Kiri: Teks & Form -->
+          <div class="sisi-kiri">
+            <h1 class="judul-utama">
+              Bimbel Online &amp; Offline Terbesar, Terlengkap, dan Terbukti di
+              Indonesia
+            </h1>
+            <p class="sub-judul">
+              Diskon spesial untukmu dengan isi nomor HP sekarang
+            </p>
+
+            <form class="formulir-nomor" action="#">
+              <div class="kotak-input">
+                <span class="teks-kode">+62</span>
+                <input
+                  type="tel"
+                  class="input-nomor"
+                  placeholder="Masukkan nomor HP"
+                  required
+                />
+                <button type="submit" class="tombol-diskon">
+                  Dapatkan Diskon &gt;
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Sisi Kanan: Gambar Aset / Placeholder -->
+          <div class="sisi-kanan">
+            <div class="pembungkus-gambar">
+              <img
+                src="./assets/imgs/hero img.png"
+                alt="Ilustrasi Bimbel"
+                class="gambar-hero"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Navigasi Layanan di Bawah Hero (Floating Card) -->
+        <div class="kartu-layanan-bawah">
+          <div class="daftar-layanan">
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=UTBK"
+                  alt="Ikon UTBK"
+                />
+                <span class="label-intensif">INTENSIF</span>
+              </div>
+              <span class="teks-layanan">Persiapan UTBK-SNBT</span>
+            </a>
+
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=TM"
+                  alt="Ikon Tatap Muka"
+                />
+              </div>
+              <span class="teks-layanan">Bimbel Tatap Muka</span>
+            </a>
+
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=OL"
+                  alt="Ikon Online Interaktif"
+                />
+              </div>
+              <span class="teks-layanan">Bimbel Online Interaktif</span>
+            </a>
+
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=VID"
+                  alt="Ikon Video Belajar"
+                />
+              </div>
+              <span class="teks-layanan">Video Belajar dan Soal</span>
+            </a>
+
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=KDN"
+                  alt="Ikon Kedinasan"
+                />
+                <span class="label-intensif">INTENSIF</span>
+              </div>
+              <span class="teks-layanan">Bimbel Kedinasan</span>
+            </a>
+
+            <a href="#" class="item-layanan">
+              <div class="ikon-layanan">
+                <img
+                  src="https://via.placeholder.com/36x36.png?text=ALL"
+                  alt="Ikon Semua Produk"
+                />
+              </div>
+              <span class="teks-layanan">Semua Produk</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END HERO SECTION -->
+
+    <!-- START COURSE LIST -->
+    <section class="bagian-kursus">
+      <div class="wadah">
+        <div class="daftar-kursus">
+          <!-- Kartu Kursus 1 -->
+          <div class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img
+                src="https://placehold.co/400x250/e0e0e0/666666?text=Gambar+Kursus"
+                alt="UX Design Beginner"
+              />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$12.50</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">UX Design Beginner</h3>
+              <p class="deskripsi-kursus">
+                Starting with UX design can be both exciting and overwhelming...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik"><i class="fa-solid fa-star"></i> 4.1</span>
+                <span class="metrik"
+                  ><i class="fa-regular fa-clock"></i> 12 week</span
+                >
+                <span class="metrik"
+                  ><i class="fa-solid fa-book"></i> 10 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="https://placehold.co/40x40/cccccc/333333?text=Ava"
+                    alt="Miss. Vanei Carly"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Miss. Vanei Carly</span>
+                </div>
+                <span class="pengalaman">(5+ Year Exp)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Kursus 2 -->
+          <div class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img
+                src="https://placehold.co/400x250/e0e0e0/666666?text=Gambar+Kursus"
+                alt="Mobile User Experience"
+              />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$18.15</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">Mobile User Experience</h3>
+              <p class="deskripsi-kursus">
+                Designing an exceptional mobile user experience (UX) involves...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik"><i class="fa-solid fa-star"></i> 4.3</span>
+                <span class="metrik"
+                  ><i class="fa-regular fa-clock"></i> 8 week</span
+                >
+                <span class="metrik"
+                  ><i class="fa-solid fa-book"></i> 14 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="https://placehold.co/40x40/cccccc/333333?text=Ava"
+                    alt="Mr. Milian Deon"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Mr. Milian Deon</span>
+                </div>
+                <span class="pengalaman">(8+ Year Exp)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Kursus 3 -->
+          <div class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img
+                src="https://placehold.co/400x250/e0e0e0/666666?text=Gambar+Kursus"
+                alt="Figma Advance"
+              />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$14.60</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">Figma Advance</h3>
+              <p class="deskripsi-kursus">
+                Figma is a powerful and versatile design tool used by UX/UI
+                designers...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik"><i class="fa-solid fa-star"></i> 3.8</span>
+                <span class="metrik"
+                  ><i class="fa-regular fa-clock"></i> 16 week</span
+                >
+                <span class="metrik"
+                  ><i class="fa-solid fa-book"></i> 18 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="https://placehold.co/40x40/cccccc/333333?text=Ava"
+                    alt="Mrs. Maria Waston"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Mrs. Maria Waston</span>
+                </div>
+                <span class="pengalaman">(2+ Year Exp)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COURSE LIST -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer class="footer">
+      <div class="wadah">
+        <!-- NEWSLETTER -->
+        <section class="berlangganan">
+          <div class="berlangganan-ilustrasi">
+            <img
+              src="https://placehold.co/420x220/eaf2ff/4a78df?text=Gambar+Ilustrasi"
+              alt="Tempat gambar ilustrasi"
+            />
+          </div>
+
+          <div class="berlangganan-informasi">
+            <h2>
+              Subscribe to our newsletter to get
+              <br class="desktop" />
+              updates to our latest collections
+            </h2>
+
+            <p>
+              Get 20% off on your first order just by subscribing to our
+              newsletter
+            </p>
+
+            <form class="formulir-berlangganan">
+              <div class="input-grup">
+                <span class="ikon-email">✉</span>
+
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  aria-label="Alamat email"
+                  required
+                />
+
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+
+            <small>
+              You will be able to unsubscribe at any time.
+              <br />
+              Read our privacy policy <a href="#">here</a>
+            </small>
+          </div>
+        </section>
+
+        <!-- BAGIAN UTAMA -->
+        <section class="bagian-utama">
+          <!-- IDENTITAS -->
+          <div class="identitas">
+            <a class="logo" href="#" aria-label="Stay Clean">
+              <img
+                src="https://placehold.co/150x48/ffffff/111827?text=Stay+Clean"
+                alt="Logo Stay Clean"
+              />
+            </a>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              <br class="desktop" />
+              adipiscing elit ut aliquam, purus sit amet
+              <br class="desktop" />
+              luctus venenatis.
+            </p>
+
+            <div class="sosial">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Twitter">♥</a>
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Google">G</a>
+            </div>
+          </div>
+
+          <!-- NAVIGASI -->
+          <nav class="kolom-tautan" aria-label="Navigasi footer">
+            <div class="kelompok-tautan">
+              <h3>Company</h3>
+              <a href="#">About Us</a>
+              <a href="#">Services</a>
+              <a href="#">Community</a>
+              <a href="#">Testimonial</a>
+            </div>
+
+            <div class="kelompok-tautan">
+              <h3>Support</h3>
+              <a href="#">Help Center</a>
+              <a href="#">Tweet @ Us</a>
+              <a href="#">Webians</a>
+              <a href="#">Feedback</a>
+            </div>
+
+            <div class="kelompok-tautan">
+              <h3>Links</h3>
+              <a href="#">Courses</a>
+              <a href="#">Become Teacher</a>
+              <a href="#">Service</a>
+              <a href="#">All in One</a>
+            </div>
+          </nav>
+
+          <!-- KONTAK -->
+          <div class="kontak">
+            <h3>Contact Us</h3>
+
+            <a href="tel:+9198765432154">
+              <span>⌕</span>
+              (91) 98765 4321 54
+            </a>
+
+            <a href="mailto:support@mail.com">
+              <span>✉</span>
+              support@mail.com
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="paling-bawah">
+        <div class="wadah paling-bawah-isi">
+          <p>© Copyright by CodedUI. All rights reserved.</p>
+
+          <div class="tautan-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Legal</a>
+            <a href="#">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
