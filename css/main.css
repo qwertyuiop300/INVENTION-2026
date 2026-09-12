@@ -2117,3 +2117,1418 @@ section.bagian-pahlawan
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 }
+
+/* --- Tata Letak Utama --- */
+.bagian-tentang {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bagian-tentang .wadah {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.bagian-tentang .wadah .kisi-tentang {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* --- Sisi Kiri (Gambar & Statistik) --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 550px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Animasi Hover Gambar Utama (Zoom In Lembut) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .gambar-latar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.6s ease;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri:hover .gambar-latar {
+  transform: scale(1.05);
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .hamparan-gradien {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Kartu Statistik 85% */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  margin: 24px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15); /* Bayangan kebiruan */
+  transition: transform 0.3s ease;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik:hover {
+  transform: translateY(-5px);
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .angka-statistik {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .deskripsi-statistik {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Komponen Bilah Progres Vertikal */
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres {
+  display: flex;
+  gap: 6px;
+  height: 36px;
+  margin-bottom: 12px;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah {
+  flex: 1;
+  border-radius: 20px; /* Bentuk membulat persis digambar */
+  transition: background-color 0.3s ease;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah.aktif {
+  background-color: #1b6cfb; /* Biru vibran utama */
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah.non-aktif {
+  background-color: #d6e4ff; /* Biru muda/pudar */
+}
+
+/* Label Progres (0 & 100) */
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .label-progres {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* --- Sisi Kanan (Kartu Informasi Susun) --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info {
+  flex: 1;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efek Hover untuk kedua kartu di kanan */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Desain Kartu Atas (Gelap tapi solid, tidak pucat) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap {
+  background-color: #15181e; /* Warna gelap tegas */
+  color: #ffffff;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .judul-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .deskripsi-info {
+  font-size: 1rem;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+/* Desain Kartu Bawah (Terang) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang:hover {
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1); /* Hover shadow kebiruan sedikit */
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang .judul-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kanan
+  .kartu-terang
+  .deskripsi-info {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* --- Ikon Pada Kartu Kanan --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .lingkaran-ikon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 1.25rem;
+}
+
+/* Warna ikon menyesuaikan referensi gambar kedua */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
+  background-color: #ffc107; /* Kuning keemasan cerah */
+  color: #15181e;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-kuning {
+  background-color: #e8f0fe;
+  color: #1b6cfb; /* Biru cerah */
+}
+
+/* --- Media Query untuk Responsivitas Mobile --- */
+@media (max-width: 992px) {
+  .bagian-tentang .wadah .kisi-tentang {
+    grid-template-columns: 1fr; /* Berubah jadi 1 kolom bertumpuk di layar kecil */
+  }
+
+  .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
+    min-height: 450px;
+  }
+}
+/* --- Tata Letak Utama --- */
+.bagian-tentang {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bagian-tentang .wadah {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.bagian-tentang .wadah .kisi-tentang {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* --- Sisi Kiri (Gambar & Statistik) --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 550px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Animasi Hover Gambar Utama (Zoom In Lembut) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .gambar-latar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.6s ease;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri:hover .gambar-latar {
+  transform: scale(1.05);
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .hamparan-gradien {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Kartu Statistik 85% */
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  margin: 24px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15); /* Bayangan kebiruan */
+  transition: transform 0.3s ease;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik:hover {
+  transform: translateY(-5px);
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .angka-statistik {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .deskripsi-statistik {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Komponen Bilah Progres Vertikal */
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres {
+  display: flex;
+  gap: 6px;
+  height: 36px;
+  margin-bottom: 12px;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah {
+  flex: 1;
+  border-radius: 20px; /* Bentuk membulat persis digambar */
+  transition: background-color 0.3s ease;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah.aktif {
+  background-color: #1b6cfb; /* Biru vibran utama */
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .kumpulan-bilah-progres
+  .bilah.non-aktif {
+  background-color: #d6e4ff; /* Biru muda/pudar */
+}
+
+/* Label Progres (0 & 100) */
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kiri
+  .kartu-statistik
+  .label-progres {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* --- Sisi Kanan (Kartu Informasi Susun) --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info {
+  flex: 1;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efek Hover untuk kedua kartu di kanan */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Desain Kartu Atas (Gelap tapi solid, tidak pucat) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap {
+  background-color: #15181e; /* Warna gelap tegas */
+  color: #ffffff;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .judul-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .deskripsi-info {
+  font-size: 1rem;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+/* Desain Kartu Bawah (Terang) */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang:hover {
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1); /* Hover shadow kebiruan sedikit */
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang .judul-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kanan
+  .kartu-terang
+  .deskripsi-info {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* --- Ikon Pada Kartu Kanan --- */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .lingkaran-ikon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 1.25rem;
+}
+
+/* Warna ikon menyesuaikan referensi gambar kedua */
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
+  background-color: #ffc107; /* Kuning keemasan cerah */
+  color: #15181e;
+}
+
+.bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-kuning {
+  background-color: #e8f0fe;
+  color: #1b6cfb; /* Biru cerah */
+}
+
+/* --- Media Query untuk Responsivitas Mobile --- */
+@media (max-width: 992px) {
+  .bagian-tentang .wadah .kisi-tentang {
+    grid-template-columns: 1fr; /* Berubah jadi 1 kolom bertumpuk di layar kecil */
+  }
+
+  .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
+    min-height: 450px;
+  }
+}
+
+/* --- Tata Letak Utama --- */
+.bagian-mengapa-kami {
+  width: 100%;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bagian-mengapa-kami .wadah {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* --- Kepala Bagian (Judul) --- */
+.bagian-mengapa-kami .wadah .kepala-bagian {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bagian-mengapa-kami .wadah .kepala-bagian .label-kecil {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ff6b00; /* Aksen oranye */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 107, 0, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.bagian-mengapa-kami .wadah .kepala-bagian .judul-utama {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.bagian-mengapa-kami .wadah .kepala-bagian .deskripsi-utama {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* --- Kisi Keunggulan (Grid) --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+/* --- Desain Kartu Global --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan {
+  border-radius: 24px;
+  padding: 40px 30px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan:hover {
+  transform: translateY(-10px);
+}
+
+/* Efek Offset untuk Kartu Tengah agar tidak kaku */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit {
+  margin-top: 40px;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit:hover {
+  transform: translateY(30px); /* Mempertahankan offset saat hover */
+}
+
+/* --- Ikon dalam Kartu --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .wadah-ikon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.bagian-mengapa-kami
+  .wadah
+  .kisi-keunggulan
+  .kartu-keunggulan:hover
+  .wadah-ikon {
+  transform: scale(1.1) rotate(-5deg); /* Animasi ikon saat hover */
+}
+
+/* --- Teks dalam Kartu --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .judul-kartu {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.bagian-mengapa-kami
+  .wadah
+  .kisi-keunggulan
+  .kartu-keunggulan
+  .deskripsi-kartu {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* --- Varian Kartu Putih (Kiri & Kanan) --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih {
+  background-color: #ffffff;
+  border: 1px solid #eef0f5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih:hover {
+  box-shadow: 0 20px 40px rgba(27, 108, 251, 0.1);
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .wadah-ikon {
+  background-color: #e8f0fe;
+  color: #1b6cfb; /* Biru utama */
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .judul-kartu {
+  color: #111827;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .deskripsi-kartu {
+  color: #6b7280;
+}
+
+/* --- Varian Kartu Utama (Tengah - Biru Dominan) --- */
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama {
+  background: linear-gradient(
+    135deg,
+    #1b6cfb 0%,
+    #0b51cd 100%
+  ); /* Gradien biru yang tegas */
+  color: #ffffff;
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.3);
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama:hover {
+  box-shadow: 0 25px 50px rgba(27, 108, 251, 0.4);
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .wadah-ikon {
+  background-color: #ffc107; /* Kuning cerah untuk kontras */
+  color: #111827;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .judul-kartu {
+  color: #ffffff;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .deskripsi-kartu {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .gambar-dekorasi {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-bottom: -40px; /* Menempel di bawah kartu */
+  border-radius: 0 0 24px 24px;
+  display: block;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.bagian-mengapa-kami
+  .wadah
+  .kisi-keunggulan
+  .kartu-utama:hover
+  .gambar-dekorasi {
+  opacity: 1;
+}
+
+/* --- Responsivitas (Media Query) --- */
+@media (max-width: 992px) {
+  .bagian-mengapa-kami .wadah .kisi-keunggulan {
+    grid-template-columns: 1fr; /* Berubah menjadi 1 kolom di layar kecil */
+    gap: 24px;
+  }
+
+  /* Menghilangkan efek offset pada mobile agar rapi */
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit {
+    margin-top: 0;
+  }
+
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit:hover {
+    transform: translateY(-10px);
+  }
+}
+
+/* --- Tata Letak Utama Bagian Pratinjau --- */
+.bagian-pratinjau {
+  width: 100%;
+  /* Warna biru solid meniru referensi gambar */
+  background-color: #4264d8;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff; /* Teks default menjadi putih karena background biru */
+}
+
+.bagian-pratinjau .wadah {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* --- Kepala Bagian (Judul & Teks) --- */
+.bagian-pratinjau .wadah .kepala-pratinjau {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bagian-pratinjau .wadah .kepala-pratinjau .label-kecil {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bagian-pratinjau .wadah .kepala-pratinjau .label-kecil i {
+  color: #ffd700; /* Ikon petir warna kuning */
+}
+
+.bagian-pratinjau .wadah .kepala-pratinjau .judul-utama {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* 1-2 Kalimat penjelasan yang diminta */
+.bagian-pratinjau .wadah .kepala-pratinjau .deskripsi-utama {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85); /* Putih agak transparan agar elegan */
+}
+
+/* --- Kisi Galeri (Grid Layout) --- */
+.bagian-pratinjau .wadah .kisi-galeri {
+  display: grid;
+  /* Kiri lebih lebar (1.6 bagian), kanan lebih kecil (1 bagian) */
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: 1fr 1fr; /* Membagi dua baris untuk yang dikanan */
+  gap: 24px;
+  min-height: 550px; /* Tinggi minimum galeri */
+}
+
+/* --- Desain Kartu Galeri Global --- */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* Memosisikan konten di bawah */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Pengaturan penempatan berdasarkan Grid */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-kiri {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3; /* Membujur dari atas ke bawah (menghabiskan 2 baris) */
+}
+
+.bagian-pratinjau .wadah .kisi-galeri .kartu-kanan-atas {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.bagian-pratinjau .wadah .kisi-galeri .kartu-kanan-bawah {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* --- Elemen dalam Kartu (Gambar, Overlay, Konten) --- */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .gambar-pratinjau {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Animasi mulus */
+}
+
+/* Hamparan gradien agar teks putih selalu terbaca di atas gambar apa pun */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .hamparan-gelap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  pointer-events: none; /* Agar tidak menghalangi klik */
+  transition: background 0.4s ease;
+}
+
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .konten-kartu {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .konten-kartu .teks-kartu {
+  flex: 1;
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri
+  .konten-kartu
+  .teks-kartu
+  .judul-kartu {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri
+  .konten-kartu
+  .teks-kartu
+  .deskripsi-kartu {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* --- Tombol Aksi dalam Kartu --- */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .konten-kartu .tombol-aksi {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri
+  .konten-kartu
+  .tombol-lingkaran {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* --- Animasi Hover (Efek Interaktif) --- */
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .gambar-pratinjau {
+  transform: scale(1.08); /* Zoom in gambar saat di-hover */
+}
+
+.bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .hamparan-gelap {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri:hover
+  .konten-kartu
+  .teks-kartu
+  .judul-kartu {
+  transform: translateY(-3px); /* Judul naik sedikit */
+}
+
+/* Tombol berubah terang saat kartu di-hover */
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri:hover
+  .konten-kartu
+  .tombol-aksi,
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri:hover
+  .konten-kartu
+  .tombol-lingkaran {
+  background-color: #ffffff;
+  color: #111827;
+  border-color: #ffffff;
+}
+
+/* --- Media Query untuk Tablet & Mobile --- */
+@media (max-width: 992px) {
+  .bagian-pratinjau .wadah .kisi-galeri {
+    grid-template-columns: 1fr; /* Jadi satu kolom */
+    grid-template-rows: auto auto auto;
+  }
+
+  .bagian-pratinjau .wadah .kisi-galeri .kartu-kiri {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 400px;
+  }
+
+  .bagian-pratinjau .wadah .kisi-galeri .kartu-kanan-atas {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 250px;
+  }
+
+  .bagian-pratinjau .wadah .kisi-galeri .kartu-kanan-bawah {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 250px;
+  }
+}
+
+/* ================= SECTION TESTIMONI ================= */
+.bagian-testimoni {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bagian-testimoni .wadah {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Kepala Testimoni */
+.kepala-testimoni {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-kecil {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2563eb; /* Aksen biru profesional */
+  background-color: #eff6ff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.label-kecil i {
+  color: #2563eb;
+}
+
+.judul-utama {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.deskripsi-utama {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* Kisi Kartu Testimoni */
+.kisi-testimoni {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+/* Efek zig-zag (staggered) ringan agar dinamis dan tidak kaku */
+.kisi-testimoni .kartu-testimoni:nth-child(even) {
+  margin-top: 35px;
+}
+
+/* Desain Kartu Testimoni */
+.kartu-testimoni {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Efek melayang saat di-hover */
+.kartu-testimoni:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.12);
+  border-color: #cbd5e1;
+}
+
+/* Bagian Atas Kartu (Isi Testimoni - Putih) */
+.konten-atas {
+  background-color: #ffffff;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.rating {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating i {
+  color: #f59e0b; /* Bintang emas */
+}
+
+.rating span {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.kutipan {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* Bagian Bawah Kartu (Profil Pengguna - Abu-abu Lembut) */
+.konten-bawah {
+  background-color: #f8fafc;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.foto-profil {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.info-profil {
+  display: flex;
+  flex-direction: column;
+}
+
+.nama {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.peran {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* --- Media Query untuk Tampilan Mobile --- */
+@media (max-width: 768px) {
+  /* Matikan efek zig-zag di layar kecil agar tersusun rapi */
+  .kisi-testimoni .kartu-testimoni:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .bagian-testimoni {
+    padding: 60px 16px;
+  }
+
+  .judul-utama {
+    font-size: 2rem;
+  }
+}
+
+/* ================= SECTION FAQ ================= */
+.bagian-faq {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bagian-faq .wadah {
+  width: 100%;
+  max-width: 900px; /* Lebar optimal agar nyaman dibaca */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Kepala FAQ */
+.kepala-faq {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-kecil {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2563eb; /* Aksen biru profesional */
+  background-color: #eff6ff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.label-kecil i {
+  color: #2563eb;
+}
+
+.judul-utama {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.deskripsi-utama {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* --- Daftar Akordeon FAQ --- */
+.daftar-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-faq {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+/* Efek saat kursor menyentuh item FAQ */
+.item-faq:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.06);
+}
+
+.pertanyaan-faq {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 24px 30px;
+  text-align: left;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.ikon-panah {
+  color: #64748b;
+  font-size: 0.9rem;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Bagian Jawaban (Tersembunyi secara default) */
+.jawaban-faq {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    padding 0.3s ease;
+  background-color: #ffffff;
+}
+
+.isi-jawaban {
+  padding: 0 30px 24px 30px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 16px;
+}
+
+/* --- State Aktif (Ketika FAQ Dibuka) --- */
+.item-faq.aktif {
+  border-color: #2563eb;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+}
+
+.item-faq.aktif .pertanyaan-faq {
+  color: #2563eb; /* Judul berubah menjadi biru saat aktif */
+}
+
+.item-faq.aktif .ikon-panah {
+  transform: rotate(180deg); /* Panah berputar ke atas */
+  color: #2563eb;
+}
+
+.item-faq.aktif .jawaban-faq {
+  max-height: 200px; /* Tinggi maksimum saat terbuka */
+}
+
+/* --- Kartu Bantuan di Bagian Bawah FAQ --- */
+.kartu-bantuan {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.teks-bantuan h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.teks-bantuan p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tombol-bantuan {
+  background-color: #ffffff;
+  color: #2563eb;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tombol-bantuan:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Media Query untuk Tampilan Mobile --- */
+@media (max-width: 768px) {
+  .bagian-faq {
+    padding: 60px 16px;
+  }
+
+  .judul-utama {
+    font-size: 2rem;
+  }
+
+  .pertanyaan-faq {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .isi-jawaban {
+    padding: 0 20px 20px 20px;
+  }
+
+  .kartu-bantuan {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
