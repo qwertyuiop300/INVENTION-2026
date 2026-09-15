@@ -3538,3 +3538,7 @@ section.bagian-pahlawan
     padding: 30px 20px;
   }
 }
+
+.kartu-kursus {
+  cursor: pointer;
+}

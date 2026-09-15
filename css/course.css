@@ -1,0 +1,2569 @@
+/* ==================================================
+   VARIABEL
+================================================== */
+
+:root {
+  --biru-utama: #2463c9;
+  --biru-gelap: #174da8;
+  --biru-terang: #eaf3ff;
+  --biru-latar: #f6faff;
+  --biru-muda: #dcecff;
+
+  --teks-utama: #17243a;
+  --teks-sekunder: #68758a;
+  --teks-lembut: #8b98aa;
+
+  --putih: #ffffff;
+  --garis: #e5ebf3;
+
+  --oranye: #ff7518;
+  --oranye-gelap: #ed5e08;
+
+  --radius-kecil: 10px;
+  --radius-sedang: 16px;
+  --radius-besar: 24px;
+
+  --bayangan: 0 15px 45px rgba(27, 70, 130, 0.08);
+  --transisi: 0.3s ease;
+}
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--putih);
+  color: var(--teks-utama);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.wadah {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ==================================================
+   BAGIAN ATAS DETAIL
+================================================== */
+
+.halaman-kursus .bagian-detail {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background:
+    radial-gradient(
+      circle at 95% 10%,
+      rgba(83, 174, 255, 0.25),
+      transparent 30%
+    ),
+    linear-gradient(115deg, #1767d2 0%, #1689e5 48%, #20b3c8 100%);
+}
+
+.halaman-kursus .bagian-detail::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: -130px;
+  width: 440px;
+  height: 440px;
+  border: 75px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.halaman-kursus .bagian-detail::after {
+  content: "";
+  position: absolute;
+  right: -170px;
+  bottom: -250px;
+  width: 560px;
+  height: 560px;
+  border: 85px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.halaman-kursus .bagian-detail .jalur-halaman {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.halaman-kursus .bagian-detail .jalur-halaman a {
+  transition: color var(--transisi);
+}
+
+.halaman-kursus .bagian-detail .jalur-halaman a:hover {
+  color: var(--putih);
+}
+
+.halaman-kursus .bagian-detail .jalur-halaman strong {
+  color: var(--putih);
+  font-weight: 600;
+}
+
+.halaman-kursus .bagian-detail .detail-utama {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 0.85fr);
+  align-items: center;
+  gap: 75px;
+  padding-top: 45px;
+  padding-bottom: 78px;
+}
+
+.halaman-kursus .bagian-detail .detail-utama .detail-utama__informasi {
+  color: var(--putih);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .label-kursus {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--putih);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .label-kursus
+  .label-kursus__titik {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffd35c;
+}
+
+.halaman-kursus .bagian-detail .detail-utama .detail-utama__informasi h1 {
+  max-width: 650px;
+  margin-top: 24px;
+  color: var(--putih);
+  font-size: clamp(34px, 4vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -2.2px;
+}
+
+.halaman-kursus .bagian-detail .detail-utama .detail-utama__informasi h1 span {
+  display: block;
+  color: #bdeaff;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__deskripsi {
+  max-width: 580px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .pengajar-mini {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background: var(--biru-muda);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .pengajar-mini
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .pengajar-mini__informasi
+  span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .pengajar-mini__informasi
+  strong {
+  display: block;
+  margin-top: 2px;
+  color: var(--putih);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .pemisah-vertikal {
+  width: 1px;
+  height: 30px;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .detail-utama__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .detail-utama__rating
+  .rating-bintang {
+  color: #ffd35c;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .detail-utama__rating
+  strong {
+  color: var(--putih);
+  font-size: 12px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__pengajar
+  .detail-utama__rating
+  span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 10px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 34px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik
+  .statistik-kursus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik
+  .statistik-kursus
+  .statistik-kursus__ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.13);
+  color: #c9edff;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik
+  .statistik-kursus
+  .statistik-kursus__ikon
+  svg {
+  width: 17px;
+  height: 17px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik
+  .statistik-kursus
+  strong {
+  display: block;
+  color: var(--putih);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__informasi
+  .detail-utama__statistik
+  .statistik-kursus
+  span {
+  display: block;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 9px;
+}
+
+/* ==================================================
+   PREVIEW KURSUS
+================================================== */
+
+.halaman-kursus .bagian-detail .detail-utama .detail-utama__preview {
+  position: relative;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus {
+  position: relative;
+  overflow: hidden;
+  border: 7px solid rgba(255, 255, 255, 0.95);
+  border-radius: 22px;
+  background: var(--biru-muda);
+  box-shadow: 0 25px 60px rgba(8, 54, 130, 0.25);
+  transform: rotate(1.5deg);
+  transition:
+    transform var(--transisi),
+    box-shadow var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 0 30px 75px rgba(8, 54, 130, 0.32);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  > img {
+  aspect-ratio: 1.55 / 1;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus:hover
+  > img {
+  transform: scale(1.04);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__lapisan {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 55, 130, 0.1),
+    rgba(10, 55, 130, 0.5)
+  );
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__atas {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__atas
+  .preview-kursus__kategori {
+  padding: 8px 11px;
+  border-radius: 6px;
+  background: var(--putih);
+  color: var(--biru-utama);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__atas
+  .preview-kursus__durasi {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border-radius: 6px;
+  background: rgba(12, 40, 95, 0.5);
+  color: var(--putih);
+  font-size: 10px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__atas
+  .preview-kursus__durasi
+  svg {
+  width: 13px;
+  height: 13px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .tombol-preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border: 5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  background: var(--biru-utama);
+  color: var(--putih);
+  transform: translate(-50%, -50%);
+  transition:
+    background var(--transisi),
+    transform var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .tombol-preview:hover {
+  background: var(--biru-gelap);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .tombol-preview
+  svg {
+  width: 23px;
+  height: 23px;
+  margin-left: 3px;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__bawah {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: var(--putih);
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__bawah
+  span:first-child {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.halaman-kursus
+  .bagian-detail
+  .detail-utama
+  .detail-utama__preview
+  .preview-kursus
+  .preview-kursus__bawah
+  span:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 9px;
+}
+
+/* ==================================================
+   BAGIAN ISI
+================================================== */
+
+.halaman-kursus .bagian-isi {
+  width: 100%;
+  background: var(--putih);
+}
+
+.halaman-kursus .bagian-isi .susunan-isi {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 365px;
+  align-items: start;
+  gap: 75px;
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .konten-kursus {
+  min-width: 0;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .konten-kursus .blok-kursus {
+  padding-bottom: 65px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  + .blok-kursus {
+  padding-top: 5px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 27px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok
+  .judul-blok__penanda {
+  flex-shrink: 0;
+  width: 5px;
+  height: 42px;
+  border-radius: 5px;
+  background: var(--biru-utama);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok
+  .judul-blok__label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--biru-utama);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok
+  h2 {
+  color: var(--teks-utama);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.3;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .konten-kursus .blok-kursus > p {
+  max-width: 800px;
+  margin-bottom: 17px;
+  color: var(--teks-sekunder);
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* ==================================================
+   DAFTAR PEMBELAJARAN
+================================================== */
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 19px;
+  border: 1px solid var(--garis);
+  border-radius: 13px;
+  background: var(--putih);
+  transition:
+    border-color var(--transisi),
+    background var(--transisi),
+    transform var(--transisi),
+    box-shadow var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran:hover {
+  border-color: #bfd5f4;
+  background: var(--biru-latar);
+  box-shadow: 0 10px 25px rgba(36, 99, 201, 0.05);
+  transform: translateY(-3px);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran
+  .item-pembelajaran__ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--biru-terang);
+  color: var(--biru-utama);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran
+  .item-pembelajaran__ikon
+  svg {
+  width: 18px;
+  height: 18px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran
+  h3 {
+  color: var(--teks-utama);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .daftar-pembelajaran
+  .item-pembelajaran
+  p {
+  margin-top: 5px;
+  color: var(--teks-sekunder);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+/* ==================================================
+   JUDUL KURIKULUM
+================================================== */
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok--dengan-aksi {
+  justify-content: space-between;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok--dengan-aksi
+  .judul-blok__kiri {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .judul-blok--dengan-aksi
+  .jumlah-materi {
+  padding: 8px 13px;
+  border-radius: 7px;
+  background: var(--biru-terang);
+  color: var(--biru-utama);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ==================================================
+   KURIKULUM
+================================================== */
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul {
+  overflow: hidden;
+  border: 1px solid var(--garis);
+  border-radius: 13px;
+  background: var(--putih);
+  transition:
+    border-color var(--transisi),
+    box-shadow var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul:hover {
+  border-color: #bfd5f4;
+  box-shadow: 0 8px 25px rgba(36, 99, 201, 0.05);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 82px;
+  gap: 17px;
+  padding: 17px 22px;
+  background: var(--putih);
+  text-align: left;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__nomor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--biru-terang);
+  color: var(--biru-utama);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__informasi {
+  flex: 1;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__informasi
+  h3 {
+  color: var(--teks-utama);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__informasi
+  span {
+  display: block;
+  margin-top: 4px;
+  color: var(--teks-sekunder);
+  font-size: 10px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__panah {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f4f7fb;
+  color: var(--biru-utama);
+  transition:
+    background var(--transisi),
+    transform var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala
+  .modul__panah
+  svg {
+  width: 16px;
+  height: 16px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__kepala:hover
+  .modul__panah {
+  background: var(--biru-terang);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi {
+  display: none;
+  padding: 0 22px 18px 79px;
+  border-top: 1px solid var(--garis);
+  background: #fcfdff;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul.modul--aktif
+  .modul__isi {
+  display: block;
+  animation: bukaMateri 0.3s ease;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul.modul--aktif
+  .modul__kepala
+  .modul__panah {
+  background: var(--biru-utama);
+  color: var(--putih);
+  transform: rotate(180deg);
+}
+
+@keyframes bukaMateri {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf1f6;
+  color: var(--teks-sekunder);
+  font-size: 11px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi:last-child {
+  border-bottom: 0;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi
+  .materi__kiri {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi
+  .materi__ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--biru-utama);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi
+  .materi__ikon
+  svg {
+  width: 14px;
+  height: 14px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi
+  .materi__durasi {
+  flex-shrink: 0;
+  color: var(--teks-lembut);
+  font-size: 10px;
+}
+
+/* ==================================================
+   INSTRUKTUR
+================================================== */
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 28px;
+  border: 1px solid var(--garis);
+  border-radius: 18px;
+  background: var(--biru-latar);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__foto {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 115px;
+  height: 115px;
+  border: 5px solid var(--putih);
+  border-radius: 50%;
+  background: var(--biru-muda);
+  box-shadow: 0 5px 18px rgba(36, 99, 201, 0.1);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__foto
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi {
+  flex: 1;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__label {
+  color: var(--biru-utama);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  h3 {
+  margin-top: 7px;
+  color: var(--teks-utama);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__profesi {
+  margin-top: 2px;
+  color: var(--biru-utama);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__deskripsi {
+  max-width: 600px;
+  margin-top: 13px;
+  color: var(--teks-sekunder);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__statistik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #dce8f7;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__statistik
+  div
+  strong {
+  display: block;
+  color: var(--teks-utama);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__statistik
+  div
+  span {
+  display: block;
+  margin-top: 3px;
+  color: var(--teks-sekunder);
+  font-size: 10px;
+}
+
+/* ==================================================
+   SIDEBAR PEMBELIAN
+================================================== */
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan {
+  position: sticky;
+  top: 25px;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-pembelian {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--garis);
+  border-radius: 20px;
+  background: var(--putih);
+  box-shadow: var(--bayangan);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__aksen {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, var(--biru-utama), #35a9e8);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi {
+  padding: 30px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .kartu-pembelian__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .kartu-pembelian__label
+  span {
+  color: var(--teks-sekunder);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .kartu-pembelian__label
+  strong {
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #eaf8f1;
+  color: #21a36f;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus {
+  margin-top: 25px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus
+  .harga-kursus__lama {
+  display: block;
+  color: var(--teks-lembut);
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus
+  .harga-kursus__utama {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus
+  .harga-kursus__utama
+  strong {
+  color: var(--teks-utama);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus
+  .harga-kursus__utama
+  span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #fff0e7;
+  color: var(--oranye);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .harga-kursus
+  p {
+  margin-top: 7px;
+  color: var(--teks-sekunder);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 25px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: var(--oranye);
+  color: var(--putih);
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background var(--transisi),
+    transform var(--transisi),
+    box-shadow var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian:hover {
+  background: var(--oranye-gelap);
+  box-shadow: 0 10px 25px rgba(255, 117, 24, 0.22);
+  transform: translateY(-3px);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian
+  svg {
+  width: 17px;
+  height: 17px;
+  transition: transform var(--transisi);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian:hover
+  svg {
+  transform: translateX(4px);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .jaminan-pembelian {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 17px;
+  color: var(--teks-lembut);
+  font-size: 10px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .jaminan-pembelian
+  svg {
+  width: 15px;
+  height: 15px;
+  color: #21a36f;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .pemisah-kartu {
+  width: 100%;
+  height: 1px;
+  margin: 25px 0;
+  background: var(--garis);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .judul-fitur {
+  color: var(--teks-utama);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .daftar-fitur {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .daftar-fitur
+  li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--teks-sekunder);
+  font-size: 11px;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .daftar-fitur
+  li
+  .fitur__ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--biru-terang);
+  color: var(--biru-utama);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .daftar-fitur
+  li
+  .fitur__ikon
+  svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ==================================================
+   KARTU BANTUAN
+================================================== */
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 22px;
+  padding: 23px;
+  border-radius: 16px;
+  background: var(--biru-terang);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-bantuan
+  .kartu-bantuan__ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  background: var(--biru-utama);
+  color: var(--putih);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-bantuan
+  .kartu-bantuan__ikon
+  svg {
+  width: 19px;
+  height: 19px;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan h3 {
+  color: var(--teks-utama);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan p {
+  margin-top: 5px;
+  color: var(--teks-sekunder);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 11px;
+  color: var(--biru-utama);
+  font-size: 10px;
+  font-weight: 800;
+  transition: transform var(--transisi);
+}
+
+.halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan a:hover {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   PENUTUP
+================================================== */
+
+.halaman-kursus .bagian-penutup {
+  width: 100%;
+  padding-bottom: 80px;
+  background: var(--putih);
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  overflow: hidden;
+  min-height: 250px;
+  padding: 50px 65px;
+  border-radius: 24px;
+  background: linear-gradient(115deg, #1b63c5 0%, #218ce3 100%);
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__ornamen {
+  position: absolute;
+  border: 70px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__ornamen--satu {
+  top: -250px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__ornamen--dua {
+  bottom: -220px;
+  left: 35%;
+  width: 350px;
+  height: 350px;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi {
+  position: relative;
+  z-index: 1;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi > span {
+  color: #a9ddff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi h2 {
+  margin-top: 12px;
+  color: var(--putih);
+  font-size: clamp(25px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi p {
+  max-width: 500px;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .tombol-penutup {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-shrink: 0;
+  min-height: 52px;
+  padding: 0 25px;
+  border-radius: 10px;
+  background: var(--putih);
+  color: var(--biru-utama);
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    transform var(--transisi),
+    background var(--transisi),
+    box-shadow var(--transisi);
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .tombol-penutup:hover {
+  background: #f1f6ff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .tombol-penutup svg {
+  width: 17px;
+  height: 17px;
+  transition: transform var(--transisi);
+}
+
+.halaman-kursus .bagian-penutup .penutup-kursus .tombol-penutup:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==================================================
+   RESPONSIVE TABLET
+================================================== */
+
+@media (max-width: 1100px) {
+  .halaman-kursus .bagian-detail .detail-utama {
+    gap: 45px;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi {
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 40px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran {
+    gap: 14px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi {
+    padding: 25px;
+  }
+
+  .halaman-kursus .bagian-penutup .penutup-kursus {
+    padding: 45px;
+  }
+}
+
+/* ==================================================
+   RESPONSIVE TABLET KECIL
+================================================== */
+
+@media (max-width: 850px) {
+  .halaman-kursus .bagian-detail .detail-utama {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+
+  .halaman-kursus .bagian-detail .detail-utama .detail-utama__preview {
+    max-width: 680px;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 60px;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan {
+    position: static;
+    order: -1;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-pembelian {
+    max-width: 100%;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi
+    .daftar-fitur {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan {
+    display: none;
+  }
+}
+
+/* ==================================================
+   RESPONSIVE HP
+================================================== */
+
+@media (max-width: 600px) {
+  .wadah {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .halaman-kursus .bagian-detail .jalur-halaman {
+    padding-top: 22px;
+    padding-bottom: 18px;
+    font-size: 10px;
+  }
+
+  .halaman-kursus .bagian-detail .detail-utama {
+    gap: 35px;
+    padding-top: 28px;
+    padding-bottom: 45px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .label-kursus {
+    font-size: 9px;
+  }
+
+  .halaman-kursus .bagian-detail .detail-utama .detail-utama__informasi h1 {
+    margin-top: 19px;
+    font-size: 34px;
+    letter-spacing: -1.5px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__deskripsi {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__pengajar {
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__pengajar
+    .pemisah-vertikal {
+    display: none;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__pengajar
+    .detail-utama__rating {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik {
+    gap: 17px;
+    margin-top: 25px;
+    padding-top: 22px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik
+    .statistik-kursus {
+    gap: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik
+    .statistik-kursus
+    .statistik-kursus__ikon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik
+    .statistik-kursus
+    .statistik-kursus__ikon
+    svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik
+    .statistik-kursus
+    strong {
+    font-size: 10px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__informasi
+    .detail-utama__statistik
+    .statistik-kursus
+    span {
+    font-size: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus {
+    border-width: 5px;
+    border-radius: 17px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__atas {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__atas
+    .preview-kursus__kategori {
+    padding: 7px 9px;
+    font-size: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__atas
+    .preview-kursus__durasi {
+    padding: 7px 9px;
+    font-size: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .tombol-preview {
+    width: 54px;
+    height: 54px;
+    border-width: 4px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .tombol-preview
+    svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__bawah {
+    right: 13px;
+    bottom: 12px;
+    left: 13px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__bawah
+    span:first-child {
+    font-size: 9px;
+  }
+
+  .halaman-kursus
+    .bagian-detail
+    .detail-utama
+    .detail-utama__preview
+    .preview-kursus
+    .preview-kursus__bawah
+    span:last-child {
+    display: none;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi .konten-kursus .blok-kursus {
+    padding-bottom: 45px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok {
+    gap: 11px;
+    margin-bottom: 20px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok
+    .judul-blok__penanda {
+    width: 4px;
+    height: 35px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok
+    .judul-blok__label {
+    font-size: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok
+    h2 {
+    font-size: 19px;
+  }
+
+  .halaman-kursus .bagian-isi .susunan-isi .konten-kursus .blok-kursus > p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran
+    .item-pembelajaran {
+    padding: 16px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran
+    .item-pembelajaran
+    .item-pembelajaran__ikon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran
+    .item-pembelajaran
+    h3 {
+    font-size: 11px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .daftar-pembelajaran
+    .item-pembelajaran
+    p {
+    font-size: 10px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok--dengan-aksi {
+    align-items: flex-start;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok--dengan-aksi
+    .judul-blok__kiri {
+    align-items: flex-start;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .judul-blok--dengan-aksi
+    .jumlah-materi {
+    padding: 6px 9px;
+    font-size: 9px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala {
+    min-height: 70px;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala
+    .modul__nomor {
+    width: 32px;
+    height: 32px;
+    font-size: 9px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala
+    .modul__informasi
+    h3 {
+    font-size: 11px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala
+    .modul__informasi
+    span {
+    font-size: 9px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala
+    .modul__panah {
+    width: 27px;
+    height: 27px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__kepala
+    .modul__panah
+    svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__isi {
+    padding: 0 15px 12px 59px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__isi
+    .materi {
+    font-size: 9px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kurikulum
+    .modul
+    .modul__isi
+    .materi
+    .materi__durasi {
+    font-size: 8px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kartu-instruktur {
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kartu-instruktur
+    .kartu-instruktur__foto {
+    width: 90px;
+    height: 90px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kartu-instruktur
+    .kartu-instruktur__informasi
+    h3 {
+    font-size: 17px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kartu-instruktur
+    .kartu-instruktur__informasi
+    .kartu-instruktur__deskripsi {
+    font-size: 11px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .konten-kursus
+    .blok-kursus
+    .kartu-instruktur
+    .kartu-instruktur__informasi
+    .kartu-instruktur__statistik {
+    gap: 20px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi {
+    padding: 23px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi
+    .harga-kursus
+    .harga-kursus__utama
+    strong {
+    font-size: 29px;
+  }
+
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi
+    .daftar-fitur {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .halaman-kursus .bagian-penutup {
+    padding-bottom: 50px;
+  }
+
+  .halaman-kursus .bagian-penutup .penutup-kursus {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    min-height: auto;
+    padding: 35px 25px;
+    border-radius: 18px;
+  }
+
+  .halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi h2 {
+    font-size: 27px;
+  }
+
+  .halaman-kursus .bagian-penutup .penutup-kursus .penutup-kursus__isi p {
+    font-size: 11px;
+  }
+
+  .halaman-kursus .bagian-penutup .penutup-kursus .tombol-penutup {
+    min-height: 48px;
+    font-size: 11px;
+  }
+}

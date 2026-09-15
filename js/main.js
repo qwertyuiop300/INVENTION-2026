@@ -97,3 +97,9 @@ itemFaq.forEach((item) => {
     item.classList.toggle("aktif");
   });
 });
+
+//MENGHUBUNGKAN HALAMAN COURSE.HTML
+
+function bukaCourse() {
+  window.location.href = "/js/course.html";
+}

@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detail Kursus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/course.css" />
+  </head>
+
+  <body>
+    <main class="halaman-kursus">
+      <!-- ==================================================
+           BAGIAN ATAS KURSUS
+      ================================================== -->
+
+      <section class="bagian-detail">
+        <div class="wadah">
+          <div class="jalur-halaman">
+            <a href="/index.html">Beranda</a>
+            <span>/</span>
+            <a href="/index.html#kursus">Kursus</a>
+            <span>/</span>
+            <strong>Detail Kursus</strong>
+          </div>
+
+          <div class="detail-utama">
+            <!-- Kolom informasi kursus -->
+            <div class="detail-utama__informasi">
+              <div class="label-kursus">
+                <span class="label-kursus__titik"></span>
+                Pemrograman Web
+              </div>
+
+              <h1>
+                Membuat Website
+                <span>Dari Nol</span>
+              </h1>
+
+              <p class="detail-utama__deskripsi">
+                Pelajari cara membangun website modern menggunakan HTML dan CSS
+                melalui materi yang terstruktur, latihan praktis, dan proyek
+                nyata.
+              </p>
+
+              <div class="detail-utama__pengajar">
+                <div class="pengajar-mini">
+                  <img
+                    src="https://placehold.co/100x100/dbeafe/2463c9?text=Foto"
+                    alt="Foto pengajar"
+                  />
+                </div>
+
+                <div class="pengajar-mini__informasi">
+                  <span>Diajarkan oleh</span>
+                  <strong>Nama Pengajar</strong>
+                </div>
+
+                <div class="pemisah-vertikal"></div>
+
+                <div class="detail-utama__rating">
+                  <div class="rating-bintang">★★★★★</div>
+                  <strong>4.9</strong>
+                  <span>128 ulasan</span>
+                </div>
+              </div>
+
+              <div class="detail-utama__statistik">
+                <div class="statistik-kursus">
+                  <div class="statistik-kursus__ikon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M12 7v5l3 2"></path>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>12 Jam</strong>
+                    <span>Durasi belajar</span>
+                  </div>
+                </div>
+
+                <div class="statistik-kursus">
+                  <div class="statistik-kursus__ikon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                      <path d="M8 8h8M8 12h8M8 16h5"></path>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>24 Materi</strong>
+                    <span>Video pembelajaran</span>
+                  </div>
+                </div>
+
+                <div class="statistik-kursus">
+                  <div class="statistik-kursus__ikon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <path
+                        d="M12 3l7 3v5c0 4.5-3 7.8-7 10-4-2.2-7-5.5-7-10V6l7-3z"
+                      ></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>Sertifikat</strong>
+                    <span>Setelah selesai</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Preview kursus -->
+            <div class="detail-utama__preview">
+              <div class="preview-kursus">
+                <img
+                  src="https://placehold.co/900x560/dcecff/2463c9?text=Gambar+Kursus"
+                  alt="Preview kursus"
+                />
+
+                <div class="preview-kursus__lapisan"></div>
+
+                <div class="preview-kursus__atas">
+                  <span class="preview-kursus__kategori">
+                    KURSUS TERPOPULER
+                  </span>
+
+                  <span class="preview-kursus__durasi">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M12 7v5l3 2"></path>
+                    </svg>
+                    12 jam
+                  </span>
+                </div>
+
+                <button
+                  class="tombol-preview"
+                  type="button"
+                  aria-label="Putar preview kursus"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.5v13l10-6.5-10-6.5z"></path>
+                  </svg>
+                </button>
+
+                <div class="preview-kursus__bawah">
+                  <span>Preview kursus</span>
+                  <span>Belajar dengan materi terstruktur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+           KONTEN DETAIL
+      ================================================== -->
+
+      <section class="bagian-isi">
+        <div class="wadah">
+          <div class="susunan-isi">
+            <!-- ==================================================
+                 KONTEN KIRI
+            ================================================== -->
+
+            <div class="konten-kursus">
+              <!-- Tentang kursus -->
+              <section class="blok-kursus">
+                <div class="judul-blok">
+                  <div class="judul-blok__penanda"></div>
+
+                  <div>
+                    <span class="judul-blok__label">MENGENAL KURSUS</span>
+                    <h2>Tentang Kursus</h2>
+                  </div>
+                </div>
+
+                <p>
+                  Kursus ini dirancang untuk kamu yang ingin memulai perjalanan
+                  di dunia pemrograman web. Kamu akan mempelajari cara kerja
+                  website, menyusun struktur halaman, hingga membuat tampilan
+                  yang menarik dan responsif.
+                </p>
+
+                <p>
+                  Materi disampaikan secara bertahap sehingga kamu tidak perlu
+                  memiliki pengalaman sebelumnya. Setiap pembelajaran dilengkapi
+                  contoh dan latihan yang dapat langsung kamu praktikkan.
+                </p>
+              </section>
+
+              <!-- Yang akan dipelajari -->
+              <section class="blok-kursus">
+                <div class="judul-blok">
+                  <div class="judul-blok__penanda"></div>
+
+                  <div>
+                    <span class="judul-blok__label">HASIL PEMBELAJARAN</span>
+                    <h2>Yang Akan Kamu Pelajari</h2>
+                  </div>
+                </div>
+
+                <div class="daftar-pembelajaran">
+                  <div class="item-pembelajaran">
+                    <div class="item-pembelajaran__ikon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      >
+                        <path d="M4 5h16v14H4z"></path>
+                        <path d="M8 9h8M8 13h5"></path>
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h3>Memahami dasar HTML</h3>
+                      <p>
+                        Mengenal struktur halaman dan elemen penting website.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item-pembelajaran">
+                    <div class="item-pembelajaran__ikon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      >
+                        <path d="M5 4h14v16H5z"></path>
+                        <path d="M8 8h8M8 12h5"></path>
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h3>Mendesain dengan CSS</h3>
+                      <p>
+                        Mengatur warna, tipografi, layout, dan tampilan halaman.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item-pembelajaran">
+                    <div class="item-pembelajaran__ikon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      >
+                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                        <path d="M3 10h18"></path>
+                        <path d="M8 15h3"></path>
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h3>Membuat layout responsif</h3>
+                      <p>
+                        Membuat website yang nyaman digunakan di berbagai
+                        perangkat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item-pembelajaran">
+                    <div class="item-pembelajaran__ikon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      >
+                        <path d="M4 18V6"></path>
+                        <path d="M4 18h16"></path>
+                        <path d="M7 15l4-4 3 2 5-6"></path>
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h3>Membangun proyek website</h3>
+                      <p>
+                        Menggabungkan materi menjadi sebuah proyek yang dapat
+                        digunakan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Kurikulum -->
+              <section class="blok-kursus">
+                <div class="judul-blok judul-blok--dengan-aksi">
+                  <div class="judul-blok__kiri">
+                    <div class="judul-blok__penanda"></div>
+
+                    <div>
+                      <span class="judul-blok__label">MATERI KURSUS</span>
+                      <h2>Kurikulum Pembelajaran</h2>
+                    </div>
+                  </div>
+
+                  <span class="jumlah-materi">24 Materi</span>
+                </div>
+
+                <div class="kurikulum">
+                  <!-- Modul 1 -->
+                  <div class="modul modul--aktif">
+                    <button class="modul__kepala" type="button">
+                      <div class="modul__nomor">01</div>
+
+                      <div class="modul__informasi">
+                        <h3>Memulai Perjalanan di Dunia Web</h3>
+                        <span>4 materi · 1 jam 20 menit</span>
+                      </div>
+
+                      <div class="modul__panah">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+
+                    <div class="modul__isi">
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Bagaimana cara kerja website?</span>
+                        </div>
+
+                        <span class="materi__durasi">12:30</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Mengenal HTML, CSS, dan JavaScript</span>
+                        </div>
+
+                        <span class="materi__durasi">18:20</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Tools yang digunakan</span>
+                        </div>
+
+                        <span class="materi__durasi">15:40</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Latihan pertama</span>
+                        </div>
+
+                        <span class="materi__durasi">20:10</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modul 2 -->
+                  <div class="modul">
+                    <button class="modul__kepala" type="button">
+                      <div class="modul__nomor">02</div>
+
+                      <div class="modul__informasi">
+                        <h3>Membangun Struktur HTML</h3>
+                        <span>6 materi · 2 jam 10 menit</span>
+                      </div>
+
+                      <div class="modul__panah">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+
+                    <div class="modul__isi">
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Struktur dasar HTML</span>
+                        </div>
+
+                        <span class="materi__durasi">14:20</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Membuat heading dan paragraf</span>
+                        </div>
+
+                        <span class="materi__durasi">16:45</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Link, gambar, dan tombol</span>
+                        </div>
+
+                        <span class="materi__durasi">22:10</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modul 3 -->
+                  <div class="modul">
+                    <button class="modul__kepala" type="button">
+                      <div class="modul__nomor">03</div>
+
+                      <div class="modul__informasi">
+                        <h3>Mendesain Tampilan dengan CSS</h3>
+                        <span>8 materi · 4 jam 30 menit</span>
+                      </div>
+
+                      <div class="modul__panah">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+
+                    <div class="modul__isi">
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Mengenal selector dan properti CSS</span>
+                        </div>
+
+                        <span class="materi__durasi">18:30</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Mengatur warna dan tipografi</span>
+                        </div>
+
+                        <span class="materi__durasi">21:20</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Flexbox dan Grid</span>
+                        </div>
+
+                        <span class="materi__durasi">35:10</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modul 4 -->
+                  <div class="modul">
+                    <button class="modul__kepala" type="button">
+                      <div class="modul__nomor">04</div>
+
+                      <div class="modul__informasi">
+                        <h3>Membangun Proyek Website Akhir</h3>
+                        <span>6 materi · 4 jam 00 menit</span>
+                      </div>
+
+                      <div class="modul__panah">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+
+                    <div class="modul__isi">
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Menentukan konsep proyek</span>
+                        </div>
+
+                        <span class="materi__durasi">20:00</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Membangun halaman utama</span>
+                        </div>
+
+                        <span class="materi__durasi">42:20</span>
+                      </div>
+
+                      <div class="materi">
+                        <div class="materi__kiri">
+                          <span class="materi__ikon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                            >
+                              <path d="M8 5l10 7-10 7V5z"></path>
+                            </svg>
+                          </span>
+
+                          <span>Membuat website responsif</span>
+                        </div>
+
+                        <span class="materi__durasi">38:15</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Instruktur -->
+              <section class="blok-kursus">
+                <div class="judul-blok">
+                  <div class="judul-blok__penanda"></div>
+
+                  <div>
+                    <span class="judul-blok__label">PENGAJAR KURSUS</span>
+                    <h2>Belajar dari Pengalaman Nyata</h2>
+                  </div>
+                </div>
+
+                <div class="kartu-instruktur">
+                  <div class="kartu-instruktur__foto">
+                    <img
+                      src="https://placehold.co/220x220/dbeafe/2463c9?text=Foto"
+                      alt="Foto instruktur"
+                    />
+                  </div>
+
+                  <div class="kartu-instruktur__informasi">
+                    <span class="kartu-instruktur__label">
+                      INSTRUKTUR KURSUS
+                    </span>
+
+                    <h3>Nama Instruktur</h3>
+
+                    <p class="kartu-instruktur__profesi">
+                      Web Developer & UI Designer
+                    </p>
+
+                    <p class="kartu-instruktur__deskripsi">
+                      Praktisi yang telah berpengalaman dalam membangun website
+                      dan membimbing pelajar untuk memahami teknologi secara
+                      praktis.
+                    </p>
+
+                    <div class="kartu-instruktur__statistik">
+                      <div>
+                        <strong>8+</strong>
+                        <span>Tahun pengalaman</span>
+                      </div>
+
+                      <div>
+                        <strong>15</strong>
+                        <span>Kursus dibuat</span>
+                      </div>
+
+                      <div>
+                        <strong>4.9</strong>
+                        <span>Rating pengajar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- ==================================================
+                 SIDEBAR HARGA
+            ================================================== -->
+
+            <aside class="sisi-kanan">
+              <div class="kartu-pembelian">
+                <div class="kartu-pembelian__aksen"></div>
+
+                <div class="kartu-pembelian__isi">
+                  <div class="kartu-pembelian__label">
+                    <span>AKSES KURSUS</span>
+                    <strong>TERPOPULER</strong>
+                  </div>
+
+                  <div class="harga-kursus">
+                    <span class="harga-kursus__lama">Rp250.000</span>
+
+                    <div class="harga-kursus__utama">
+                      <strong>Rp150.000</strong>
+                      <span>40% OFF</span>
+                    </div>
+
+                    <p>Bayar sekali, akses materi selamanya.</p>
+                  </div>
+
+                  <a href="#" class="tombol-pembelian">
+                    <span>Mulai Belajar Sekarang</span>
+
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M13 6l6 6-6 6"></path>
+                    </svg>
+                  </a>
+
+                  <div class="jaminan-pembelian">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <path
+                        d="M12 3l7 3v5c0 4.5-3 7.8-7 10-4-2.2-7-5.5-7-10V6l7-3z"
+                      ></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+
+                    <span>Pembelajaran aman dan terarah</span>
+                  </div>
+
+                  <div class="pemisah-kartu"></div>
+
+                  <h3 class="judul-fitur">Yang kamu dapatkan:</h3>
+
+                  <ul class="daftar-fitur">
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>24 video pembelajaran</span>
+                    </li>
+
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>Akses materi selamanya</span>
+                    </li>
+
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>Latihan dan proyek praktis</span>
+                    </li>
+
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>Sertifikat penyelesaian</span>
+                    </li>
+
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>Dukungan komunitas belajar</span>
+                    </li>
+
+                    <li>
+                      <span class="fitur__ikon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M5 12l4 4L19 6"></path>
+                        </svg>
+                      </span>
+                      <span>Bisa dipelajari melalui HP</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="kartu-bantuan">
+                <div class="kartu-bantuan__ikon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M9.5 9a2.5 2.5 0 115 0c0 1.8-2.5 2-2.5 3.5"></path>
+                    <path d="M12 16.5h.01"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Masih punya pertanyaan?</h3>
+                  <p>Tim kami siap membantu kamu memahami informasi kursus.</p>
+                  <a href="#">Hubungi Kami <span>→</span></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+           CTA BAWAH HALAMAN
+      ================================================== -->
+
+      <section class="bagian-penutup">
+        <div class="wadah">
+          <div class="penutup-kursus">
+            <div
+              class="penutup-kursus__ornamen penutup-kursus__ornamen--satu"
+            ></div>
+            <div
+              class="penutup-kursus__ornamen penutup-kursus__ornamen--dua"
+            ></div>
+
+            <div class="penutup-kursus__isi">
+              <span>LANJUTKAN PERJALANAN BELAJARMU</span>
+
+              <h2>
+                Satu keterampilan baru,
+                <br />
+                satu langkah lebih maju.
+              </h2>
+
+              <p>
+                Mulai dari dasar dan kembangkan kemampuanmu melalui pembelajaran
+                yang terarah.
+              </p>
+            </div>
+
+            <a href="#" class="tombol-penutup">
+              Mulai Belajar
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14"></path>
+                <path d="M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const daftarModul = document.querySelectorAll(".modul");
+
+      daftarModul.forEach((modul) => {
+        const tombolModul = modul.querySelector(".modul__kepala");
+
+        tombolModul.addEventListener("click", () => {
+          modul.classList.toggle("modul--aktif");
+        });
+      });
+    </script>
+  </body>
+</html>
