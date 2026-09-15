@@ -13,7 +13,7 @@
 ========================= */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #ffffff;
   color: #1f1f1f;
 }
@@ -546,7 +546,7 @@ body {
 
   color: #222222;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 
   font-size: 16px;
   font-weight: 500;
@@ -757,15 +757,6 @@ ul {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  min-width: 320px;
-  background: var(--warna-latar);
-  color: var(--warna-teks);
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 a {
@@ -1030,7 +1021,7 @@ section.bagian-pahlawan
   border: none;
   outline: none;
   padding: 0 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 0.95rem;
   color: #333333;
   background: transparent;
@@ -1058,7 +1049,7 @@ section.bagian-pahlawan
   border: none;
   border-radius: 40px;
   padding: 14px 28px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
@@ -1868,11 +1859,32 @@ section.bagian-pahlawan
   padding: 60px 20px;
   display: flex;
   justify-content: center;
+  background-color: #f2f8ff;
 }
 
 .bagian-kursus .wadah {
   width: 100%;
   max-width: 1280px;
+}
+.bagian-kursus .wadah .head-kursus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.head-section {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  color: #111827;
+  font-weight: 700;
+}
+.sub-head-section {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #1f6ce8;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
 }
 
 .bagian-kursus .wadah .daftar-kursus {
@@ -2033,7 +2045,16 @@ section.bagian-pahlawan
   align-items: center;
   gap: 6px;
 }
-
+.bagian-kursus
+  .wadah
+  .daftar-kursus
+  .kartu-kursus
+  .bagian-konten
+  .metrik-kursus
+  .metrik
+  .ikon {
+  height: 24px;
+}
 .bagian-kursus
   .wadah
   .daftar-kursus
@@ -2316,7 +2337,7 @@ section.bagian-pahlawan
 
 /* Desain Kartu Atas (Gelap tapi solid, tidak pucat) */
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap {
-  background-color: #15181e; /* Warna gelap tegas */
+  background-color: #0d6efd;
   color: #ffffff;
 }
 
@@ -2583,7 +2604,7 @@ section.bagian-pahlawan
 
 /* Desain Kartu Atas (Gelap tapi solid, tidak pucat) */
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap {
-  background-color: #15181e; /* Warna gelap tegas */
+  background-color: #0d6efd; /* Warna gelap tegas */
   color: #ffffff;
 }
 
@@ -2596,7 +2617,7 @@ section.bagian-pahlawan
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .deskripsi-info {
   font-size: 1rem;
-  color: #a1a1aa;
+  color: rgba(255, 255, 255, 0.713);
   line-height: 1.6;
 }
 
@@ -2923,6 +2944,7 @@ section.bagian-pahlawan
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 /* 1-2 Kalimat penjelasan yang diminta */
