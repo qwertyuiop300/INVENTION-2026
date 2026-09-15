@@ -461,6 +461,9 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.sidebar .kepala-sidebar .logo-sidebar img {
+  height: 36px;
+}
 
 /* =========================
    TOMBOL TUTUP
