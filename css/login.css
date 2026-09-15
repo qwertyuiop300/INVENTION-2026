@@ -1149,7 +1149,6 @@ img {
     padding: 14px 15px;
   }
 }
-
 /* =====================================================
    LOGO
 ===================================================== */
@@ -1165,6 +1164,14 @@ img {
 .halaman-login .bagian-form .isi-form .logo-login:hover {
   opacity: 0.8;
   transform: translateY(-2px);
+}
+
+.halaman-login .bagian-form .isi-form .logo-login .logo-login__gambar {
+  display: block;
+  width: 145px;
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
 }
 
 /* =====================================================
