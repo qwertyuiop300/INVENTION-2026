@@ -56,12 +56,28 @@ section.bagian-pahlawan
   div.konten-pahlawan
   div.sisi-kiri
   h1.judul-utama {
-  font-size: 2.3rem;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.35;
   margin-bottom: 18px;
   color: #ffffff;
   letter-spacing: -0.3px;
+}
+
+section.bagian-pahlawan
+  div.wadah-utama
+  div.konten-pahlawan
+  div.sisi-kiri
+  h1.judul-utama
+  span {
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  transform: rotate(-1deg);
+  background-color: #f6b904;
 }
 
 section.bagian-pahlawan
@@ -474,237 +490,29 @@ section.bagian-pahlawan
     grid-template-columns: 1fr;
   }
 }
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus {
-  background-color: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #eef0f5;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease; }
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(25, 99, 235, 0.15); }
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus .bagian-gambar {
-  position: relative;
+.bagian-kursus {
   width: 100%;
-  height: 220px;
-  padding: 12px;
-}
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus .bagian-gambar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-gambar
-  .tombol-simpan {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  width: 36px;
-  height: 36px;
+  padding: 80px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-gambar
-  .tombol-simpan:hover {
-  background-color: #ff6b00; }
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus .bagian-gambar .label-harga {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  background-color: #ffffff;
-  color: #1963eb; font-weight: 700;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.bagian-kursus .wadah .daftar-kursus .kartu-kursus .bagian-konten {
-  padding: 24px;
+.bagian-kursus .wadah {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .judul-kursus {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 12px;
-  transition: color 0.2s ease;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus:hover
-  .bagian-konten
-  .judul-kursus {
-  color: #1963eb; }
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .deskripsi-kursus {
-  font-size: 0.9rem;
-  color: #6b7280;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .metrik-kursus {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #374151;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .metrik-kursus
-  .metrik {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .metrik-kursus
-  .metrik
-  .ikon {
-  height: 24px;
-}
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .metrik-kursus
-  .metrik
-  i {
-  color: #ff6b00; }
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .garis-pemisah {
-  border: 0;
-  height: 1px;
-  background-color: #e5e7eb;
-  margin-bottom: 20px;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .bagian-instruktur {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .bagian-instruktur
-  .info-instruktur {
+.bagian-kursus .wadah .head-kursus {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.bagian-kursus .wadah .daftar-kursus {
+  display: flex;
   gap: 12px;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .bagian-instruktur
-  .info-instruktur
-  .avatar-instruktur {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .bagian-instruktur
-  .info-instruktur
-  .nama-instruktur {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.bagian-kursus
-  .wadah
-  .daftar-kursus
-  .kartu-kursus
-  .bagian-konten
-  .bagian-instruktur
-  .pengalaman {
-  font-size: 0.8rem;
-  color: #6b7280;
 }
 
 @media (max-width: 768px) {
@@ -779,7 +587,8 @@ section.bagian-pahlawan
   margin: 24px;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15); transition: transform 0.3s ease;
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15);
+  transition: transform 0.3s ease;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik:hover {
@@ -831,7 +640,8 @@ section.bagian-pahlawan
   .kumpulan-bilah-progres
   .bilah {
   flex: 1;
-  border-radius: 20px; transition: background-color 0.3s ease;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .bagian-tentang
@@ -841,7 +651,8 @@ section.bagian-pahlawan
   .kartu-statistik
   .kumpulan-bilah-progres
   .bilah.aktif {
-  background-color: #1b6cfb; }
+  background-color: #1b6cfb;
+}
 
 .bagian-tentang
   .wadah
@@ -850,7 +661,8 @@ section.bagian-pahlawan
   .kartu-statistik
   .kumpulan-bilah-progres
   .bilah.non-aktif {
-  background-color: #d6e4ff; }
+  background-color: #d6e4ff;
+}
 
 .bagian-tentang
   .wadah
@@ -912,7 +724,8 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang:hover {
-  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1); }
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1);
+}
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang .judul-info {
   font-size: 1.5rem;
@@ -944,16 +757,19 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
-  background-color: #ffc107; color: #15181e;
+  background-color: #ffc107;
+  color: #15181e;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-kuning {
   background-color: #e8f0fe;
-  color: #1b6cfb; }
+  color: #1b6cfb;
+}
 
 @media (max-width: 992px) {
   .bagian-tentang .wadah .kisi-tentang {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+  }
 
   .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
     min-height: 450px;
@@ -1025,7 +841,8 @@ section.bagian-pahlawan
   margin: 24px;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15); transition: transform 0.3s ease;
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.15);
+  transition: transform 0.3s ease;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik:hover {
@@ -1077,7 +894,8 @@ section.bagian-pahlawan
   .kumpulan-bilah-progres
   .bilah {
   flex: 1;
-  border-radius: 20px; transition: background-color 0.3s ease;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .bagian-tentang
@@ -1087,7 +905,8 @@ section.bagian-pahlawan
   .kartu-statistik
   .kumpulan-bilah-progres
   .bilah.aktif {
-  background-color: #1b6cfb; }
+  background-color: #1b6cfb;
+}
 
 .bagian-tentang
   .wadah
@@ -1096,7 +915,8 @@ section.bagian-pahlawan
   .kartu-statistik
   .kumpulan-bilah-progres
   .bilah.non-aktif {
-  background-color: #d6e4ff; }
+  background-color: #d6e4ff;
+}
 
 .bagian-tentang
   .wadah
@@ -1135,7 +955,8 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap {
-  background-color: #0d6efd; color: #ffffff;
+  background-color: #0d6efd;
+  color: #ffffff;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-gelap .judul-info {
@@ -1157,7 +978,8 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang:hover {
-  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1); }
+  box-shadow: 0 15px 35px rgba(27, 108, 251, 0.1);
+}
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-terang .judul-info {
   font-size: 1.5rem;
@@ -1189,16 +1011,19 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
-  background-color: #ffc107; color: #15181e;
+  background-color: #ffc107;
+  color: #15181e;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-kuning {
   background-color: #e8f0fe;
-  color: #1b6cfb; }
+  color: #1b6cfb;
+}
 
 @media (max-width: 992px) {
   .bagian-tentang .wadah .kisi-tentang {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+  }
 
   .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
     min-height: 450px;
@@ -1232,7 +1057,8 @@ section.bagian-pahlawan
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #ff6b00; text-transform: uppercase;
+  color: #ff6b00;
+  text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 16px;
   background-color: rgba(255, 107, 0, 0.1);
@@ -1282,7 +1108,8 @@ section.bagian-pahlawan
 }
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit:hover {
-  transform: translateY(30px); }
+  transform: translateY(30px);
+}
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .wadah-ikon {
   width: 60px;
@@ -1301,7 +1128,8 @@ section.bagian-pahlawan
   .kisi-keunggulan
   .kartu-keunggulan:hover
   .wadah-ikon {
-  transform: scale(1.1) rotate(-5deg); }
+  transform: scale(1.1) rotate(-5deg);
+}
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .judul-kartu {
   font-size: 1.3rem;
@@ -1332,7 +1160,13 @@ section.bagian-pahlawan
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .wadah-ikon {
   background-color: #e8f0fe;
-  color: #1b6cfb; }
+  color: #1b6cfb;
+}
+
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .wadah-ikon img,
+.bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .wadah-ikon img {
+  width: 36px;
+}
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .judul-kartu {
   color: #111827;
@@ -1343,11 +1177,8 @@ section.bagian-pahlawan
 }
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama {
-  background: linear-gradient(
-    135deg,
-    #1b6cfb 0%,
-    #0b51cd 100%
-  ); color: #ffffff;
+  background: linear-gradient(135deg, #1b6cfb 0%, #0b51cd 100%);
+  color: #ffffff;
   box-shadow: 0 15px 35px rgba(27, 108, 251, 0.3);
 }
 
@@ -1356,7 +1187,8 @@ section.bagian-pahlawan
 }
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .wadah-ikon {
-  background-color: #ffc107; color: #111827;
+  background-color: #ffc107;
+  color: #111827;
 }
 
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .judul-kartu {
@@ -1371,7 +1203,8 @@ section.bagian-pahlawan
 .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .gambar-dekorasi {
   width: calc(100% + 60px);
   margin-left: -30px;
-  margin-bottom: -40px; border-radius: 0 0 24px 24px;
+  margin-bottom: -40px;
+  border-radius: 0 0 24px 24px;
   display: block;
   object-fit: cover;
   opacity: 0.9;
@@ -1388,7 +1221,8 @@ section.bagian-pahlawan
 
 @media (max-width: 992px) {
   .bagian-mengapa-kami .wadah .kisi-keunggulan {
-    grid-template-columns: 1fr; gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .bagian-mengapa-kami .wadah .kisi-keunggulan .turun-sedikit {
@@ -1402,11 +1236,12 @@ section.bagian-pahlawan
 
 .bagian-pratinjau {
   width: 100%;
-  background-color: #4264d8;
+  background-color: #0b51cd;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .bagian-pratinjau .wadah {
   width: 100%;
@@ -1435,7 +1270,8 @@ section.bagian-pahlawan
 }
 
 .bagian-pratinjau .wadah .kepala-pratinjau .label-kecil i {
-  color: #ffd700; }
+  color: #ffd700;
+}
 
 .bagian-pratinjau .wadah .kepala-pratinjau .judul-utama {
   font-size: 2.5rem;
@@ -1448,26 +1284,31 @@ section.bagian-pahlawan
 .bagian-pratinjau .wadah .kepala-pratinjau .deskripsi-utama {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85); }
+  color: rgba(255, 255, 255, 0.85);
+}
 
 .bagian-pratinjau .wadah .kisi-galeri {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
-  grid-template-rows: 1fr 1fr; gap: 24px;
-  min-height: 550px; }
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  min-height: 550px;
+}
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
   display: flex;
-  align-items: flex-end; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  align-items: flex-end;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-kiri {
   grid-column: 1 / 2;
-  grid-row: 1 / 3; }
+  grid-row: 1 / 3;
+}
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-kanan-atas {
   grid-column: 2 / 3;
@@ -1486,7 +1327,8 @@ section.bagian-pahlawan
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .hamparan-gelap {
   position: absolute;
@@ -1500,7 +1342,8 @@ section.bagian-pahlawan
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.1) 100%
   );
-  pointer-events: none; transition: background 0.4s ease;
+  pointer-events: none;
+  transition: background 0.4s ease;
 }
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri .konten-kartu {
@@ -1580,7 +1423,8 @@ section.bagian-pahlawan
 }
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .gambar-pratinjau {
-  transform: scale(1.08); }
+  transform: scale(1.08);
+}
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .hamparan-gelap {
   background: linear-gradient(
@@ -1598,7 +1442,8 @@ section.bagian-pahlawan
   .konten-kartu
   .teks-kartu
   .judul-kartu {
-  transform: translateY(-3px); }
+  transform: translateY(-3px);
+}
 
 .bagian-pratinjau
   .wadah
@@ -1619,7 +1464,8 @@ section.bagian-pahlawan
 
 @media (max-width: 992px) {
   .bagian-pratinjau .wadah .kisi-galeri {
-    grid-template-columns: 1fr; grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
   }
 
   .bagian-pratinjau .wadah .kisi-galeri .kartu-kiri {
@@ -1674,7 +1520,8 @@ section.bagian-pahlawan
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #2563eb; background-color: #eff6ff;
+  color: #2563eb;
+  background-color: #eff6ff;
   padding: 6px 14px;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -1746,7 +1593,8 @@ section.bagian-pahlawan
 }
 
 .rating i {
-  color: #f59e0b; }
+  color: #f59e0b;
+}
 
 .rating span {
   color: #64748b;
@@ -1819,7 +1667,8 @@ section.bagian-pahlawan
 
 .bagian-faq .wadah {
   width: 100%;
-  max-width: 900px; display: flex;
+  max-width: 900px;
+  display: flex;
   flex-direction: column;
   gap: 50px;
 }
@@ -1841,7 +1690,8 @@ section.bagian-pahlawan
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #2563eb; background-color: #eff6ff;
+  color: #2563eb;
+  background-color: #eff6ff;
   padding: 6px 14px;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -1934,14 +1784,17 @@ section.bagian-pahlawan
 }
 
 .item-faq.aktif .pertanyaan-faq {
-  color: #2563eb; }
+  color: #2563eb;
+}
 
 .item-faq.aktif .ikon-panah {
-  transform: rotate(180deg); color: #2563eb;
+  transform: rotate(180deg);
+  color: #2563eb;
 }
 
 .item-faq.aktif .jawaban-faq {
-  max-height: 200px; }
+  max-height: 200px;
+}
 
 .kartu-bantuan {
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
