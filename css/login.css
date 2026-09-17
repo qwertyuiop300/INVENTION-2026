@@ -1,7 +1,3 @@
-/* =====================================================
-   RESET & DASAR
-===================================================== */
-
 :root {
   --warna-biru: #1769d5;
   --warna-biru-gelap: #0b56bd;
@@ -59,10 +55,6 @@ img {
   max-width: 100%;
 }
 
-/* =====================================================
-   HALAMAN LOGIN
-===================================================== */
-
 .halaman-login {
   width: 100%;
   min-height: 100vh;
@@ -75,10 +67,6 @@ img {
   width: 100%;
   min-height: 100vh;
 }
-
-/* =====================================================
-   BAGIAN FORM
-===================================================== */
 
 .halaman-login .bagian-form {
   display: flex;
@@ -97,10 +85,6 @@ img {
   min-height: 100%;
   animation: munculDariKiri 0.8s ease both;
 }
-
-/* =====================================================
-   LOGO
-===================================================== */
 
 .halaman-login .bagian-form .isi-form .logo-login {
   display: inline-flex;
@@ -142,10 +126,6 @@ img {
   letter-spacing: -0.6px;
 }
 
-/* =====================================================
-   KEPALA FORM
-===================================================== */
-
 .halaman-login .bagian-form .isi-form .kepala-form {
   margin-bottom: 38px;
 }
@@ -179,10 +159,6 @@ img {
   font-weight: 500;
   line-height: 1.9;
 }
-
-/* =====================================================
-   FORM INPUT
-===================================================== */
 
 .halaman-login .bagian-form .isi-form .formulir-login {
   width: 100%;
@@ -291,10 +267,6 @@ img {
   color: var(--warna-biru);
 }
 
-/* =====================================================
-   LABEL PASSWORD
-===================================================== */
-
 .halaman-login
   .bagian-form
   .isi-form
@@ -339,10 +311,6 @@ img {
   .tautan-lupa:hover {
   color: var(--warna-biru-gelap);
 }
-
-/* =====================================================
-   TOGGLE PASSWORD
-===================================================== */
 
 .halaman-login
   .bagian-form
@@ -418,10 +386,6 @@ img {
   .ikon-mata--terbuka {
   display: block;
 }
-
-/* =====================================================
-   OPSI FORM
-===================================================== */
 
 .halaman-login .bagian-form .isi-form .formulir-login .opsi-form {
   display: flex;
@@ -506,10 +470,6 @@ img {
   transform: rotate(45deg);
 }
 
-/* =====================================================
-   TOMBOL MASUK
-===================================================== */
-
 .halaman-login .bagian-form .isi-form .formulir-login .tombol-masuk {
   display: flex;
   align-items: center;
@@ -555,10 +515,6 @@ img {
   transform: translateY(0);
 }
 
-/* =====================================================
-   PEMISAH
-===================================================== */
-
 .halaman-login .bagian-form .isi-form .formulir-login .pemisah-login {
   display: flex;
   align-items: center;
@@ -581,10 +537,6 @@ img {
   font-weight: 500;
   white-space: nowrap;
 }
-
-/* =====================================================
-   LOGIN SOSIAL
-===================================================== */
 
 .halaman-login .bagian-form .isi-form .formulir-login .login-sosial {
   display: grid;
@@ -636,10 +588,6 @@ img {
   transform: translateY(-2px);
 }
 
-/* =====================================================
-   DAFTAR & HAK CIPTA
-===================================================== */
-
 .halaman-login .bagian-form .isi-form .teks-daftar {
   margin-top: 35px;
   color: #9299a5;
@@ -666,10 +614,6 @@ img {
   font-weight: 500;
   text-align: center;
 }
-
-/* =====================================================
-   BAGIAN VISUAL BIRU
-===================================================== */
 
 .halaman-login .bagian-visual {
   position: relative;
@@ -738,10 +682,6 @@ img {
   background: rgba(255, 255, 255, 0.025);
 }
 
-/* =====================================================
-   ISI VISUAL
-===================================================== */
-
 .halaman-login .bagian-visual .isi-visual {
   position: relative;
   z-index: 1;
@@ -792,10 +732,6 @@ img {
   line-height: 1.9;
 }
 
-/* =====================================================
-   GAMBAR VISUAL
-===================================================== */
-
 .halaman-login .bagian-visual .isi-visual .bungkus-gambar-visual {
   position: relative;
   width: 100%;
@@ -837,10 +773,6 @@ img {
   aspect-ratio: 1.5 / 1;
   object-fit: cover;
 }
-
-/* =====================================================
-   KARTU STATISTIK
-===================================================== */
 
 .halaman-login
   .bagian-visual
@@ -925,10 +857,6 @@ img {
   font-weight: 700;
 }
 
-/* =====================================================
-   KUTIPAN
-===================================================== */
-
 .halaman-login .bagian-visual .isi-visual .kutipan-visual {
   display: flex;
   align-items: center;
@@ -951,10 +879,6 @@ img {
   font-weight: 500;
   line-height: 1.8;
 }
-
-/* =====================================================
-   ANIMASI
-===================================================== */
 
 @keyframes munculDariKiri {
   from {
@@ -991,10 +915,6 @@ img {
   }
 }
 
-/* =====================================================
-   RESPONSIF TABLET
-===================================================== */
-
 @media (max-width: 1100px) {
   .halaman-login .bagian-form {
     padding: 38px 45px;
@@ -1024,10 +944,6 @@ img {
     right: -10px;
   }
 }
-
-/* =====================================================
-   RESPONSIF MOBILE
-===================================================== */
 
 @media (max-width: 768px) {
   .halaman-login .pembungkus-login {
@@ -1096,10 +1012,6 @@ img {
   }
 }
 
-/* =====================================================
-   RESPONSIF MOBILE KECIL
-===================================================== */
-
 @media (max-width: 420px) {
   .halaman-login .bagian-form {
     padding: 25px 20px 35px;
@@ -1150,10 +1062,6 @@ img {
   }
 }
 
-/* =====================================================
-   LOGO
-===================================================== */
-
 .halaman-login .bagian-form .isi-form .logo-login {
   display: inline-flex;
   align-items: center;
@@ -1166,10 +1074,6 @@ img {
   opacity: 0.8;
   transform: translateY(-2px);
 }
-
-/* =====================================================
-   PENGURANGAN ANIMASI
-===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
   *,

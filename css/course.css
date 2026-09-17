@@ -1,7 +1,3 @@
-/* ==================================================
-   VARIABEL
-================================================== */
-
 :root {
   --biru-utama: #2463c9;
   --biru-gelap: #174da8;
@@ -26,10 +22,6 @@
   --bayangan: 0 15px 45px rgba(27, 70, 130, 0.08);
   --transisi: 0.3s ease;
 }
-
-/* ==================================================
-   RESET
-================================================== */
 
 * {
   margin: 0;
@@ -76,10 +68,6 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
-
-/* ==================================================
-   BAGIAN ATAS DETAIL
-================================================== */
 
 .halaman-kursus .bagian-detail {
   position: relative;
@@ -416,10 +404,6 @@ img {
   font-size: 9px;
 }
 
-/* ==================================================
-   PREVIEW KURSUS
-================================================== */
-
 .halaman-kursus .bagian-detail .detail-utama .detail-utama__preview {
   position: relative;
 }
@@ -633,10 +617,6 @@ img {
   font-size: 9px;
 }
 
-/* ==================================================
-   BAGIAN ISI
-================================================== */
-
 .halaman-kursus .bagian-isi {
   width: 100%;
   background: var(--putih);
@@ -730,10 +710,6 @@ img {
   font-size: 13px;
   line-height: 2;
 }
-
-/* ==================================================
-   DAFTAR PEMBELAJARAN
-================================================== */
 
 .halaman-kursus
   .bagian-isi
@@ -839,10 +815,6 @@ img {
   line-height: 1.7;
 }
 
-/* ==================================================
-   JUDUL KURIKULUM
-================================================== */
-
 .halaman-kursus
   .bagian-isi
   .susunan-isi
@@ -878,10 +850,6 @@ img {
   font-size: 10px;
   font-weight: 700;
 }
-
-/* ==================================================
-   KURIKULUM
-================================================== */
 
 .halaman-kursus
   .bagian-isi
@@ -1197,10 +1165,6 @@ img {
   font-size: 10px;
 }
 
-/* ==================================================
-   INSTRUKTUR
-================================================== */
-
 .halaman-kursus
   .bagian-isi
   .susunan-isi
@@ -1360,10 +1324,6 @@ img {
   color: var(--teks-sekunder);
   font-size: 10px;
 }
-
-/* ==================================================
-   SIDEBAR PEMBELIAN
-================================================== */
 
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan {
   position: sticky;
@@ -1705,10 +1665,6 @@ img {
   height: 12px;
 }
 
-/* ==================================================
-   KARTU BANTUAN
-================================================== */
-
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan {
   display: flex;
   align-items: flex-start;
@@ -1774,10 +1730,6 @@ img {
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan a:hover {
   transform: translateX(4px);
 }
-
-/* ==================================================
-   PENUTUP
-================================================== */
 
 .halaman-kursus .bagian-penutup {
   width: 100%;
@@ -1884,10 +1836,6 @@ img {
   transform: translateX(4px);
 }
 
-/* ==================================================
-   RESPONSIVE TABLET
-================================================== */
-
 @media (max-width: 1100px) {
   .halaman-kursus .bagian-detail .detail-utama {
     gap: 45px;
@@ -1920,10 +1868,6 @@ img {
     padding: 45px;
   }
 }
-
-/* ==================================================
-   RESPONSIVE TABLET KECIL
-================================================== */
 
 @media (max-width: 850px) {
   .halaman-kursus .bagian-detail .detail-utama {
@@ -1967,10 +1911,6 @@ img {
     display: none;
   }
 }
-
-/* ==================================================
-   RESPONSIVE HP
-================================================== */
 
 @media (max-width: 600px) {
   .wadah {

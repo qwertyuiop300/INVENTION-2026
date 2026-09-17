@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>My Website</title>
-
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,42 +13,29 @@
     />
 
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
   </head>
 
   <body>
-    <!-- NAVIGASI -->
-
     <nav class="navigasi">
       <div class="wadah">
-        <!-- LOGO -->
-
         <a href="#" class="logo">
           <img src="./assets/imgs/logo-color.png" alt="Logo" />
         </a>
-
-        <!-- MENU DESKTOP -->
-
         <div class="menu">
           <a href="#" class="tautan-menu"> Platform </a>
 
           <a href="#" class="tautan-menu"> Source </a>
 
           <a href="#" class="tautan-menu"> Solutions </a>
-
-          <!-- DROPDOWN DESKTOP -->
-
           <div class="menu-dropdown">
             <a href="#" class="tautan-menu tautan-dropdown">
               Resources
 
               <span class="panah"> ⌄ </span>
             </a>
-
-            <!-- JENDELA BESAR -->
-
             <div class="jendela">
               <div class="isi-jendela">
-                <!-- KOLOM 1 -->
                 <div class="kolom-jendela">
                   <h3>Get started</h3>
 
@@ -62,9 +47,6 @@
 
                   <a href="#"> Developers </a>
                 </div>
-
-                <!-- KOLOM 2 -->
-
                 <div class="kolom-jendela">
                   <h3>Learn</h3>
 
@@ -76,9 +58,6 @@
 
                   <a href="#"> The Webflow Way </a>
                 </div>
-
-                <!-- KOLOM 3 -->
-
                 <div class="kolom-jendela">
                   <h3>Discover</h3>
 
@@ -90,9 +69,6 @@
 
                   <a href="#"> Assessment </a>
                 </div>
-
-                <!-- KOLOM 4 -->
-
                 <div class="kolom-jendela">
                   <h3>Get help</h3>
 
@@ -108,9 +84,6 @@
 
           <a href="#" class="tautan-menu"> Pricing </a>
         </div>
-
-        <!-- MENU KANAN DESKTOP -->
-
         <div class="menu-kanan">
           <a href="#" class="masuk"> Log in </a>
 
@@ -118,9 +91,6 @@
 
           <a href="#" class="tombol"> Start for free </a>
         </div>
-
-        <!-- TOMBOL HAMBURGER -->
-
         <button
           class="tombol-hamburger"
           id="tombolHamburger"
@@ -134,16 +104,8 @@
         </button>
       </div>
     </nav>
-
-    <!-- BACKDROP -->
-
     <div class="lapisan" id="lapisan"></div>
-
-    <!-- SIDEBAR -->
-
     <aside class="sidebar" id="sidebar">
-      <!-- HEADER SIDEBAR -->
-
       <div class="kepala-sidebar">
         <a href="#" class="logo-sidebar">
           <img src="./assets/imgs/logo-color.png" alt="Logo" />
@@ -153,27 +115,18 @@
           x
         </button>
       </div>
-
-      <!-- ISI SIDEBAR -->
-
       <div class="isi-sidebar">
         <a href="#"> Platform </a>
 
         <a href="#"> Source </a>
 
         <a href="#"> Solutions </a>
-
-        <!-- ACCORDION RESOURCES -->
-
         <div class="dropdown-sidebar">
           <button class="tombol-dropdown-sidebar" id="tombolDropdownSidebar">
             Resources
 
             <span id="panahSidebar"> + </span>
           </button>
-
-          <!-- ISI DROPDOWN -->
-
           <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
             <h4>Get started</h4>
 
@@ -221,19 +174,12 @@
       </div>
     </aside>
 
-    <!-- KONTEN -->
-
-    <!--START HERO SECTION -->
-    <!-- Bagian Hero / Pahlawan Utama -->
     <section class="bagian-pahlawan">
-      <!-- Dekorasi Latar Belakang Lengkungan -->
       <div class="dekorasi-latar-1"></div>
       <div class="dekorasi-latar-2"></div>
 
       <div class="wadah-utama">
-        <!-- Area Konten Utama Hero -->
         <div class="konten-pahlawan">
-          <!-- Sisi Kiri: Teks & Form -->
           <div class="sisi-kiri">
             <h1 class="judul-utama">
               Bimbel Online &amp; Offline Terbesar, Terlengkap, dan Terbukti di
@@ -257,8 +203,6 @@
               </div>
             </form>
           </div>
-
-          <!-- Sisi Kanan: Gambar Aset / Placeholder -->
           <div class="sisi-kanan">
             <div class="pembungkus-gambar">
               <img
@@ -269,8 +213,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Kartu Navigasi Layanan di Bawah Hero (Floating Card) -->
         <div class="kartu-layanan-bawah">
           <div class="daftar-layanan">
             <a href="#" class="item-layanan">
@@ -332,9 +274,7 @@
         </div>
       </div>
     </section>
-    <!--END HERO SECTION -->
 
-    <!-- START COURSE LIST -->
     <section class="bagian-kursus" onclick="bukaCourse()">
       <div class="wadah">
         <div class="head-kursus">
@@ -342,7 +282,6 @@
           <h2 class="head-section">Temukan Kursus Terpopuler</h2>
         </div>
         <div class="daftar-kursus">
-          <!-- Kartu Kursus 1 -->
           <div class="kartu-kursus">
             <div class="bagian-gambar">
               <img src="./assets/imgs/course-1.png" alt="UX Design Beginner" />
@@ -396,8 +335,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu Kursus 2 -->
           <div class="kartu-kursus">
             <div class="bagian-gambar">
               <img
@@ -454,8 +391,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu Kursus 3 -->
           <div class="kartu-kursus">
             <div class="bagian-gambar">
               <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
@@ -513,13 +448,10 @@
         </div>
       </div>
     </section>
-    <!-- END COURSE LIST -->
 
-    <!-- START ABOUT SECTION -->
     <section class="bagian-tentang">
       <div class="wadah">
         <div class="kisi-tentang">
-          <!-- Sisi Kiri: Gambar Utama dan Statistik -->
           <div class="kolom-kiri">
             <img
               src="./assets/imgs/about-homepage.png"
@@ -564,13 +496,9 @@
               </div>
             </div>
           </div>
-
-          <!-- Sisi Kanan: Dua Kartu Informasi -->
           <div class="kolom-kanan">
-            <!-- Kartu Atas (Gelap) - Fokus pada AI yang Bertanya -->
             <div class="kartu-info kartu-gelap">
               <div class="lingkaran-ikon ikon-oranye">
-                <!-- Mengganti ikon menjadi otak untuk melambangkan critical thinking -->
                 <i class="fa-solid fa-brain"></i>
               </div>
               <h3 class="judul-info">Metode Socratic AI</h3>
@@ -581,11 +509,8 @@
                 pemahaman analitis Anda secara mendalam.
               </p>
             </div>
-
-            <!-- Kartu Bawah (Terang) - Fokus pada Video dan Skor -->
             <div class="kartu-info kartu-terang">
               <div class="lingkaran-ikon ikon-kuning">
-                <!-- Mengganti ikon menjadi tombol play video -->
                 <i class="fa-solid fa-circle-play"></i>
               </div>
               <h3 class="judul-info">Video & Skor Interaktif</h3>
@@ -600,12 +525,9 @@
         </div>
       </div>
     </section>
-    <!-- END ABOUT SECTION -->
 
-    <!-- START WHY US SECTION -->
     <section class="bagian-mengapa-kami">
       <div class="wadah">
-        <!-- Judul Bagian -->
         <div class="kepala-bagian">
           <span class="label-kecil">Keunggulan Platform Kami</span>
           <h2 class="judul-utama">Tinggalkan Cara Belajar yang Pasif</h2>
@@ -615,10 +537,7 @@
             menguji batasan logika Anda.
           </p>
         </div>
-
-        <!-- Kisi Kartu (Bentuk Offset / Zig-Zag Dinamis) -->
         <div class="kisi-keunggulan">
-          <!-- Kartu 1 -->
           <div class="kartu-keunggulan kartu-putih">
             <div class="wadah-ikon">
               <i class="fa-solid fa-play"></i>
@@ -630,12 +549,9 @@
               memasuki fase pengujian.
             </p>
           </div>
-
-          <!-- Kartu 2 (Kartu Utama - Ditonjolkan dengan warna biru) -->
           <div class="kartu-keunggulan kartu-utama turun-sedikit">
             <div class="wadah-ikon ikon-terang">
               <i class="fa-solid fa-comments-dollar"></i>
-              <!-- Menggunakan ikon interaksi -->
             </div>
             <h3 class="judul-kartu">AI yang Menantang Anda</h3>
             <p class="deskripsi-kartu">
@@ -649,8 +565,6 @@
               class="gambar-dekorasi"
             />
           </div>
-
-          <!-- Kartu 3 -->
           <div class="kartu-keunggulan kartu-putih">
             <div class="wadah-ikon">
               <i class="fa-solid fa-chart-pie"></i>
@@ -665,12 +579,9 @@
         </div>
       </div>
     </section>
-    <!-- END WHY US SECTION -->
 
-    <!-- START CLASS PREVIEW SECTION -->
     <section class="bagian-pratinjau">
       <div class="wadah">
-        <!-- Kepala Bagian (Judul & Deskripsi) -->
         <div class="kepala-pratinjau">
           <span class="label-kecil">
             <i class="fa-solid fa-bolt"></i> Kisah Sukses & Pratinjau
@@ -682,10 +593,7 @@
             yang menantang logika Anda untuk mencapai skor maksimal.
           </p>
         </div>
-
-        <!-- Kisi Galeri (1 Kiri, 2 Kanan) -->
         <div class="kisi-galeri">
-          <!-- Kartu 1 (Kiri - Besar) -->
           <div class="kartu-galeri kartu-kiri">
             <img
               src="https://placehold.co/800x800/111827/cccccc?text=Video+Pembelajaran"
@@ -706,8 +614,6 @@
               </button>
             </div>
           </div>
-
-          <!-- Kartu 2 (Kanan Atas - Kecil) -->
           <div class="kartu-galeri kartu-kanan-atas">
             <img
               src="https://placehold.co/600x400/1e3a8a/ffffff?text=AI+Socratic+Debate"
@@ -728,8 +634,6 @@
               </button>
             </div>
           </div>
-
-          <!-- Kartu 3 (Kanan Bawah - Kecil) -->
           <div class="kartu-galeri kartu-kanan-bawah">
             <img
               src="https://placehold.co/600x400/047857/ffffff?text=Hasil+Skoring+Kritis"
@@ -753,14 +657,9 @@
         </div>
       </div>
     </section>
-    <!-- END CLASS PREVIEW SECTION -->
 
-    <!-- START TESTIMONIAL SECTION -->
-
-    <!-- ================= SECTION TESTIMONI ================= -->
     <section class="bagian-testimoni">
       <div class="wadah">
-        <!-- Kepala Testimoni -->
         <div class="kepala-testimoni">
           <span class="label-kecil">
             <i class="fa-solid fa-comment-dots"></i> Testimoni Pengguna
@@ -771,10 +670,7 @@
             bersama platform kami.
           </p>
         </div>
-
-        <!-- Kisi Kartu Testimoni -->
         <div class="kisi-testimoni">
-          <!-- Kartu 1 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -798,8 +694,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 2 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -823,8 +717,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 3 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -847,8 +739,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 4 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -875,12 +765,9 @@
         </div>
       </div>
     </section>
-    <!-- END TESTIMONIAL SECTION -->
 
-    <!-- START FAQ SECTION -->
     <section class="bagian-faq">
       <div class="wadah">
-        <!-- Kepala FAQ -->
         <div class="kepala-faq">
           <span class="label-kecil">
             <i class="fa-solid fa-circle-question"></i> Pertanyaan Umum
@@ -891,10 +778,7 @@
             kami? Temukan jawaban lengkapnya di sini.
           </p>
         </div>
-
-        <!-- Daftar Akordeon FAQ -->
         <div class="daftar-faq">
-          <!-- Item FAQ 1 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -912,8 +796,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 2 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -930,8 +812,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 3 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -948,8 +828,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 4 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -967,8 +845,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Bagian Bantuan Tambahan -->
         <div class="kartu-bantuan">
           <div class="teks-bantuan">
             <h3>Masih punya pertanyaan lain?</h3>
@@ -981,13 +857,8 @@
       </div>
     </section>
 
-    <!-- END FAQ SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
     <footer class="footer">
       <div class="wadah">
-        <!-- NEWSLETTER -->
         <section class="berlangganan">
           <div class="berlangganan-ilustrasi">
             <img
@@ -1030,10 +901,7 @@
             </small>
           </div>
         </section>
-
-        <!-- BAGIAN UTAMA -->
         <section class="bagian-utama">
-          <!-- IDENTITAS -->
           <div class="identitas">
             <a class="logo" href="#" aria-label="Stay Clean">
               <img
@@ -1058,8 +926,6 @@
               <a href="#" aria-label="Google">G</a>
             </div>
           </div>
-
-          <!-- NAVIGASI -->
           <nav class="kolom-tautan" aria-label="Navigasi footer">
             <div class="kelompok-tautan">
               <h3>Company</h3>
@@ -1085,8 +951,6 @@
               <a href="#">All in One</a>
             </div>
           </nav>
-
-          <!-- KONTAK -->
           <div class="kontak">
             <h3>Contact Us</h3>
 
@@ -1102,8 +966,6 @@
           </div>
         </section>
       </div>
-
-      <!-- COPYRIGHT -->
       <div class="paling-bawah">
         <div class="wadah paling-bawah-isi">
           <p>© Copyright by CodedUI. All rights reserved.</p>
@@ -1118,9 +980,6 @@
       </div>
     </footer>
 
-    <!-- END FOOTER SECTION -->
-
-    <!-- JAVASCRIPT -->
     <script src="./js/main.js"></script>
   </body>
 </html>

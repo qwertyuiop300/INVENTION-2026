@@ -1,18 +1,13 @@
-/* Reset & Pengaturan Dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Segoe UI",
-    system-ui,
-    -apple-system,
-    sans-serif;
 }
 
 body {
   background-color: #f8f9fc;
   color: #2d3748;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 .dashboard-container {
@@ -20,7 +15,6 @@ body {
   min-height: 100vh;
 }
 
-/* --- SIDEBAR NAVIGASI KIRI (STYLE ACADEMOS) --- */
 .sidebar-nav {
   width: 250px;
   background: #ffffff;
@@ -40,7 +34,6 @@ body {
   pointer-events: none;
 }
 
-/* Brand / Logo */
 .sidebar-brand {
   display: flex;
   align-items: center;
@@ -67,7 +60,6 @@ body {
   letter-spacing: -0.5px;
 }
 
-/* Menu Section */
 .sidebar-menu {
   display: flex;
   flex-direction: column;
@@ -111,7 +103,6 @@ body {
   color: #2d3748;
 }
 
-/* Active State (Courses) */
 .menu-item.active {
   background-color: #f0edff;
   color: #6c5ce7;
@@ -122,7 +113,6 @@ body {
   color: #6c5ce7;
 }
 
-/* --- MAIN CONTENT AREA (KANAN) --- */
 .main-content {
   flex-grow: 1;
   padding: 24px 32px;
@@ -132,7 +122,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Top Bar Filter & Search */
 .top-bar {
   display: flex;
   align-items: center;
@@ -204,7 +193,6 @@ body {
   cursor: pointer;
 }
 
-/* --- COURSE GRID (3 KOLOM x 3 BARIS = 9 KARTU) --- */
 .course-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -346,7 +334,6 @@ body {
   color: #a0aec0;
 }
 
-/* --- PAGINATION DI BAWAH --- */
 .pagination {
   display: flex;
   justify-content: center;
@@ -383,7 +370,6 @@ body {
   border-color: #6c5ce7;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .course-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -1,16 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleSidebarBtn = document.getElementById("toggleSidebarBtn");
-  const sidebarNav = document.getElementById("sidebarNav");
+  const tombolSidebar = document.getElementById("toggleSidebarBtn");
+  const sidebarKursus = document.getElementById("sidebarNav");
 
-  // Toggle Sembunyikan / Tampilkan Sidebar Navigasi Kiri
-  if (toggleSidebarBtn && sidebarNav) {
-    toggleSidebarBtn.addEventListener("click", () => {
-      sidebarNav.classList.toggle("hidden");
-    });
-  }
+  tombolSidebar?.addEventListener("click", () => {
+    sidebarKursus?.classList.toggle("hidden");
+  });
 });
 
-// Callback saat kartu diklik
 function bukaCourse() {
-  console.log("Navigasi ke detail kursus...");
+  window.location.href = "./course.html";
 }
