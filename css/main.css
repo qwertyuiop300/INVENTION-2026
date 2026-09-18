@@ -54,7 +54,9 @@ p {
   font-family: "Raleway", sans-serif;
   background-color: #ffffff;
   border-bottom: 1px solid #e8e8e8;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -557,7 +559,7 @@ ul {
   list-style: none;
 }
 :root {
-  --warna-biru: #4a78df;
+  --warna-biru: #0b51cd;
   --warna-biru-gelap: #3867d6;
   --warna-latar: #edf3ff;
   --warna-teks: #151b26;
