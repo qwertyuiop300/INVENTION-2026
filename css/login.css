@@ -86,6 +86,10 @@ img {
   animation: munculDariKiri 0.8s ease both;
 }
 
+.logo-login img {
+  height: 40px;
+}
+
 .halaman-login .bagian-form .isi-form .logo-login {
   display: inline-flex;
   align-items: center;
