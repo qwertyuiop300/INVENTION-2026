@@ -38,7 +38,6 @@ body {
   min-height: 100vh;
   background: var(--putih);
   color: var(--teks-utama);
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +78,7 @@ img {
       rgba(83, 174, 255, 0.25),
       transparent 30%
     ),
-    linear-gradient(115deg, #1767d2 0%, #1689e5 48%, #20b3c8 100%);
+    linear-gradient(115deg, #1767d2 0%, #0b51cd 48%, #0b51cd 100%);
 }
 
 .halaman-kursus .bagian-detail::before {
@@ -116,6 +115,7 @@ img {
   color: rgba(255, 255, 255, 0.65);
   font-size: 11px;
   font-weight: 500;
+  margin-top: 72px;
 }
 
 .halaman-kursus .bagian-detail .jalur-halaman a {
@@ -146,42 +146,11 @@ img {
   color: var(--putih);
 }
 
-.halaman-kursus
-  .bagian-detail
-  .detail-utama
-  .detail-utama__informasi
-  .label-kursus {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 8px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 100px;
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--putih);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-
-.halaman-kursus
-  .bagian-detail
-  .detail-utama
-  .detail-utama__informasi
-  .label-kursus
-  .label-kursus__titik {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #ffd35c;
-}
-
 .halaman-kursus .bagian-detail .detail-utama .detail-utama__informasi h1 {
   max-width: 650px;
   margin-top: 24px;
   color: var(--putih);
-  font-size: clamp(34px, 4vw, 56px);
+  font-size: 52px;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -2.2px;
@@ -200,7 +169,7 @@ img {
   max-width: 580px;
   margin-top: 24px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
