@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My Website</title>
+    <title>Homepage | Socratic</title>
 
-    <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,233 +14,123 @@
       rel="stylesheet"
     />
 
+    <!-- STYLE -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
   </head>
 
   <body>
-    <!-- NAVIGASI -->
-
     <nav class="navigasi">
       <div class="wadah">
-        <!-- LOGO -->
-
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="./assets/imgs/logo-color.png" alt="Logo" />
         </a>
-
-        <!-- MENU DESKTOP -->
-
         <div class="menu">
-          <a href="#" class="tautan-menu"> Platform </a>
-
-          <a href="#" class="tautan-menu"> Source </a>
-
-          <a href="#" class="tautan-menu"> Solutions </a>
-
-          <!-- DROPDOWN DESKTOP -->
-
+          <a href="course-list.html" class="tautan-menu"> Courses </a>
+          <a href="#how-it-works" class="tautan-menu"> How It Works </a>
+          <a href="dashboard.html" class="tautan-menu"> My Learning </a>
           <div class="menu-dropdown">
             <a href="#" class="tautan-menu tautan-dropdown">
-              Resources
-
-              <span class="panah"> ⌄ </span>
+              Resources <span class="panah">⌄</span>
             </a>
-
-            <!-- JENDELA BESAR -->
-
             <div class="jendela">
               <div class="isi-jendela">
-                <!-- KOLOM 1 -->
                 <div class="kolom-jendela">
-                  <h3>Get started</h3>
-
-                  <a href="#"> Templates </a>
-
-                  <a href="#"> Made in Webflow </a>
-
-                  <a href="#"> Hire a Certified Partner </a>
-
-                  <a href="#"> Developers </a>
+                  <h3>Explore</h3>
+                  <a href="course-list.html"> All Courses </a>
+                  <a href="#"> Learning Paths </a> <a href="#"> Challenges </a>
                 </div>
-
-                <!-- KOLOM 2 -->
-
                 <div class="kolom-jendela">
                   <h3>Learn</h3>
-
-                  <a href="#"> Webflow University </a>
-
-                  <a href="#"> Blog </a>
-
-                  <a href="#"> Webinars & ebooks </a>
-
-                  <a href="#"> The Webflow Way </a>
+                  <a href="#how-it-works"> How Socratic AI Works </a>
+                  <a href="#"> Learning Guide </a> <a href="#"> FAQ </a>
                 </div>
-
-                <!-- KOLOM 3 -->
-
                 <div class="kolom-jendela">
-                  <h3>Discover</h3>
-
-                  <a href="#"> Customer stories </a>
-
-                  <a href="#"> Our Community </a>
-
-                  <a href="#"> Partner with Webflow </a>
-
-                  <a href="#"> Assessment </a>
+                  <h3>About</h3>
+                  <a href="#"> About Platform </a>
+                  <a href="#"> Our Approach </a> <a href="#"> Contact Us </a>
                 </div>
-
-                <!-- KOLOM 4 -->
-
                 <div class="kolom-jendela">
-                  <h3>Get help</h3>
-
-                  <a href="#"> Support </a>
-
-                  <a href="#"> Join the Community </a>
+                  <h3>Your Learning</h3>
+                  <a href="dashboard.html"> Dashboard </a>
+                  <a href="#"> Learning Progress </a>
+                  <a href="#"> Learning Report </a>
                 </div>
               </div>
             </div>
           </div>
-
-          <a href="#" class="tautan-menu"> Enterprise </a>
-
-          <a href="#" class="tautan-menu"> Pricing </a>
+          <a href="#socratic-ai" class="tautan-menu"> Socratic AI </a>
+          <a href="challenge.html" class="tautan-menu"> Challenge </a>
         </div>
-
-        <!-- MENU KANAN DESKTOP -->
-
         <div class="menu-kanan">
-          <a href="#" class="masuk"> Log in </a>
-
-          <a href="#" class="kontak"> Contact Sales </a>
-
-          <a href="#" class="tombol"> Start for free </a>
+          <a href="login.html" class="masuk"> Log in </a>
+          <a href="course-list.html" class="tombol"> Start Learning </a>
         </div>
-
-        <!-- TOMBOL HAMBURGER -->
-
         <button
           class="tombol-hamburger"
           id="tombolHamburger"
           aria-label="Buka menu"
         >
-          <span></span>
-
-          <span></span>
-
-          <span></span>
+          <span></span> <span></span> <span></span>
         </button>
       </div>
     </nav>
-
-    <!-- BACKDROP -->
-
     <div class="lapisan" id="lapisan"></div>
-
-    <!-- SIDEBAR -->
-
     <aside class="sidebar" id="sidebar">
-      <!-- HEADER SIDEBAR -->
-
       <div class="kepala-sidebar">
-        <a href="#" class="logo-sidebar">
+        <a href="index.html" class="logo-sidebar">
           <img src="./assets/imgs/logo-color.png" alt="Logo" />
         </a>
-
         <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup menu">
           x
         </button>
       </div>
-
-      <!-- ISI SIDEBAR -->
-
       <div class="isi-sidebar">
-        <a href="#"> Platform </a>
-
-        <a href="#"> Source </a>
-
-        <a href="#"> Solutions </a>
-
-        <!-- ACCORDION RESOURCES -->
-
+        <a href="course-list.html"> Courses </a>
+        <a href="#how-it-works"> How It Works </a>
+        <a href="dashboard.html"> My Learning </a>
         <div class="dropdown-sidebar">
           <button class="tombol-dropdown-sidebar" id="tombolDropdownSidebar">
-            Resources
-
-            <span id="panahSidebar"> + </span>
+            Resources <span id="panahSidebar">+</span>
           </button>
-
-          <!-- ISI DROPDOWN -->
-
           <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
-            <h4>Get started</h4>
-
-            <a href="#"> Templates </a>
-
-            <a href="#"> Made in Webflow </a>
-
-            <a href="#"> Developers </a>
-
+            <h4>Explore</h4>
+            <a href="course-list.html"> All Courses </a>
+            <a href="#"> Learning Paths </a> <a href="#"> Challenges </a>
             <h4>Learn</h4>
-
-            <a href="#"> Webflow University </a>
-
-            <a href="#"> Blog </a>
-
-            <a href="#"> Webinars & ebooks </a>
-
-            <h4>Discover</h4>
-
-            <a href="#"> Customer stories </a>
-
-            <a href="#"> Our Community </a>
-
-            <a href="#"> Partner with Webflow </a>
-
-            <h4>Get help</h4>
-
-            <a href="#"> Support </a>
-
-            <a href="#"> Join the Community </a>
+            <a href="#how-it-works"> How Socratic AI Works </a>
+            <a href="#"> Learning Guide </a> <a href="#"> FAQ </a>
+            <h4>About</h4>
+            <a href="#"> About Platform </a> <a href="#"> Our Approach </a>
+            <a href="#"> Contact Us </a>
+            <h4>Your Learning</h4>
+            <a href="dashboard.html"> Dashboard </a>
+            <a href="#"> Learning Progress </a>
+            <a href="#"> Learning Report </a>
           </div>
         </div>
-
-        <a href="#"> Enterprise </a>
-
-        <a href="#"> Pricing </a>
-
+        <a href="#socratic-ai"> Socratic AI </a>
+        <a href="challenge.html"> Challenge </a>
         <div class="garis-sidebar"></div>
-
-        <a href="#"> Log in </a>
-
-        <a href="#"> Contact Sales </a>
-
-        <a href="#" class="tombol-sidebar"> Start for free </a>
+        <a href="login.html"> Log in </a> <a href="#"> Contact Us </a>
+        <a href="course-list.html" class="tombol-sidebar"> Start Learning </a>
       </div>
     </aside>
 
-    <!-- KONTEN -->
-
-    <!--START HERO SECTION -->
-    <!-- Bagian Hero / Pahlawan Utama -->
     <section class="bagian-pahlawan">
-      <!-- Dekorasi Latar Belakang Lengkungan -->
       <div class="dekorasi-latar-1"></div>
       <div class="dekorasi-latar-2"></div>
 
       <div class="wadah-utama">
-        <!-- Area Konten Utama Hero -->
         <div class="konten-pahlawan">
-          <!-- Sisi Kiri: Teks & Form -->
           <div class="sisi-kiri">
             <h1 class="judul-utama">
-              Bimbel Online &amp; Offline Terbesar, Terlengkap, dan Terbukti di
+              Bimbingan Belajar Berbasis <span>AI Socratic</span> #1 di
               Indonesia
             </h1>
             <p class="sub-judul">
-              Diskon spesial untukmu dengan isi nomor HP sekarang
+              Dapatkan diskon spesial khusus untuk kamu yang mendaftar hari ini!
+              Stok terbatas, jangan sampai kehabisan.
             </p>
 
             <form class="formulir-nomor" action="#">
@@ -257,20 +147,16 @@
               </div>
             </form>
           </div>
-
-          <!-- Sisi Kanan: Gambar Aset / Placeholder -->
           <div class="sisi-kanan">
             <div class="pembungkus-gambar">
               <img
-                src="./assets/imgs/hero-img.png"
+                src="./assets/imgs/hero_img_homepage.png"
                 alt="Ilustrasi Bimbel"
                 class="gambar-hero"
               />
             </div>
           </div>
         </div>
-
-        <!-- Kartu Navigasi Layanan di Bawah Hero (Floating Card) -->
         <div class="kartu-layanan-bawah">
           <div class="daftar-layanan">
             <a href="#" class="item-layanan">
@@ -332,18 +218,15 @@
         </div>
       </div>
     </section>
-    <!--END HERO SECTION -->
 
-    <!-- START COURSE LIST -->
-    <section class="bagian-kursus" onclick="bukaCourse()">
+    <section class="bagian-kursus">
       <div class="wadah">
         <div class="head-kursus">
           <span class="sub-head-section">Kursus Populer</span>
           <h2 class="head-section">Temukan Kursus Terpopuler</h2>
         </div>
         <div class="daftar-kursus">
-          <!-- Kartu Kursus 1 -->
-          <div class="kartu-kursus">
+          <a href="course.html" class="kartu-kursus">
             <div class="bagian-gambar">
               <img src="./assets/imgs/course-1.png" alt="UX Design Beginner" />
               <button class="tombol-simpan">
@@ -395,10 +278,8 @@
                 <span class="pengalaman">(5+ Year Exp)</span>
               </div>
             </div>
-          </div>
-
-          <!-- Kartu Kursus 2 -->
-          <div class="kartu-kursus">
+          </a>
+          <a href="course.html" class="kartu-kursus">
             <div class="bagian-gambar">
               <img
                 src="./assets/imgs/course-2.png"
@@ -453,10 +334,8 @@
                 <span class="pengalaman">(8+ Year Exp)</span>
               </div>
             </div>
-          </div>
-
-          <!-- Kartu Kursus 3 -->
-          <div class="kartu-kursus">
+          </a>
+          <a href="course.html" class="kartu-kursus">
             <div class="bagian-gambar">
               <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
               <button class="tombol-simpan">
@@ -509,17 +388,14 @@
                 <span class="pengalaman">(2+ Year Exp)</span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-    <!-- END COURSE LIST -->
 
-    <!-- START ABOUT SECTION -->
     <section class="bagian-tentang">
       <div class="wadah">
         <div class="kisi-tentang">
-          <!-- Sisi Kiri: Gambar Utama dan Statistik -->
           <div class="kolom-kiri">
             <img
               src="./assets/imgs/about-homepage.png"
@@ -564,13 +440,9 @@
               </div>
             </div>
           </div>
-
-          <!-- Sisi Kanan: Dua Kartu Informasi -->
           <div class="kolom-kanan">
-            <!-- Kartu Atas (Gelap) - Fokus pada AI yang Bertanya -->
             <div class="kartu-info kartu-gelap">
               <div class="lingkaran-ikon ikon-oranye">
-                <!-- Mengganti ikon menjadi otak untuk melambangkan critical thinking -->
                 <i class="fa-solid fa-brain"></i>
               </div>
               <h3 class="judul-info">Metode Socratic AI</h3>
@@ -581,11 +453,8 @@
                 pemahaman analitis Anda secara mendalam.
               </p>
             </div>
-
-            <!-- Kartu Bawah (Terang) - Fokus pada Video dan Skor -->
             <div class="kartu-info kartu-terang">
               <div class="lingkaran-ikon ikon-kuning">
-                <!-- Mengganti ikon menjadi tombol play video -->
                 <i class="fa-solid fa-circle-play"></i>
               </div>
               <h3 class="judul-info">Video & Skor Interaktif</h3>
@@ -600,28 +469,22 @@
         </div>
       </div>
     </section>
-    <!-- END ABOUT SECTION -->
 
-    <!-- START WHY US SECTION -->
     <section class="bagian-mengapa-kami">
       <div class="wadah">
-        <!-- Judul Bagian -->
         <div class="kepala-bagian">
-          <span class="label-kecil">Keunggulan Platform Kami</span>
-          <h2 class="judul-utama">Tinggalkan Cara Belajar yang Pasif</h2>
+          <span class="sub-head-section">Keunggulan Platform Kami</span>
+          <h2 class="head-section">Tinggalkan Cara Belajar yang Pasif</h2>
           <p class="deskripsi-utama">
             Kami tidak memberikan jawaban instan untuk disalin. Kami memaksa
             otak Anda bekerja lebih keras melalui ekosistem pembelajaran yang
             menguji batasan logika Anda.
           </p>
         </div>
-
-        <!-- Kisi Kartu (Bentuk Offset / Zig-Zag Dinamis) -->
         <div class="kisi-keunggulan">
-          <!-- Kartu 1 -->
           <div class="kartu-keunggulan kartu-putih">
             <div class="wadah-ikon">
-              <i class="fa-solid fa-play"></i>
+              <img src="./assets/imgs/video_dode.png" alt="Video Icon" />
             </div>
             <h3 class="judul-kartu">Materi Video Komprehensif</h3>
             <p class="deskripsi-kartu">
@@ -630,12 +493,9 @@
               memasuki fase pengujian.
             </p>
           </div>
-
-          <!-- Kartu 2 (Kartu Utama - Ditonjolkan dengan warna biru) -->
           <div class="kartu-keunggulan kartu-utama turun-sedikit">
             <div class="wadah-ikon ikon-terang">
-              <i class="fa-solid fa-comments-dollar"></i>
-              <!-- Menggunakan ikon interaksi -->
+              <img src="./assets/imgs/chatai_dode.png" alt="Chat AI Icon" />
             </div>
             <h3 class="judul-kartu">AI yang Menantang Anda</h3>
             <p class="deskripsi-kartu">
@@ -649,11 +509,9 @@
               class="gambar-dekorasi"
             />
           </div>
-
-          <!-- Kartu 3 -->
           <div class="kartu-keunggulan kartu-putih">
             <div class="wadah-ikon">
-              <i class="fa-solid fa-chart-pie"></i>
+              <img src="./assets/imgs/skoring_dode.png" alt="Skoring Icon" />
             </div>
             <h3 class="judul-kartu">Skoring & Evaluasi Akurat</h3>
             <p class="deskripsi-kartu">
@@ -665,27 +523,21 @@
         </div>
       </div>
     </section>
-    <!-- END WHY US SECTION -->
 
-    <!-- START CLASS PREVIEW SECTION -->
     <section class="bagian-pratinjau">
       <div class="wadah">
-        <!-- Kepala Bagian (Judul & Deskripsi) -->
         <div class="kepala-pratinjau">
-          <span class="label-kecil">
+          <span class="sub-head-section white">
             <i class="fa-solid fa-bolt"></i> Kisah Sukses & Pratinjau
           </span>
-          <h2 class="judul-utama">Sorotan Cuplikan Kelas</h2>
+          <h2 class="head-section">Sorotan Cuplikan Kelas</h2>
           <p class="deskripsi-utama">
             Lihat secara langsung bagaimana ekosistem AI kami bekerja. Mulai
             dari pendalaman materi via video interaktif hingga sesi debat kritis
             yang menantang logika Anda untuk mencapai skor maksimal.
           </p>
         </div>
-
-        <!-- Kisi Galeri (1 Kiri, 2 Kanan) -->
         <div class="kisi-galeri">
-          <!-- Kartu 1 (Kiri - Besar) -->
           <div class="kartu-galeri kartu-kiri">
             <img
               src="https://placehold.co/800x800/111827/cccccc?text=Video+Pembelajaran"
@@ -706,8 +558,6 @@
               </button>
             </div>
           </div>
-
-          <!-- Kartu 2 (Kanan Atas - Kecil) -->
           <div class="kartu-galeri kartu-kanan-atas">
             <img
               src="https://placehold.co/600x400/1e3a8a/ffffff?text=AI+Socratic+Debate"
@@ -728,8 +578,6 @@
               </button>
             </div>
           </div>
-
-          <!-- Kartu 3 (Kanan Bawah - Kecil) -->
           <div class="kartu-galeri kartu-kanan-bawah">
             <img
               src="https://placehold.co/600x400/047857/ffffff?text=Hasil+Skoring+Kritis"
@@ -753,28 +601,194 @@
         </div>
       </div>
     </section>
-    <!-- END CLASS PREVIEW SECTION -->
 
-    <!-- START TESTIMONIAL SECTION -->
+    <section class="bagian-kursus">
+      <div class="wadah">
+        <div class="head-kursus">
+          <span class="sub-head-section">Kursus Terbaru</span>
+          <h2 class="head-section">Baru Saja Ditambahkan</h2>
+        </div>
+        <div class="daftar-kursus">
+          <a href="course.html" class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img src="./assets/imgs/course-1.png" alt="UX Design Beginner" />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$12.50</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">UX Design Beginner</h3>
+              <p class="deskripsi-kursus">
+                Starting with UX design can be both exciting and overwhelming...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/star.png"
+                    alt="Star icon"
+                    class="ikon"
+                  />
+                  4.1</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/date.png"
+                    alt="Date Icon"
+                    class="ikon"
+                  />
+                  12 week</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/book.png"
+                    alt="Book icon"
+                    class="ikon"
+                  />
+                  10 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="./assets/imgs/user-1.png"
+                    alt="Miss. Vanei Carly"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Miss. Vanei Carly</span>
+                </div>
+                <span class="pengalaman">(5+ Year Exp)</span>
+              </div>
+            </div>
+          </a>
+          <a href="course.html" class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img
+                src="./assets/imgs/course-2.png"
+                alt="Mobile User Experience"
+              />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$18.15</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">Mobile User Experience</h3>
+              <p class="deskripsi-kursus">
+                Designing an exceptional mobile user experience (UX) involves...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik"
+                  ><img
+                    src="./assets/icon/star.png"
+                    alt="Star icon"
+                    class="ikon"
+                  />
+                  4.3</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/date.png"
+                    alt="Date Icon"
+                    class="ikon"
+                  />
+                  8 week</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/book.png"
+                    alt="Book icon"
+                    class="ikon"
+                  />
+                  14 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="./assets/imgs/user-2.png"
+                    alt="Mr. Milian Deon"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Mr. Milian Deon</span>
+                </div>
+                <span class="pengalaman">(8+ Year Exp)</span>
+              </div>
+            </div>
+          </a>
+          <a href="course.html" class="kartu-kursus">
+            <div class="bagian-gambar">
+              <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
+              <button class="tombol-simpan">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <span class="label-harga">$14.60</span>
+            </div>
+            <div class="bagian-konten">
+              <h3 class="judul-kursus">Figma Advance</h3>
+              <p class="deskripsi-kursus">
+                Figma is a powerful and versatile design tool used by UX/UI
+                designers...
+              </p>
+              <div class="metrik-kursus">
+                <span class="metrik"
+                  ><img
+                    src="./assets/icon/star.png"
+                    alt="Star icon"
+                    class="ikon"
+                  />
+                  3.8</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/date.png"
+                    alt="Date Icon"
+                    class="ikon"
+                  />
+                  16 week</span
+                >
+                <span class="metrik">
+                  <img
+                    src="./assets/icon/book.png"
+                    alt="Book icon"
+                    class="ikon"
+                  />
+                  18 Lessons</span
+                >
+              </div>
+              <hr class="garis-pemisah" />
+              <div class="bagian-instruktur">
+                <div class="info-instruktur">
+                  <img
+                    src="./assets/imgs/user-3.png"
+                    alt="Mrs. Maria Waston"
+                    class="avatar-instruktur"
+                  />
+                  <span class="nama-instruktur">Mrs. Maria Waston</span>
+                </div>
+                <span class="pengalaman">(2+ Year Exp)</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <!-- ================= SECTION TESTIMONI ================= -->
     <section class="bagian-testimoni">
       <div class="wadah">
-        <!-- Kepala Testimoni -->
         <div class="kepala-testimoni">
-          <span class="label-kecil">
+          <span class="sub-head-section">
             <i class="fa-solid fa-comment-dots"></i> Testimoni Pengguna
           </span>
-          <h2 class="judul-utama">Apa Kata Mereka?</h2>
+          <h2 class="head-section">Apa Kata Mereka?</h2>
           <p class="deskripsi-utama">
             Ribuan pelajar dan mahasiswa telah merasakan revolusi belajar kritis
             bersama platform kami.
           </p>
         </div>
-
-        <!-- Kisi Kartu Testimoni -->
         <div class="kisi-testimoni">
-          <!-- Kartu 1 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -798,8 +812,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 2 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -823,8 +835,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 3 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -847,8 +857,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Kartu 4 -->
           <div class="kartu-testimoni">
             <div class="konten-atas">
               <div class="rating">
@@ -875,26 +883,20 @@
         </div>
       </div>
     </section>
-    <!-- END TESTIMONIAL SECTION -->
 
-    <!-- START FAQ SECTION -->
     <section class="bagian-faq">
       <div class="wadah">
-        <!-- Kepala FAQ -->
         <div class="kepala-faq">
-          <span class="label-kecil">
+          <span class="sub-head-section">
             <i class="fa-solid fa-circle-question"></i> Pertanyaan Umum
           </span>
-          <h2 class="judul-utama">Segala Hal yang Perlu Anda Ketahui</h2>
+          <h2 class="head-section">Segala Hal yang Perlu Anda Ketahui</h2>
           <p class="deskripsi-utama">
             Punya pertanyaan seputar sistem latihan kritis dan interogasi AI
             kami? Temukan jawaban lengkapnya di sini.
           </p>
         </div>
-
-        <!-- Daftar Akordeon FAQ -->
         <div class="daftar-faq">
-          <!-- Item FAQ 1 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -912,8 +914,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 2 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -930,8 +930,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 3 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -948,8 +946,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Item FAQ 4 -->
           <div class="item-faq">
             <button class="pertanyaan-faq">
               <span
@@ -967,8 +963,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Bagian Bantuan Tambahan -->
         <div class="kartu-bantuan">
           <div class="teks-bantuan">
             <h3>Masih punya pertanyaan lain?</h3>
@@ -981,146 +975,96 @@
       </div>
     </section>
 
-    <!-- END FAQ SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
     <footer class="footer">
       <div class="wadah">
-        <!-- NEWSLETTER -->
         <section class="berlangganan">
           <div class="berlangganan-ilustrasi">
             <img
-              src="https://placehold.co/420x220/eaf2ff/4a78df?text=Gambar+Ilustrasi"
-              alt="Tempat gambar ilustrasi"
+              src="./assets/imgs/footer_dode.png"
+              alt="Learning illustration"
             />
           </div>
-
           <div class="berlangganan-informasi">
             <h2>
-              Subscribe to our newsletter to get
-              <br class="desktop" />
-              updates to our latest collections
+              Keep learning with <br class="desktop" />
+              AI-powered education
             </h2>
-
             <p>
-              Get 20% off on your first order just by subscribing to our
-              newsletter
+              Get learning tips, new courses, and updates about our AI learning
+              experience.
             </p>
-
             <form class="formulir-berlangganan">
               <div class="input-grup">
                 <span class="ikon-email">✉</span>
-
                 <input
                   type="email"
                   placeholder="Enter your email"
                   aria-label="Alamat email"
                   required
                 />
-
                 <button type="submit">Subscribe</button>
               </div>
             </form>
-
-            <small>
-              You will be able to unsubscribe at any time.
-              <br />
-              Read our privacy policy <a href="#">here</a>
-            </small>
           </div>
         </section>
-
-        <!-- BAGIAN UTAMA -->
         <section class="bagian-utama">
-          <!-- IDENTITAS -->
-          <div class="identitas">
-            <a class="logo" href="#" aria-label="Stay Clean">
-              <img
-                src="https://placehold.co/150x48/ffffff/111827?text=Stay+Clean"
-                alt="Logo Stay Clean"
-              />
-            </a>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              <br class="desktop" />
-              adipiscing elit ut aliquam, purus sit amet
-              <br class="desktop" />
-              luctus venenatis.
-            </p>
-
-            <div class="sosial">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Twitter">♥</a>
-              <a href="#" aria-label="Instagram">◎</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Google">G</a>
+          <div class="overlay"></div>
+          <div class="cover">
+            <div class="identitas">
+              <a class="logo" href="index.html" aria-label="Homepage">
+                <img src="./assets/imgs/logo-color.png" alt="Logo" />
+              </a>
+              <p>
+                An AI-powered learning platform that helps you understand,
+                think, and learn through meaningful conversations with AI.
+              </p>
+              <div class="sosial">
+                <a href="#" aria-label="Instagram"> ◎ </a>
+                <a href="#" aria-label="LinkedIn"> in </a>
+                <a href="#" aria-label="YouTube"> ▶ </a>
+                <a href="#" aria-label="X"> 𝕏 </a>
+              </div>
             </div>
-          </div>
-
-          <!-- NAVIGASI -->
-          <nav class="kolom-tautan" aria-label="Navigasi footer">
-            <div class="kelompok-tautan">
-              <h3>Company</h3>
-              <a href="#">About Us</a>
-              <a href="#">Services</a>
-              <a href="#">Community</a>
-              <a href="#">Testimonial</a>
-            </div>
-
-            <div class="kelompok-tautan">
-              <h3>Support</h3>
-              <a href="#">Help Center</a>
-              <a href="#">Tweet @ Us</a>
-              <a href="#">Webians</a>
-              <a href="#">Feedback</a>
-            </div>
-
-            <div class="kelompok-tautan">
-              <h3>Links</h3>
-              <a href="#">Courses</a>
-              <a href="#">Become Teacher</a>
-              <a href="#">Service</a>
-              <a href="#">All in One</a>
-            </div>
-          </nav>
-
-          <!-- KONTAK -->
-          <div class="kontak">
-            <h3>Contact Us</h3>
-
-            <a href="tel:+9198765432154">
-              <span>⌕</span>
-              (91) 98765 4321 54
-            </a>
-
-            <a href="mailto:support@mail.com">
-              <span>✉</span>
-              support@mail.com
-            </a>
+            <nav class="kolom-tautan" aria-label="Navigasi footer">
+              <div class="kelompok-tautan">
+                <h3>Platform</h3>
+                <a href="course-list.html"> Courses </a>
+                <a href="dashboard.html"> My Learning </a>
+                <a href="challenge.html"> Challenges </a>
+                <a href="#"> Socratic AI </a>
+              </div>
+              <div class="kelompok-tautan">
+                <h3>Learn</h3>
+                <a href="#"> How It Works </a> <a href="#"> Learning Guide </a>
+                <a href="#"> FAQ </a> <a href="#"> Learning Report </a>
+              </div>
+              <div class="kelompok-tautan">
+                <h3>About</h3>
+                <a href="#"> About Us </a> <a href="#"> Our Approach </a>
+                <a href="#"> Contact Us </a> <a href="#"> Community </a>
+              </div>
+              <div class="kelompok-tautan">
+                <h3>Account</h3>
+                <a href="login.html"> Log in </a>
+                <a href="dashboard.html"> Dashboard </a>
+                <a href="#"> Progress </a> <a href="#"> Settings </a>
+              </div>
+            </nav>
           </div>
         </section>
       </div>
-
-      <!-- COPYRIGHT -->
       <div class="paling-bawah">
         <div class="wadah paling-bawah-isi">
-          <p>© Copyright by CodedUI. All rights reserved.</p>
-
+          <p>© 2026 All rights reserved.</p>
           <div class="tautan-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Legal</a>
-            <a href="#">Site Map</a>
+            <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use </a>
+            <a href="#"> AI & Learning Policy </a>
+            <a href="#"> Accessibility </a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- END FOOTER SECTION -->
-
-    <!-- JAVASCRIPT -->
     <script src="./js/main.js"></script>
   </body>
 </html>
