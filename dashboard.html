@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Learning | Socratic</title>
+
+    <!-- FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         NAVBAR
+         KODE NAVBAR TIDAK DIUBAH
+    ====================================================== -->
+
+    <nav class="navigasi">
+      <div class="wadah">
+        <a href="index.html" class="logo">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
+        <div class="menu">
+          <a href="course-list.html" class="tautan-menu"> Courses </a>
+          <a href="#how-it-works" class="tautan-menu"> How It Works </a>
+          <a href="dashboard.html" class="tautan-menu"> My Learning </a>
+          <div class="menu-dropdown">
+            <a href="#" class="tautan-menu tautan-dropdown">
+              Resources <span class="panah">⌄</span>
+            </a>
+            <div class="jendela">
+              <div class="isi-jendela">
+                <div class="kolom-jendela">
+                  <h3>Explore</h3>
+                  <a href="course-list.html"> All Courses </a>
+                  <a href="#"> Learning Paths </a>
+                  <a href="#"> Challenges </a>
+                </div>
+                <div class="kolom-jendela">
+                  <h3>Learn</h3>
+                  <a href="#how-it-works"> How Socratic AI Works </a>
+                  <a href="#"> Learning Guide </a>
+                  <a href="#"> FAQ </a>
+                </div>
+                <div class="kolom-jendela">
+                  <h3>About</h3>
+                  <a href="#"> About Platform </a>
+                  <a href="#"> Our Approach </a>
+                  <a href="#"> Contact Us </a>
+                </div>
+                <div class="kolom-jendela">
+                  <h3>Your Learning</h3>
+                  <a href="dashboard.html"> Dashboard </a>
+                  <a href="#"> Learning Progress </a>
+                  <a href="#"> Learning Report </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#socratic-ai" class="tautan-menu"> Socratic AI </a>
+          <a href="challenge.html" class="tautan-menu"> Challenge </a>
+        </div>
+        <div class="menu-kanan">
+          <a href="login.html" class="masuk"> Log in </a>
+          <a href="course-list.html" class="tombol"> Start Learning </a>
+        </div>
+        <button
+          class="tombol-hamburger"
+          id="tombolHamburger"
+          aria-label="Buka menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+         LAPISAN MOBILE
+    ====================================================== -->
+
+    <div class="lapisan" id="lapisan"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="kepala-sidebar">
+        <a href="index.html" class="logo-sidebar">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
+
+        <button class="tombol-tutup" id="tombolTutup">&times;</button>
+      </div>
+
+      <div class="isi-sidebar">
+        <a href="course-list.html">Courses</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="dashboard.html">My Learning</a>
+
+        <div class="dropdown-sidebar">
+          <button class="tombol-dropdown-sidebar" id="tombolDropdown">
+            Resources
+            <span>⌄</span>
+          </button>
+
+          <div class="isi-dropdown-sidebar" id="isiDropdown">
+            <h4>Explore</h4>
+            <a href="course-list.html">All Courses</a>
+            <a href="#">Learning Paths</a>
+            <a href="#">Challenges</a>
+
+            <h4>Learn</h4>
+            <a href="#">How Socratic AI Works</a>
+            <a href="#">Learning Guide</a>
+            <a href="#">FAQ</a>
+
+            <h4>Your Learning</h4>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Learning Progress</a>
+            <a href="#">Learning Report</a>
+          </div>
+        </div>
+
+        <a href="#socratic-ai">Socratic AI</a>
+        <a href="challenge.html">Challenge</a>
+
+        <div class="garis-sidebar"></div>
+
+        <a href="login.html">Log in</a>
+
+        <a href="course-list.html" class="tombol-sidebar"> Start Learning </a>
+      </div>
+    </aside>
+
+    <!-- =====================================================
+         DASHBOARD
+    ====================================================== -->
+
+    <main class="dashboard">
+      <div class="wadah-dashboard">
+        <!-- HEADER DASHBOARD -->
+
+        <section class="kepala-dashboard">
+          <div class="teks-kepala">
+            <span class="label-kecil">MY LEARNING</span>
+
+            <h1>
+              Selamat datang kembali,
+              <strong>Maha.</strong>
+            </h1>
+
+            <p>Lanjutkan perjalanan belajarmu dan capai target berikutnya.</p>
+          </div>
+
+          <div class="tanggal-dashboard">
+            <i class="fa-regular fa-calendar"></i>
+            <span>September 2026</span>
+          </div>
+        </section>
+
+        <!-- STATISTIK -->
+
+        <section class="statistik">
+          <div class="kartu-statistik">
+            <div class="ikon-statistik biru">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div class="isi-statistik">
+              <span>Kursus Diikuti</span>
+              <strong>6</strong>
+              <small>kursus aktif</small>
+            </div>
+          </div>
+
+          <div class="kartu-statistik">
+            <div class="ikon-statistik hijau">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div class="isi-statistik">
+              <span>Kursus Selesai</span>
+              <strong>3</strong>
+              <small>kursus selesai</small>
+            </div>
+          </div>
+
+          <div class="kartu-statistik">
+            <div class="ikon-statistik ungu">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="isi-statistik">
+              <span>Waktu Belajar</span>
+              <strong>18h</strong>
+              <small>bulan ini</small>
+            </div>
+          </div>
+
+          <div class="kartu-statistik">
+            <div class="ikon-statistik kuning">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+
+            <div class="isi-statistik">
+              <span>Learning Streak</span>
+              <strong>12</strong>
+              <small>hari berturut-turut</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- AREA UTAMA -->
+
+        <section class="area-utama">
+          <!-- KONTEN KIRI -->
+
+          <div class="konten-kiri">
+            <!-- LANJUTKAN BELAJAR -->
+
+            <div class="bagian">
+              <div class="judul-bagian">
+                <div>
+                  <span class="label-kecil">CONTINUE LEARNING</span>
+                  <h2>Lanjutkan Belajar</h2>
+                </div>
+
+                <a href="course-list.html">
+                  Lihat Semua
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <article class="kartu-lanjut">
+                <div class="gambar-lanjut">
+                  <img
+                    src="https://placehold.co/560x340/e7efff/2563eb?text=Course+Image"
+                    alt="Gambar kursus"
+                  />
+
+                  <span class="label-kursus"> WEB DEVELOPMENT </span>
+                </div>
+
+                <div class="isi-lanjut">
+                  <div class="atas-lanjut">
+                    <span>HTML & CSS</span>
+
+                    <button class="tombol-tiga" aria-label="More options">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                  </div>
+
+                  <h3>Membuat Website dari Nol</h3>
+
+                  <p>
+                    Pelajari dasar HTML dan CSS untuk membangun website modern
+                    dari awal.
+                  </p>
+
+                  <div class="progress-lanjut">
+                    <div class="teks-progress">
+                      <span>Progress</span>
+                      <strong>72%</strong>
+                    </div>
+
+                    <div class="batang-progress">
+                      <span style="width: 72%"></span>
+                    </div>
+                  </div>
+
+                  <div class="bawah-lanjut">
+                    <span>
+                      <i class="fa-regular fa-clock"></i>
+                      4h 20m tersisa
+                    </span>
+
+                    <a href="#">
+                      Lanjutkan
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- KURSUS SAYA -->
+
+            <div class="bagian">
+              <div class="judul-bagian">
+                <div>
+                  <span class="label-kecil">MY COURSES</span>
+                  <h2>Kursus Saya</h2>
+                </div>
+
+                <a href="course-list.html">
+                  Lihat Semua
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="daftar-kursus-dashboard">
+                <!-- KARTU -->
+
+                <article class="kartu-dashboard">
+                  <div class="gambar-kartu">
+                    <img
+                      src="https://placehold.co/400x230/e7efff/2563eb?text=HTML+%26+CSS"
+                      alt="HTML CSS"
+                    />
+                  </div>
+
+                  <div class="isi-kartu">
+                    <span class="kategori-kartu"> DEVELOPMENT </span>
+
+                    <h3>HTML & CSS Fundamentals</h3>
+
+                    <div class="progress-kartu">
+                      <div class="teks-progress">
+                        <span>65% selesai</span>
+                        <strong>65%</strong>
+                      </div>
+
+                      <div class="batang-progress">
+                        <span style="width: 65%"></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="kartu-dashboard">
+                  <div class="gambar-kartu">
+                    <img
+                      src="https://placehold.co/400x230/e7efff/2563eb?text=Data+%26+AI"
+                      alt="Data AI"
+                    />
+                  </div>
+
+                  <div class="isi-kartu">
+                    <span class="kategori-kartu"> TECHNOLOGY </span>
+
+                    <h3>Data & Artificial Intelligence</h3>
+
+                    <div class="progress-kartu">
+                      <div class="teks-progress">
+                        <span>42% selesai</span>
+                        <strong>42%</strong>
+                      </div>
+
+                      <div class="batang-progress">
+                        <span style="width: 42%"></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="kartu-dashboard">
+                  <div class="gambar-kartu">
+                    <img
+                      src="https://placehold.co/400x230/e7efff/2563eb?text=UI+UX+Design"
+                      alt="UI UX"
+                    />
+                  </div>
+
+                  <div class="isi-kartu">
+                    <span class="kategori-kartu"> DESIGN </span>
+
+                    <h3>UI/UX Design Fundamentals</h3>
+
+                    <div class="progress-kartu">
+                      <div class="teks-progress">
+                        <span>28% selesai</span>
+                        <strong>28%</strong>
+                      </div>
+
+                      <div class="batang-progress">
+                        <span style="width: 28%"></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDEBAR DASHBOARD -->
+
+          <aside class="sisi-dashboard">
+            <!-- TARGET -->
+
+            <div class="kartu-target">
+              <div class="judul-kartu-samping">
+                <h3>Target Belajar</h3>
+
+                <button>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </div>
+
+              <div class="lingkaran-progress">
+                <div class="lingkaran-dalam">
+                  <strong>76%</strong>
+                  <span>Target</span>
+                </div>
+              </div>
+
+              <h4>Bagus! Terus lanjutkan.</h4>
+
+              <p>
+                Kamu sudah mencapai sebagian besar target belajar bulan ini.
+              </p>
+
+              <div class="target-info">
+                <span>15 / 20 jam</span>
+                <span>5 jam lagi</span>
+              </div>
+            </div>
+
+            <!-- AKTIVITAS -->
+
+            <div class="kartu-aktivitas">
+              <div class="judul-kartu-samping">
+                <h3>Aktivitas Terbaru</h3>
+
+                <a href="#">Lihat Semua</a>
+              </div>
+
+              <div class="daftar-aktivitas">
+                <div class="item-aktivitas">
+                  <div class="ikon-aktivitas biru">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+
+                  <div>
+                    <strong> Menonton materi HTML </strong>
+
+                    <span> 20 menit yang lalu </span>
+                  </div>
+                </div>
+
+                <div class="item-aktivitas">
+                  <div class="ikon-aktivitas hijau">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+
+                  <div>
+                    <strong> Menyelesaikan quiz </strong>
+
+                    <span> Kemarin </span>
+                  </div>
+                </div>
+
+                <div class="item-aktivitas">
+                  <div class="ikon-aktivitas ungu">
+                    <i class="fa-solid fa-book"></i>
+                  </div>
+
+                  <div>
+                    <strong> Membuka kursus baru </strong>
+
+                    <span> 2 hari yang lalu </span>
+                  </div>
+                </div>
+
+                <div class="item-aktivitas">
+                  <div class="ikon-aktivitas kuning">
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+
+                  <div>
+                    <strong> Mendapatkan achievement </strong>
+
+                    <span> 4 hari yang lalu </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACHIEVEMENT -->
+
+            <div class="kartu-achievement">
+              <div class="ikon-achievement">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+
+              <div>
+                <span>Achievement</span>
+                <strong>Learning Streak</strong>
+                <p>12 hari belajar berturut-turut</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="./assets/js/dashboard.js"></script>
+  </body>
+</html>
