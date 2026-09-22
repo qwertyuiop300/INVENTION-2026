@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socratic AI — Practice Session</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/socratic-session.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <nav class="navigasi">
+      <div class="wadah">
+        <a href="index.html" class="logo">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
+
+        <div class="menu">
+          <a href="course-list.html" class="tautan-menu">Courses</a>
+          <a href="#how-it-works" class="tautan-menu">How It Works</a>
+          <a href="dashboard.html" class="tautan-menu">My Learning</a>
+
+          <div class="menu-dropdown">
+            <a href="#" class="tautan-menu tautan-dropdown">
+              Resources <span class="panah">⌄</span>
+            </a>
+
+            <div class="jendela">
+              <div class="isi-jendela">
+                <div class="kolom-jendela">
+                  <h3>Explore</h3>
+                  <a href="course-list.html">All Courses</a>
+                  <a href="#">Learning Paths</a>
+                  <a href="#">Challenges</a>
+                </div>
+
+                <div class="kolom-jendela">
+                  <h3>Learn</h3>
+                  <a href="#how-it-works">How Socratic AI Works</a>
+                  <a href="#">Learning Guide</a>
+                  <a href="#">FAQ</a>
+                </div>
+
+                <div class="kolom-jendela">
+                  <h3>About</h3>
+                  <a href="#">About Platform</a>
+                  <a href="#">Our Approach</a>
+                  <a href="#">Contact Us</a>
+                </div>
+
+                <div class="kolom-jendela">
+                  <h3>Your Learning</h3>
+                  <a href="dashboard.html">Dashboard</a>
+                  <a href="#">Learning Progress</a>
+                  <a href="#">Learning Report</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#socratic-ai" class="tautan-menu aktif">Socratic AI</a>
+          <a href="challenge.html" class="tautan-menu">Challenge</a>
+        </div>
+
+        <div class="menu-kanan">
+          <a href="login.html" class="masuk">Log in</a>
+          <a href="course-list.html" class="tombol">Start Learning</a>
+        </div>
+
+        <button
+          class="tombol-hamburger"
+          id="tombolHamburger"
+          aria-label="Buka menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="lapisan" id="lapisan"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="kepala-sidebar">
+        <a href="index.html" class="logo-sidebar">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
+
+        <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup menu">
+          ×
+        </button>
+      </div>
+
+      <div class="isi-sidebar">
+        <a href="course-list.html">Courses</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="dashboard.html">My Learning</a>
+
+        <div class="dropdown-sidebar">
+          <button class="tombol-dropdown-sidebar" id="tombolDropdownSidebar">
+            Resources <span id="panahSidebar">+</span>
+          </button>
+
+          <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
+            <h4>Explore</h4>
+            <a href="course-list.html">All Courses</a>
+            <a href="#">Learning Paths</a>
+            <a href="#">Challenges</a>
+
+            <h4>Learn</h4>
+            <a href="#how-it-works">How Socratic AI Works</a>
+            <a href="#">Learning Guide</a>
+            <a href="#">FAQ</a>
+
+            <h4>About</h4>
+            <a href="#">About Platform</a>
+            <a href="#">Our Approach</a>
+            <a href="#">Contact Us</a>
+
+            <h4>Your Learning</h4>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Learning Progress</a>
+            <a href="#">Learning Report</a>
+          </div>
+        </div>
+
+        <a href="#socratic-ai">Socratic AI</a>
+        <a href="challenge.html">Challenge</a>
+
+        <div class="garis-sidebar"></div>
+
+        <a href="login.html">Log in</a>
+        <a href="#">Contact Us</a>
+        <a href="course-list.html" class="tombol-sidebar">Start Learning</a>
+      </div>
+    </aside>
+
+    <!-- ==================== SESSION ==================== -->
+    <main class="sesi-halaman" id="socratic-ai">
+      <section class="sesi-hero">
+        <div class="wadah sesi-wadah">
+          <div class="sesi-kepala">
+            <div>
+              <span class="sub-head-section">Socratic AI Practice</span>
+              <h1>Show what you know.<br /><span>Think out loud.</span></h1>
+              <p>
+                A conversation-based quiz where Socratic AI asks the questions
+                and you explain your thinking.
+              </p>
+            </div>
+
+            <div class="status-sesi">
+              <div class="status-sesi-item">
+                <span class="status-titik"></span>
+                <span>Live session</span>
+              </div>
+              <div class="status-waktu">
+                <i class="fa-regular fa-clock"></i>
+                <strong id="timer">05:00</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session setup -->
+          <div class="pengaturan-sesi" id="pengaturanSesi">
+            <div class="pengaturan-intro">
+              <div class="ikon-pengaturan">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div>
+                <span class="label-kecil">Ready when you are</span>
+                <h2>Set up your practice</h2>
+                <p>
+                  Choose a difficulty and session length. You can focus on
+                  explaining ideas rather than selecting multiple-choice
+                  answers.
+                </p>
+              </div>
+            </div>
+
+            <div class="pengaturan-grid">
+              <div class="pilihan-kelompok">
+                <label>Difficulty</label>
+                <div class="pilihan-level">
+                  <button class="pilihan-level-item aktif" data-level="easy">
+                    <span class="level-ikon"
+                      ><i class="fa-solid fa-seedling"></i
+                    ></span>
+                    <span>
+                      <strong>Easy</strong>
+                      <small>Recall & explain</small>
+                    </span>
+                  </button>
+
+                  <button class="pilihan-level-item" data-level="medium">
+                    <span class="level-ikon"
+                      ><i class="fa-solid fa-lightbulb"></i
+                    ></span>
+                    <span>
+                      <strong>Medium</strong>
+                      <small>Apply & connect</small>
+                    </span>
+                  </button>
+
+                  <button class="pilihan-level-item" data-level="hard">
+                    <span class="level-ikon"
+                      ><i class="fa-solid fa-bolt"></i
+                    ></span>
+                    <span>
+                      <strong>Hard</strong>
+                      <small>Reason & defend</small>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pilihan-kelompok">
+                <label>Session length</label>
+                <div class="durasi-pilihan">
+                  <button class="durasi-item" data-duration="180">3 min</button>
+                  <button class="durasi-item aktif" data-duration="300">
+                    5 min
+                  </button>
+                  <button class="durasi-item" data-duration="600">
+                    10 min
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="aturan-singkat">
+              <div>
+                <i class="fa-solid fa-microphone"></i>
+                <span>Speak your answer naturally</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-comments"></i>
+                <span>AI asks follow-up questions</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Get feedback at the end</span>
+              </div>
+            </div>
+
+            <button class="tombol-mulai" id="tombolMulai">
+              Start practice
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Active session -->
+          <div class="ruang-sesi tersembunyi" id="ruangSesi">
+            <div class="sesi-toolbar">
+              <div class="topik-sesi">
+                <span class="badge-level" id="badgeLevel">EASY</span>
+                <span class="topik-nama">Responsive Web Design</span>
+              </div>
+
+              <div class="progres-sesi">
+                <span
+                  >Question <strong id="nomorPertanyaan">1</strong> of 5</span
+                >
+                <div class="progres-track">
+                  <span id="progresBar"></span>
+                </div>
+              </div>
+
+              <button class="tombol-akhiri" id="tombolAkhiri">
+                <i class="fa-solid fa-stop"></i>
+                End session
+              </button>
+            </div>
+
+            <div class="ruang-utama">
+              <!-- User camera -->
+              <div class="kamera-kartu">
+                <div class="kamera-status">
+                  <span class="status-titik hijau"></span>
+                  <span>You</span>
+                  <span class="kamera-live">Camera on</span>
+                </div>
+
+                <div class="kamera-area">
+                  <video id="videoPengguna" autoplay muted playsinline></video>
+
+                  <div class="kamera-fallback" id="kameraFallback">
+                    <div class="avatar-pengguna">Y</div>
+                    <span>Camera preview</span>
+                    <small>Allow camera access for the live experience</small>
+                  </div>
+
+                  <div class="kamera-overlay">
+                    <span class="nama-pengguna">You</span>
+                    <span class="status-mikrofon">
+                      <i class="fa-solid fa-microphone"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="kontrol-kamera">
+                  <button
+                    class="kontrol-bulat aktif"
+                    id="tombolMikrofon"
+                    aria-label="Microphone"
+                  >
+                    <i class="fa-solid fa-microphone"></i>
+                  </button>
+                  <button
+                    class="kontrol-bulat aktif"
+                    id="tombolKamera"
+                    aria-label="Camera"
+                  >
+                    <i class="fa-solid fa-video"></i>
+                  </button>
+                  <button
+                    class="kontrol-bulat"
+                    id="tombolMute"
+                    aria-label="Speaker"
+                  >
+                    <i class="fa-solid fa-volume-high"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- AI panel -->
+              <aside class="ai-panel">
+                <div class="ai-panel-kepala">
+                  <div class="ai-identitas">
+                    <div class="ikon-ai">
+                      <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <div>
+                      <strong>Socratic AI</strong>
+                      <span>Listening & thinking</span>
+                    </div>
+                  </div>
+
+                  <span class="ai-online"> <span></span> Online </span>
+                </div>
+
+                <div class="ai-pertanyaan">
+                  <div class="ai-label">
+                    <span class="ai-label-ikon">
+                      <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </span>
+                    AI asks
+                  </div>
+
+                  <h2 id="teksPertanyaan">
+                    In your own words, what makes a website responsive?
+                  </h2>
+
+                  <p id="konteksPertanyaan">
+                    Take a moment to think. There is no single perfect answer.
+                  </p>
+
+                  <div
+                    class="gelombang-suara"
+                    id="gelombangSuara"
+                    aria-label="AI speaking"
+                  >
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+
+                  <div class="ai-berbicara">
+                    <span class="titik-berbicara"></span>
+                    <span>AI is speaking...</span>
+                  </div>
+                </div>
+
+                <div class="jawaban-area">
+                  <div class="jawaban-status">
+                    <span id="statusJawaban">Your turn</span>
+                    <span id="durasiJawaban">00:00</span>
+                  </div>
+
+                  <div class="jawaban-visual">
+                    <div class="gelombang-jawaban" id="gelombangJawaban">
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="teks-jawaban">Speak your answer</span>
+                  </div>
+
+                  <button class="tombol-rekam" id="tombolRekam">
+                    <span><i class="fa-solid fa-microphone"></i></span>
+                    <strong>Hold to answer</strong>
+                  </button>
+                </div>
+
+                <div class="ai-petunjuk">
+                  <i class="fa-regular fa-lightbulb"></i>
+                  <span>
+                    Tip: explain <strong>why</strong>, not only
+                    <strong>what</strong>.
+                  </span>
+                </div>
+              </aside>
+            </div>
+
+            <div class="sesi-bawah">
+              <div class="indikator-sesi">
+                <span class="indikator-aktif"></span>
+                <span id="teksStatusSesi">Listening for your answer</span>
+              </div>
+
+              <button class="tombol-lewati" id="tombolLanjut">
+                Next question
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== RESULT MODAL ==================== -->
+    <div class="modal-lapisan" id="modalHasil" aria-hidden="true">
+      <div class="modal-hasil">
+        <button class="modal-tutup" id="modalTutup" aria-label="Close">
+          ×
+        </button>
+
+        <div class="hasil-ikon">
+          <div class="hasil-ikon-lingkaran">
+            <i class="fa-solid fa-sparkles"></i>
+          </div>
+        </div>
+
+        <span class="label-kecil">Session complete</span>
+        <h2>Nice thinking, <span id="hasilLevel">Explorer</span>.</h2>
+        <p class="hasil-intro">
+          Here is a snapshot of how you communicated your ideas during this
+          practice session.
+        </p>
+
+        <div class="nilai-utama">
+          <div class="lingkaran-nilai">
+            <span id="nilaiAngka">86</span>
+            <small>/100</small>
+          </div>
+          <div>
+            <strong>Overall score</strong>
+            <span>Great progress in explaining your thinking.</span>
+          </div>
+        </div>
+
+        <div class="nilai-grid">
+          <div class="nilai-kartu">
+            <div class="nilai-kartu-ikon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div>
+              <span>Relevance</span>
+              <strong>92%</strong>
+            </div>
+          </div>
+
+          <div class="nilai-kartu">
+            <div class="nilai-kartu-ikon">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div>
+              <span>Clarity</span>
+              <strong>85%</strong>
+            </div>
+          </div>
+
+          <div class="nilai-kartu">
+            <div class="nilai-kartu-ikon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <span>Reasoning</span>
+              <strong>82%</strong>
+            </div>
+          </div>
+
+          <div class="nilai-kartu">
+            <div class="nilai-kartu-ikon">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <div>
+              <span>Confidence</span>
+              <strong>84%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hasil-masukan">
+          <div class="hasil-masukan-ikon">
+            <i class="fa-regular fa-message"></i>
+          </div>
+          <div>
+            <strong>AI feedback</strong>
+            <p>
+              You explained the core idea clearly. Next time, support your
+              answer with a concrete example or trade-off.
+            </p>
+          </div>
+        </div>
+
+        <div class="hasil-tindakan">
+          <button class="tombol-sekunder" id="tombolUlangi">
+            <i class="fa-solid fa-rotate-right"></i>
+            Practice again
+          </button>
+          <button class="tombol-utama" id="tombolLihatProgress">
+            View my progress
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="wadah">
+        <section class="berlangganan">
+          <div class="berlangganan-ilustrasi">
+            <img
+              src="./assets/imgs/footer_dode.png"
+              alt="Learning illustration"
+            />
+          </div>
+
+          <div class="berlangganan-informasi">
+            <h2>
+              Keep learning with <br class="desktop" />
+              AI-powered education
+            </h2>
+
+            <p>
+              Get learning tips, new courses, and updates about our AI learning
+              experience.
+            </p>
+
+            <form class="formulir-berlangganan">
+              <div class="input-grup">
+                <span class="ikon-email">✉</span>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  aria-label="Alamat email"
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="bagian-utama">
+          <div class="overlay"></div>
+
+          <div class="cover">
+            <div class="identitas">
+              <a class="logo" href="index.html" aria-label="Homepage">
+                <img src="./assets/imgs/logo-color.png" alt="Logo" />
+              </a>
+
+              <p>
+                An AI-powered learning platform that helps you understand,
+                think, and learn through meaningful conversations with AI.
+              </p>
+
+              <div class="sosial">
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="X">𝕏</a>
+              </div>
+            </div>
+
+            <nav class="kolom-tautan" aria-label="Navigasi footer">
+              <div class="kelompok-tautan">
+                <h3>Platform</h3>
+                <a href="course-list.html">Courses</a>
+                <a href="dashboard.html">My Learning</a>
+                <a href="challenge.html">Challenges</a>
+                <a href="#">Socratic AI</a>
+              </div>
+
+              <div class="kelompok-tautan">
+                <h3>Learn</h3>
+                <a href="#">How It Works</a>
+                <a href="#">Learning Guide</a>
+                <a href="#">FAQ</a>
+                <a href="#">Learning Report</a>
+              </div>
+
+              <div class="kelompok-tautan">
+                <h3>About</h3>
+                <a href="#">About Us</a>
+                <a href="#">Our Approach</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Community</a>
+              </div>
+
+              <div class="kelompok-tautan">
+                <h3>Account</h3>
+                <a href="login.html">Log in</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="#">Progress</a>
+                <a href="#">Settings</a>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+
+      <div class="paling-bawah">
+        <div class="wadah paling-bawah-isi">
+          <p>© 2026 All rights reserved.</p>
+
+          <div class="tautan-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">AI & Learning Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/socratic-session.js"></script>
+  </body>
+</html>
