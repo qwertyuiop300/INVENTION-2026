@@ -1,0 +1,1067 @@
+/* =========================================================
+   CHALLENGE PAGE
+   Mengikuti design system dari main.css
+   Font: Raleway
+========================================================= */
+
+:root {
+  --challenge-primary: #0b51cd;
+  --challenge-primary-dark: #0845ad;
+  --challenge-primary-soft: #edf4ff;
+  --challenge-heading: #151b26;
+  --challenge-text: #2d3748;
+  --challenge-muted: #697180;
+  --challenge-line: #e4e7ec;
+  --challenge-soft: #f7f9fc;
+  --challenge-white: #ffffff;
+  --challenge-container: 1280px;
+  --challenge-shadow: 0 20px 60px rgba(24, 34, 48, 0.10);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #ffffff;
+  color: var(--challenge-text);
+}
+
+body.popup-terbuka {
+  overflow: hidden;
+}
+
+main {
+  padding-top: 74px;
+}
+
+.wadah {
+  width: 100%;
+  max-width: var(--challenge-container);
+  margin-inline: auto;
+  padding-inline: 28px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-challenge {
+  position: relative;
+  overflow: hidden;
+  padding: 95px 0 105px;
+  background:
+    radial-gradient(
+      circle at 78% 20%,
+      rgba(13, 110, 253, 0.11),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+}
+
+.hero-wadah {
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-konten {
+  max-width: 650px;
+}
+
+.label-section,
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--challenge-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.titik-label {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--challenge-primary);
+}
+
+.hero-konten h1 {
+  max-width: 690px;
+  margin-top: 19px;
+  color: var(--challenge-heading);
+  font-size: clamp(46px, 6vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.hero-konten h1 span {
+  display: block;
+  color: var(--challenge-primary);
+}
+
+.hero-konten > p {
+  max-width: 580px;
+  margin-top: 25px;
+  color: var(--challenge-muted);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.hero-statistik {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-top: 38px;
+}
+
+.statistik-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statistik-item strong {
+  color: var(--challenge-heading);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.statistik-item span {
+  color: var(--challenge-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 460px;
+  display: grid;
+  place-items: center;
+}
+
+.lingkaran-hero {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(11, 81, 205, 0.12);
+}
+
+.lingkaran-satu {
+  width: 440px;
+  height: 440px;
+}
+
+.lingkaran-dua {
+  width: 340px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.kartu-hero {
+  position: relative;
+  z-index: 2;
+  width: min(370px, 80%);
+  min-height: 315px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 30px 80px rgba(28, 71, 139, 0.14);
+  backdrop-filter: blur(15px);
+}
+
+.ikon-hero {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  background: var(--challenge-primary-soft);
+  color: var(--challenge-primary);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.kartu-hero > span {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--challenge-primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.kartu-hero strong {
+  display: block;
+  color: var(--challenge-heading);
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.progress-hero {
+  height: 8px;
+  margin-top: 35px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e9eef6;
+}
+
+.progress-hero span {
+  display: block;
+  width: 72%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--challenge-primary);
+}
+
+.kartu-hero small {
+  display: block;
+  margin-top: 9px;
+  color: var(--challenge-muted);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.kartu-melayang {
+  position: absolute;
+  z-index: 3;
+  min-width: 150px;
+  padding: 16px 18px;
+  border: 1px solid var(--challenge-line);
+  border-radius: 15px;
+  background: var(--challenge-white);
+  box-shadow: 0 12px 35px rgba(24, 34, 48, 0.09);
+}
+
+.kartu-melayang span,
+.kartu-melayang small {
+  display: block;
+}
+
+.kartu-melayang span {
+  color: var(--challenge-heading);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.kartu-melayang small {
+  margin-top: 2px;
+  color: var(--challenge-muted);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.kartu-xp {
+  top: 74px;
+  right: 10px;
+}
+
+.kartu-streak {
+  bottom: 62px;
+  left: 5px;
+}
+
+/* =========================================================
+   DAFTAR CHALLENGE
+========================================================= */
+
+.bagian-challenge {
+  padding: 105px 0 125px;
+  background: #ffffff;
+}
+
+.kepala-bagian {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 45px;
+}
+
+.kepala-bagian h2 {
+  margin-top: 8px;
+  color: var(--challenge-heading);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.kepala-bagian p {
+  max-width: 580px;
+  margin-top: 12px;
+  color: var(--challenge-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-challenge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.filter-challenge button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--challenge-line);
+  border-radius: 100px;
+  background: #ffffff;
+  color: var(--challenge-muted);
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.filter-challenge button:hover,
+.filter-challenge button.filter-aktif {
+  border-color: var(--challenge-primary);
+  background: var(--challenge-primary);
+  color: #ffffff;
+}
+
+.grid-challenge {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.kartu-challenge {
+  display: flex;
+  flex-direction: column;
+  min-height: 405px;
+  padding: 22px;
+  border: 1px solid var(--challenge-line);
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.kartu-challenge:hover,
+.kartu-challenge:focus-visible {
+  transform: translateY(-5px);
+  border-color: #cddbf1;
+  box-shadow: 0 16px 40px rgba(24, 34, 48, 0.08);
+}
+
+.kartu-challenge.tersembunyi {
+  display: none;
+}
+
+.kartu-atas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ikon-kategori {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ikon-web {
+  background: #eef5ff;
+  color: var(--challenge-primary);
+}
+
+.ikon-ai {
+  background: #f1f0ff;
+  color: #6958d6;
+}
+
+.ikon-design {
+  background: #fff5e9;
+  color: #d97706;
+}
+
+.ikon-business {
+  background: #ecf9f2;
+  color: #198754;
+}
+
+.status-challenge {
+  padding: 5px 9px;
+  border-radius: 100px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.status-challenge.tersedia {
+  background: #edf9f2;
+  color: #198754;
+}
+
+.status-challenge.selesai {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+.kartu-konten {
+  flex: 1;
+  padding: 31px 0 22px;
+}
+
+.meta-challenge {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--challenge-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.meta-challenge span + span::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 7px 2px 0;
+  border-radius: 50%;
+  background: #b6beca;
+}
+
+.kartu-konten h3 {
+  margin-top: 13px;
+  color: var(--challenge-heading);
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+.kartu-konten p {
+  margin-top: 11px;
+  color: var(--challenge-muted);
+  font-size: 12px;
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+.tag-challenge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 19px;
+}
+
+.tag-challenge span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: var(--challenge-soft);
+  color: #667085;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.tombol-detail {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  border: 1px solid var(--challenge-line);
+  border-radius: 9px;
+  background: #ffffff;
+  color: var(--challenge-heading);
+  font-size: 11px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.tombol-detail span {
+  color: var(--challenge-primary);
+  font-size: 17px;
+  transition: transform 0.2s ease;
+}
+
+.kartu-challenge:hover .tombol-detail,
+.tombol-detail:hover {
+  border-color: var(--challenge-primary);
+  color: var(--challenge-primary);
+}
+
+.kartu-challenge:hover .tombol-detail span,
+.tombol-detail:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   DETAIL / POPUP
+   Hidden dari awal melalui atribut hidden di HTML.
+========================================================= */
+
+.lapisan-detail[hidden],
+.popup-detail[hidden] {
+  display: none !important;
+}
+
+.lapisan-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(15, 23, 42, 0.58);
+  backdrop-filter: blur(7px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.lapisan-detail.aktif {
+  opacity: 1;
+}
+
+.popup-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 910;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  opacity: 0;
+  transform: scale(0.985);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.popup-detail.aktif {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-detail-scroll {
+  width: min(1180px, 100%);
+  height: min(850px, calc(100vh - 72px));
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: 0 35px 100px rgba(15, 23, 42, 0.28);
+  scrollbar-width: thin;
+}
+
+.popup-detail-kepala {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  padding: 0 34px;
+  border-bottom: 1px solid var(--challenge-line);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(15px);
+}
+
+.tombol-kembali {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: var(--challenge-heading);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.tombol-kembali:hover {
+  color: var(--challenge-primary);
+}
+
+.popup-label {
+  color: var(--challenge-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.popup-detail-isi {
+  padding: 55px 65px 70px;
+}
+
+.popup-intro {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 25px;
+  align-items: start;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--challenge-line);
+}
+
+.popup-ikon {
+  width: 85px;
+  height: 85px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background: var(--challenge-primary-soft);
+  color: var(--challenge-primary);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.popup-intro-teks h2 {
+  margin-top: 8px;
+  color: var(--challenge-heading);
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+}
+
+.popup-intro-teks > p {
+  max-width: 730px;
+  margin-top: 16px;
+  color: var(--challenge-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.popup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.popup-tags span {
+  padding: 7px 11px;
+  border-radius: 7px;
+  background: var(--challenge-soft);
+  color: #5e6a7b;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.popup-tags span:last-child {
+  background: #edf9f2;
+  color: #198754;
+}
+
+.popup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 70px;
+  padding-top: 55px;
+}
+
+.popup-kolom-utama {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.blok-detail {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 22px;
+}
+
+.nomor-blok {
+  color: var(--challenge-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.blok-detail h3 {
+  color: var(--challenge-heading);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.blok-detail p,
+.blok-detail li {
+  color: var(--challenge-muted);
+  font-size: 13px;
+  line-height: 1.85;
+  font-weight: 500;
+}
+
+.blok-detail p {
+  margin-top: 11px;
+}
+
+.blok-detail ul {
+  margin-top: 13px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.blok-detail li + li {
+  margin-top: 6px;
+}
+
+.penilaian-list {
+  margin-top: 18px;
+  border-top: 1px solid var(--challenge-line);
+}
+
+.penilaian-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--challenge-line);
+}
+
+.penilaian-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.penilaian-item strong {
+  color: var(--challenge-heading);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.penilaian-item span {
+  color: var(--challenge-muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.penilaian-item > span {
+  flex: 0 0 auto;
+  color: var(--challenge-primary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.popup-sidebar {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.info-card {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--challenge-line);
+}
+
+.info-card:first-child {
+  padding-top: 0;
+}
+
+.info-card span {
+  display: block;
+  color: var(--challenge-muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-card strong {
+  display: block;
+  margin-top: 5px;
+  color: var(--challenge-heading);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.info-card p {
+  margin-top: 5px;
+  color: var(--challenge-muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.tombol-mulai {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--challenge-primary);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.tombol-mulai span {
+  font-size: 18px;
+}
+
+.tombol-mulai:hover {
+  background: var(--challenge-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   FORM FOOTER
+========================================================= */
+
+.footer .berlangganan {
+  color: #ffffff;
+}
+
+.footer .berlangganan .berlangganan-informasi h2,
+.footer .berlangganan .berlangganan-informasi p {
+  font-family: "Raleway", sans-serif;
+}
+
+.footer .formulir-berlangganan input {
+  font-family: "Raleway", sans-serif;
+}
+
+.footer .formulir-berlangganan button {
+  font-family: "Raleway", sans-serif;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+  main {
+    padding-top: 74px;
+  }
+
+  .hero-wadah {
+    gap: 35px;
+  }
+
+  .grid-challenge {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popup-grid {
+    gap: 45px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-wadah {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-konten {
+    max-width: 760px;
+  }
+
+  .hero-visual {
+    min-height: 420px;
+  }
+
+  .kepala-bagian {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filter-challenge {
+    justify-content: flex-start;
+  }
+
+  .popup-detail {
+    padding: 20px;
+  }
+
+  .popup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .info-card,
+  .info-card:first-child {
+    padding: 16px;
+    border: 1px solid var(--challenge-line);
+    border-radius: 12px;
+  }
+
+  .tombol-mulai {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding-top: 74px;
+  }
+
+  .wadah {
+    width: min(calc(100% - 30px), var(--challenge-container));
+    padding-inline: 15px;
+  }
+
+  .hero-challenge {
+    padding: 65px 0 75px;
+  }
+
+  .hero-konten h1 {
+    font-size: clamp(43px, 13vw, 65px);
+  }
+
+  .hero-konten > p {
+    font-size: 14px;
+  }
+
+  .hero-statistik {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .hero-visual {
+    min-height: 365px;
+  }
+
+  .lingkaran-satu {
+    width: 340px;
+    height: 340px;
+  }
+
+  .lingkaran-dua {
+    width: 260px;
+    height: 260px;
+  }
+
+  .kartu-hero {
+    width: min(320px, 82%);
+    min-height: 280px;
+  }
+
+  .kartu-xp {
+    top: 25px;
+    right: 0;
+  }
+
+  .kartu-streak {
+    bottom: 25px;
+    left: 0;
+  }
+
+  .bagian-challenge {
+    padding: 75px 0 90px;
+  }
+
+  .grid-challenge {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-challenge {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .filter-challenge button {
+    flex: 0 0 auto;
+  }
+
+  .popup-detail {
+    padding: 10px;
+  }
+
+  .popup-detail-scroll {
+    height: calc(100vh - 20px);
+    border-radius: 18px;
+  }
+
+  .popup-detail-kepala {
+    min-height: 62px;
+    padding: 0 18px;
+  }
+
+  .popup-label {
+    display: none;
+  }
+
+  .popup-detail-isi {
+    padding: 30px 22px 45px;
+  }
+
+  .popup-intro {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-bottom: 32px;
+  }
+
+  .popup-ikon {
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+  }
+
+  .popup-intro-teks h2 {
+    font-size: clamp(31px, 10vw, 48px);
+  }
+
+  .popup-grid {
+    padding-top: 35px;
+  }
+
+  .blok-detail {
+    grid-template-columns: 30px 1fr;
+    gap: 13px;
+  }
+
+  .popup-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .tombol-mulai {
+    grid-column: auto;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .footer .berlangganan .berlangganan-informasi h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .hero-statistik {
+    gap: 16px;
+  }
+
+  .statistik-item strong {
+    font-size: 19px;
+  }
+
+  .kartu-melayang {
+    min-width: 128px;
+    padding: 12px 14px;
+  }
+
+  .popup-detail-isi {
+    padding-inline: 17px;
+  }
+}
