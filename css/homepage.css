@@ -390,106 +390,6 @@ section.bagian-pahlawan
   }
 }
 
-@media (max-width: 900px) {
-  section.bagian-pahlawan div.wadah-utama div.konten-pahlawan {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    h1.judul-utama {
-    font-size: 1.8rem;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    form.formulir-nomor {
-    margin: 0 auto;
-  }
-
-  section.bagian-pahlawan div.wadah-utama div.konten-pahlawan div.sisi-kanan {
-    justify-content: center;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.kartu-layanan-bawah
-    div.daftar-layanan {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    h1.judul-utama {
-    font-size: 1.5rem;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    form.formulir-nomor
-    div.kotak-input {
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 16px;
-    gap: 12px;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    form.formulir-nomor
-    div.kotak-input
-    span.teks-kode {
-    border-right: none;
-    border-bottom: 1px solid #e0e0e0;
-    padding-right: 0;
-    padding-bottom: 8px;
-    width: 100%;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    form.formulir-nomor
-    div.kotak-input
-    input.input-nomor {
-    width: 100%;
-    text-align: center;
-    padding: 6px 0;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.konten-pahlawan
-    div.sisi-kiri
-    form.formulir-nomor
-    div.kotak-input
-    button.tombol-diskon {
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  section.bagian-pahlawan
-    div.wadah-utama
-    div.kartu-layanan-bawah
-    div.daftar-layanan {
-    grid-template-columns: 1fr;
-  }
-}
 .bagian-kursus {
   width: 100%;
   padding: 80px 20px;
@@ -746,14 +646,24 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .lingkaran-ikon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
   font-size: 1.25rem;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kanan
+  .kartu-info
+  .lingkaran-ikon
+  svg {
+  height: 20px;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
@@ -766,15 +676,6 @@ section.bagian-pahlawan
   color: #1b6cfb;
 }
 
-@media (max-width: 992px) {
-  .bagian-tentang .wadah .kisi-tentang {
-    grid-template-columns: 1fr;
-  }
-
-  .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
-    min-height: 450px;
-  }
-}
 .bagian-tentang {
   width: 100%;
   padding: 80px 20px;
@@ -1421,6 +1322,26 @@ section.bagian-pahlawan
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri
+  .konten-kartu
+  .tombol-lingkaran
+  svg {
+  width: 28px;
+  fill: white;
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri:hover
+  .konten-kartu
+  .tombol-lingkaran
+  svg {
+  fill: #0b51cd;
+}
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .gambar-pratinjau {
   transform: scale(1.08);
@@ -1871,4 +1792,231 @@ section.bagian-pahlawan
 
 .kartu-kursus {
   cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+  .kartu-kursus {
+    min-width: 340px;
+  }
+  .bagian-kursus .wadah .daftar-kursus {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bagian-tentang .wadah .kisi-tentang {
+    grid-template-columns: 1fr;
+  }
+
+  .bagian-tentang
+    .wadah
+    .kisi-tentang
+    .kolom-kiri
+    .kartu-statistik
+    .angka-statistik {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+
+  .bagian-tentang .wadah .kisi-tentang .kolom-kiri {
+    min-height: 584px;
+  }
+  .bagian-tentang .wadah .kisi-tentang .kolom-kanan .judul-info {
+    font-size: 1.3em !important;
+  }
+  .bagian-tentang
+    .wadah
+    .kisi-tentang
+    .kolom-kanan
+    .kartu-gelap
+    .deskripsi-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  section.bagian-pahlawan div.wadah-utama div.konten-pahlawan {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    h1.judul-utama {
+    font-size: 2.4rem;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    form.formulir-nomor {
+    margin: 0 auto;
+    max-width: unset;
+  }
+
+  section.bagian-pahlawan div.wadah-utama div.konten-pahlawan div.sisi-kanan {
+    justify-content: center;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.kartu-layanan-bawah
+    div.daftar-layanan {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 664px) {
+  .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri.kartu-kiri .konten-kartu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .bagian-pratinjau .wadah,
+  .bagian-faq .wadah,
+  .bagian-testimoni .wadah {
+    padding: 0;
+  }
+  .bagian-pratinjau
+    .wadah
+    .kisi-galeri
+    .kartu-galeri
+    .konten-kartu
+    .tombol-aksi,
+  .bagian-pratinjau
+    .wadah
+    .kisi-galeri
+    .kartu-galeri
+    .konten-kartu
+    .tombol-lingkaran {
+    display: none;
+  }
+  .bagian-mengapa-kami .wadah .kepala-bagian .deskripsi-utama,
+  .bagian-pratinjau .wadah .kepala-pratinjau .deskripsi-utama,
+  .deskripsi-utama {
+    font-size: 14px;
+  }
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .judul-kartu {
+    font-size: 18px;
+  }
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-keunggulan .wadah-ikon {
+    width: 52px;
+    height: 52px;
+  }
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-putih .wadah-ikon img,
+  .bagian-mengapa-kami .wadah .kisi-keunggulan .kartu-utama .wadah-ikon img {
+    width: 28px;
+  }
+  .bagian-mengapa-kami
+    .wadah
+    .kisi-keunggulan
+    .kartu-keunggulan
+    .deskripsi-kartu {
+    font-size: 14px;
+  }
+  .bagian-mengapa-kami .wadah {
+    padding: 0;
+    gap: 24px;
+  }
+  .bagian-tentang,
+  .bagian-mengapa-kami {
+    padding-top: 24px;
+  }
+  .bagian-tentang
+    .wadah
+    .kisi-tentang
+    .kolom-kiri
+    .kartu-statistik
+    .angka-statistik {
+    font-size: 2rem;
+  }
+  .bagian-tentang .wadah .kisi-tentang .kolom-kiri .kartu-statistik {
+    margin: 16px;
+  }
+  .bagian-tentang
+    .wadah
+    .kisi-tentang
+    .kolom-kiri
+    .kartu-statistik
+    .deskripsi-statistik {
+    font-size: 14px;
+  }
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    h1.judul-utama {
+    font-size: 1.85rem;
+  }
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    form.formulir-nomor
+    div.kotak-input {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    form.formulir-nomor
+    div.kotak-input
+    span.teks-kode {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    form.formulir-nomor
+    div.kotak-input
+    input.input-nomor {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.konten-pahlawan
+    div.sisi-kiri
+    form.formulir-nomor
+    div.kotak-input
+    button.tombol-diskon {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  section.bagian-pahlawan
+    div.wadah-utama
+    div.kartu-layanan-bawah
+    div.daftar-layanan {
+    grid-template-columns: 1fr;
+  }
 }

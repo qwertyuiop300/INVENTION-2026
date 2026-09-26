@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.hidden {
+  display: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -623,7 +627,7 @@ input {
 }
 
 .footer .berlangganan {
-  width: 100%;
+  width: calc(100% - 48px);
   min-height: 260px;
   display: grid;
   grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.35fr);
@@ -823,6 +827,9 @@ input {
     color 0.25s ease,
     transform 0.25s ease;
 }
+.footer .identitas .sosial a svg {
+  width: 20px;
+}
 
 .footer .identitas .sosial a:hover {
   color: var(--warna-biru);
@@ -947,7 +954,13 @@ input {
 @media (max-width: 900px) {
   .footer .berlangganan {
     grid-template-columns: 0.8fr 1.2fr;
-    padding-inline: 28px;
+  }
+
+  .footer .berlangganan .berlangganan-informasi h2 {
+    font-size: 28px;
+  }
+  .footer .berlangganan .berlangganan-informasi p {
+    font-size: 14px;
   }
 
   .footer .bagian-utama {
@@ -964,6 +977,30 @@ input {
   }
 }
 
+@media (max-width: 764px) {
+  .footer .berlangganan {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer .berlangganan .berlangganan-informasi {
+    padding: 0;
+  }
+  .footer .berlangganan .berlangganan-informasi {
+    width: 100%;
+    padding: 40px 32px;
+    padding-bottom: 0;
+  }
+  .footer .berlangganan .berlangganan-informasi h2 {
+    text-align: center;
+  }
+  .footer .berlangganan .berlangganan-informasi p {
+    text-align: center;
+  }
+  .footer .formulir-berlangganan {
+    max-width: unset;
+  }
+}
+
 @media (max-width: 640px) {
   .wadah {
     padding-inline: 18px;
@@ -976,16 +1013,16 @@ input {
   .footer .berlangganan {
     grid-template-columns: 1fr;
     gap: 4px;
-    padding: 22px 20px 26px;
     text-align: center;
   }
 
   .footer .berlangganan .berlangganan-ilustrasi {
-    height: 150px;
+    height: auto;
+    padding: 0 20px;
   }
 
   .footer .berlangganan .berlangganan-ilustrasi img {
-    height: 150px;
+    height: auto;
   }
 
   .footer .berlangganan .berlangganan-informasi h2 {
@@ -1066,9 +1103,9 @@ input {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .footer .kolom-tautan .kelompok-tautan {
-    align-items: center;
+  .footer .kolom-tautan .kelompok-tautan a,
+  .footer .kontak a {
+    text-align: left;
   }
 
   .footer .formulir-berlangganan .input-grup {
@@ -1146,6 +1183,10 @@ input {
   border-radius: 6px;
   font-size: 1.1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .kartu-kursus .bagian-konten {
@@ -1242,4 +1283,74 @@ input {
 .kartu-kursus .bagian-konten .bagian-instruktur .pengalaman {
   font-size: 0.8rem;
   color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .head-section {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sub-head-section {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer .bagian-utama .cover {
+    flex-direction: column;
+  }
+  .footer .identitas {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer .identitas p {
+    text-align: left;
+  }
+  .footer .paling-bawah .paling-bawah-isi .tautan-legal {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .head-section {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .sub-head-section {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  .bagian-kursus .wadah {
+    padding: 0;
+  }
+}
+
+@media (max-width: 564px) {
+  .footer .kolom-tautan .kelompok-tautan h3,
+  .footer .kontak h3 {
+    font-size: 14px;
+  }
+  .footer .kolom-tautan .kelompok-tautan a,
+  .footer .kontak a {
+    font-size: 14px;
+  }
+  .footer .kolom-tautan .kelompok-tautan {
+    flex: 1;
+    min-width: 100px;
+  }
+  .footer .kolom-tautan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
