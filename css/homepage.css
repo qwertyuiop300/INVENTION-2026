@@ -746,14 +746,24 @@ section.bagian-pahlawan
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .lingkaran-ikon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
   font-size: 1.25rem;
+}
+
+.bagian-tentang
+  .wadah
+  .kisi-tentang
+  .kolom-kanan
+  .kartu-info
+  .lingkaran-ikon
+  svg {
+  height: 20px;
 }
 
 .bagian-tentang .wadah .kisi-tentang .kolom-kanan .kartu-info .ikon-oranye {
@@ -1420,6 +1430,26 @@ section.bagian-pahlawan
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
+}
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri
+  .konten-kartu
+  .tombol-lingkaran
+  svg {
+  width: 28px;
+  fill: white;
+}
+
+.bagian-pratinjau
+  .wadah
+  .kisi-galeri
+  .kartu-galeri:hover
+  .konten-kartu
+  .tombol-lingkaran
+  svg {
+  fill: #0b51cd;
 }
 
 .bagian-pratinjau .wadah .kisi-galeri .kartu-galeri:hover .gambar-pratinjau {
