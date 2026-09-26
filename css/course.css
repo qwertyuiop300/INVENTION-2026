@@ -120,6 +120,13 @@ img {
 
 .halaman-kursus .bagian-detail .jalur-halaman a {
   transition: color var(--transisi);
+  font-size: 16px;
+}
+.halaman-kursus .bagian-detail .jalur-halaman span {
+  font-size: 16px;
+}
+.halaman-kursus .bagian-detail .jalur-halaman strong {
+  font-size: 16px;
 }
 
 .halaman-kursus .bagian-detail .jalur-halaman a:hover {
@@ -150,7 +157,7 @@ img {
   max-width: 650px;
   margin-top: 24px;
   color: var(--putih);
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -2.2px;
@@ -192,8 +199,8 @@ img {
   .detail-utama__pengajar
   .pengajar-mini {
   overflow: hidden;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   background: var(--biru-muda);
@@ -220,7 +227,7 @@ img {
   span {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .halaman-kursus
@@ -233,7 +240,7 @@ img {
   display: block;
   margin-top: 2px;
   color: var(--putih);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -268,7 +275,7 @@ img {
   .detail-utama__rating
   .rating-bintang {
   color: #ffd35c;
-  font-size: 13px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
@@ -280,7 +287,7 @@ img {
   .detail-utama__rating
   strong {
   color: var(--putih);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .halaman-kursus
@@ -291,7 +298,7 @@ img {
   .detail-utama__rating
   span {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .halaman-kursus
@@ -328,8 +335,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 48px;
+  height: 48px;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.13);
   color: #c9edff;
@@ -343,8 +350,8 @@ img {
   .statistik-kursus
   .statistik-kursus__ikon
   svg {
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
 }
 
 .halaman-kursus
@@ -356,7 +363,7 @@ img {
   strong {
   display: block;
   color: var(--putih);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -370,7 +377,7 @@ img {
   display: block;
   margin-top: 2px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .halaman-kursus .bagian-detail .detail-utama .detail-utama__preview {
@@ -624,7 +631,7 @@ img {
   .blok-kursus
   .judul-blok {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 15px;
   margin-bottom: 27px;
 }
@@ -638,7 +645,6 @@ img {
   .judul-blok__penanda {
   flex-shrink: 0;
   width: 5px;
-  height: 42px;
   border-radius: 5px;
   background: var(--biru-utama);
 }
@@ -653,7 +659,7 @@ img {
   display: block;
   margin-bottom: 4px;
   color: var(--biru-utama);
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.3px;
 }
@@ -676,7 +682,7 @@ img {
   max-width: 800px;
   margin-bottom: 17px;
   color: var(--teks-sekunder);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -720,9 +726,8 @@ img {
   .daftar-pembelajaran
   .item-pembelajaran:hover {
   border-color: #bfd5f4;
-  background: var(--biru-latar);
-  box-shadow: 0 10px 25px rgba(36, 99, 201, 0.05);
-  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(36, 99, 201, 0.02);
+  transform: translateY(-1px);
 }
 
 .halaman-kursus
@@ -737,8 +742,8 @@ img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 10px;
   background: var(--biru-terang);
   color: var(--biru-utama);
@@ -753,8 +758,8 @@ img {
   .item-pembelajaran
   .item-pembelajaran__ikon
   svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .halaman-kursus
@@ -766,7 +771,7 @@ img {
   .item-pembelajaran
   h3 {
   color: var(--teks-utama);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -780,7 +785,7 @@ img {
   p {
   margin-top: 5px;
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -801,7 +806,7 @@ img {
   .judul-blok--dengan-aksi
   .judul-blok__kiri {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 15px;
 }
 
@@ -816,8 +821,9 @@ img {
   border-radius: 7px;
   background: var(--biru-terang);
   color: var(--biru-utama);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
+  height: fit-content;
 }
 
 .halaman-kursus
@@ -894,7 +900,7 @@ img {
   border-radius: 10px;
   background: var(--biru-terang);
   color: var(--biru-utama);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -921,7 +927,7 @@ img {
   .modul__informasi
   h3 {
   color: var(--teks-utama);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -938,7 +944,7 @@ img {
   display: block;
   margin-top: 4px;
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .halaman-kursus
@@ -999,7 +1005,7 @@ img {
   .modul
   .modul__isi {
   display: none;
-  padding: 0 22px 18px 79px;
+  padding: 0 22px 18px 22px;
   border-top: 1px solid var(--garis);
   background: #fcfdff;
 }
@@ -1059,6 +1065,7 @@ img {
   border-bottom: 1px solid #edf1f6;
   color: var(--teks-sekunder);
   font-size: 11px;
+  cursor: pointer;
 }
 
 .halaman-kursus
@@ -1115,8 +1122,25 @@ img {
   .materi
   .materi__ikon
   svg {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
+  color: #0b51cd;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kurikulum
+  .modul
+  .modul__isi
+  .materi
+  .materi__kiri
+  span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #17243a;
 }
 
 .halaman-kursus
@@ -1131,7 +1155,7 @@ img {
   .materi__durasi {
   flex-shrink: 0;
   color: var(--teks-lembut);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .halaman-kursus
@@ -1146,7 +1170,7 @@ img {
   padding: 28px;
   border: 1px solid var(--garis);
   border-radius: 18px;
-  background: var(--biru-latar);
+  background-color: white;
 }
 
 .halaman-kursus
@@ -1197,10 +1221,10 @@ img {
   .kartu-instruktur
   .kartu-instruktur__informasi
   .kartu-instruktur__label {
-  color: var(--biru-utama);
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.2px;
+  display: none;
 }
 
 .halaman-kursus
@@ -1212,8 +1236,8 @@ img {
   .kartu-instruktur__informasi
   h3 {
   margin-top: 7px;
-  color: var(--teks-utama);
-  font-size: 19px;
+  color: var(--biru-utama);
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -1225,9 +1249,9 @@ img {
   .kartu-instruktur
   .kartu-instruktur__informasi
   .kartu-instruktur__profesi {
+  color: var(--teks-utama);
   margin-top: 2px;
-  color: var(--biru-utama);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1242,7 +1266,7 @@ img {
   max-width: 600px;
   margin-top: 13px;
   color: var(--teks-sekunder);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -1270,11 +1294,28 @@ img {
   .kartu-instruktur
   .kartu-instruktur__informasi
   .kartu-instruktur__statistik
+  > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 1px solid #dce8f7;
+
+  flex: 1;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .konten-kursus
+  .blok-kursus
+  .kartu-instruktur
+  .kartu-instruktur__informasi
+  .kartu-instruktur__statistik
   div
   strong {
   display: block;
   color: var(--teks-utama);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -1291,7 +1332,7 @@ img {
   display: block;
   margin-top: 3px;
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan {
@@ -1350,7 +1391,7 @@ img {
   .kartu-pembelian__label
   span {
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -1364,9 +1405,9 @@ img {
   strong {
   padding: 7px 10px;
   border-radius: 6px;
-  background: #eaf8f1;
-  color: #21a36f;
-  font-size: 9px;
+  background: #0b52cd11;
+  color: #0b51cd;
+  font-size: 12px;
   font-weight: 800;
 }
 
@@ -1390,7 +1431,7 @@ img {
   .harga-kursus__lama {
   display: block;
   color: var(--teks-lembut);
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: line-through;
 }
 
@@ -1451,7 +1492,7 @@ img {
   p {
   margin-top: 7px;
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
@@ -1468,12 +1509,12 @@ img {
   gap: 13px;
   width: 100%;
   min-height: 54px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0 20px;
   border-radius: 10px;
-  background: var(--oranye);
+  background: #0b51cd;
   color: var(--putih);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   transition:
     background var(--transisi),
@@ -1488,9 +1529,32 @@ img {
   .kartu-pembelian
   .kartu-pembelian__isi
   .tombol-pembelian:hover {
-  background: var(--oranye-gelap);
-  box-shadow: 0 10px 25px rgba(255, 117, 24, 0.22);
+  background: #0a4ab7;
+  box-shadow: 0 10px 25px rgba(24, 70, 255, 0.02);
   transform: translateY(-3px);
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian.socratic {
+  background-color: white;
+  border: 1px solid #0b51cd;
+  margin-top: 12px;
+  color: #0b51cd;
+}
+
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .tombol-pembelian.socratic:hover {
+  background-color: white;
 }
 
 .halaman-kursus
@@ -1541,9 +1605,19 @@ img {
   .kartu-pembelian__isi
   .jaminan-pembelian
   svg {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   color: #21a36f;
+}
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .jaminan-pembelian
+  p {
+  font-size: 14px;
 }
 
 .halaman-kursus
@@ -1567,8 +1641,8 @@ img {
   .kartu-pembelian__isi
   .judul-fitur {
   color: var(--teks-utama);
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .halaman-kursus
@@ -1599,7 +1673,17 @@ img {
   color: var(--teks-sekunder);
   font-size: 11px;
 }
-
+.halaman-kursus
+  .bagian-isi
+  .susunan-isi
+  .sisi-kanan
+  .kartu-pembelian
+  .kartu-pembelian__isi
+  .daftar-fitur
+  li
+  span {
+  font-size: 14px;
+}
 .halaman-kursus
   .bagian-isi
   .susunan-isi
@@ -1630,8 +1714,8 @@ img {
   li
   .fitur__ikon
   svg {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan {
@@ -1641,7 +1725,9 @@ img {
   margin-top: 22px;
   padding: 23px;
   border-radius: 16px;
-  background: var(--biru-terang);
+  background: white;
+  box-shadow: var(--bayangan);
+  border: 1px solid var(--garis);
 }
 
 .halaman-kursus
@@ -1674,14 +1760,14 @@ img {
 
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan h3 {
   color: var(--teks-utama);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
 }
 
 .halaman-kursus .bagian-isi .susunan-isi .sisi-kanan .kartu-bantuan p {
   margin-top: 5px;
   color: var(--teks-sekunder);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
@@ -1691,7 +1777,7 @@ img {
   gap: 7px;
   margin-top: 11px;
   color: var(--biru-utama);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   transition: transform var(--transisi);
 }
