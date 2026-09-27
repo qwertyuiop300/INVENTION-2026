@@ -43,7 +43,7 @@ body {
   background-color: var(--warna-latar);
   color: var(--warna-teks);
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
 
   line-height: 1.6;
@@ -82,7 +82,7 @@ body img {
   background-color: #ffffff;
   border-bottom: 1px solid #e8e8e8;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .navigasi .wadah {
@@ -448,7 +448,7 @@ body img {
 
   color: #222222;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
 
@@ -503,13 +503,11 @@ body img {
 
   border-radius: 5px;
 
-  background-color: var(--warna-biru);
-
-  color: #ffffff !important;
+  border: 1px solid #bebdbd !important;
+  color: #5f5e5e !important;
+  background-color: white;
 
   text-align: center;
-
-  border: none !important;
 }
 
 /* =========================================================
@@ -558,7 +556,7 @@ body img {
 
   color: var(--warna-biru);
 
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 
   letter-spacing: 1.5px;
@@ -569,8 +567,8 @@ body img {
 
   color: var(--warna-teks);
 
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 600;
 
   line-height: 1.25;
 }
@@ -584,7 +582,7 @@ body img {
 .dashboard .wadah-dashboard .kepala-dashboard .teks-kepala p {
   color: var(--warna-teks-lembut);
 
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dashboard .wadah-dashboard .kepala-dashboard .tanggal-dashboard {
@@ -602,7 +600,7 @@ body img {
 
   color: var(--warna-teks-lembut);
 
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -655,8 +653,8 @@ body img {
 }
 
 .dashboard .wadah-dashboard .statistik .kartu-statistik .ikon-statistik {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
 
   flex-shrink: 0;
 
@@ -701,14 +699,14 @@ body img {
 
   color: var(--warna-teks-lembut);
 
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .dashboard .wadah-dashboard .statistik .kartu-statistik .isi-statistik strong {
   color: var(--warna-teks);
 
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
 
   line-height: 1.2;
@@ -717,7 +715,7 @@ body img {
 .dashboard .wadah-dashboard .statistik .kartu-statistik .isi-statistik small {
   color: #9aa1ad;
 
-  font-size: 10px;
+  font-size: 14px;
 }
 
 /* =========================================================
@@ -771,7 +769,7 @@ body img {
 
   color: var(--warna-biru);
 
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
 
   letter-spacing: 1.3px;
@@ -780,8 +778,8 @@ body img {
 .dashboard .wadah-dashboard .area-utama .konten-kiri .bagian .judul-bagian h2 {
   color: var(--warna-teks);
 
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .dashboard .wadah-dashboard .area-utama .konten-kiri .bagian .judul-bagian > a {
@@ -792,7 +790,7 @@ body img {
 
   color: var(--warna-biru);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 
   transition:
@@ -955,7 +953,7 @@ body img {
   > span {
   color: var(--warna-biru);
 
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -992,7 +990,7 @@ body img {
 
   color: var(--warna-teks);
 
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -1010,7 +1008,7 @@ body img {
 
   color: var(--warna-teks-lembut);
 
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -1031,13 +1029,13 @@ body img {
 
   color: #777f8d;
 
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .teks-progress strong {
   color: var(--warna-teks);
 
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .batang-progress {
@@ -1085,9 +1083,9 @@ body img {
   .isi-lanjut
   .bawah-lanjut
   > span {
-  color: #858c98;
+  color: #545555;
 
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .dashboard
@@ -1122,7 +1120,7 @@ body img {
 
   color: #ffffff;
 
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
 
   transition:
@@ -1262,7 +1260,7 @@ body img {
 
   color: var(--warna-biru);
 
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 
   letter-spacing: 1px;
@@ -1283,8 +1281,8 @@ body img {
 
   color: var(--warna-teks);
 
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
 
   line-height: 1.5;
 }
@@ -1335,7 +1333,7 @@ body img {
 .judul-kartu-samping h3 {
   color: var(--warna-teks);
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1352,7 +1350,7 @@ body img {
 .judul-kartu-samping a {
   color: var(--warna-biru);
 
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1410,7 +1408,7 @@ body img {
   strong {
   color: var(--warna-teks);
 
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -1424,7 +1422,7 @@ body img {
   span {
   color: #969eaa;
 
-  font-size: 8px;
+  font-size: 14px;
 }
 
 .dashboard .wadah-dashboard .area-utama .sisi-dashboard .kartu-target h4 {
@@ -1432,7 +1430,7 @@ body img {
 
   color: var(--warna-teks);
 
-  font-size: 12px;
+  font-size: 16px;
 
   text-align: center;
 }
@@ -1442,7 +1440,7 @@ body img {
 
   color: var(--warna-teks-lembut);
 
-  font-size: 10px;
+  font-size: 14px;
 
   line-height: 1.6;
 
@@ -1461,7 +1459,7 @@ body img {
 
   color: #7e8794;
 
-  font-size: 9px;
+  font-size: 14px;
 }
 
 .dashboard
@@ -1602,7 +1600,7 @@ body img {
 
   color: var(--warna-teks);
 
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
 
   text-overflow: ellipsis;
@@ -1620,7 +1618,7 @@ body img {
   span {
   color: #9aa1ad;
 
-  font-size: 8px;
+  font-size: 14px;
 }
 
 /* =========================================================
@@ -1662,8 +1660,8 @@ body img {
   .sisi-dashboard
   .kartu-achievement
   .ikon-achievement {
-  width: 42px;
-  height: 42px;
+  width: 56px;
+  height: 56px;
 
   flex-shrink: 0;
 
@@ -1675,7 +1673,7 @@ body img {
 
   border-radius: 11px;
 
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .dashboard
@@ -1699,7 +1697,7 @@ body img {
 
   color: rgba(255, 255, 255, 0.72);
 
-  font-size: 8px;
+  font-size: 14px;
 }
 
 .dashboard
@@ -1709,7 +1707,7 @@ body img {
   .kartu-achievement
   > div:last-child
   strong {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1722,7 +1720,7 @@ body img {
   p {
   color: rgba(255, 255, 255, 0.75);
 
-  font-size: 8px;
+  font-size: 14px;
 }
 
 /* =========================================================

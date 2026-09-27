@@ -6,11 +6,11 @@
 
     <title>My Learning | Socratic</title>
 
-    <!-- FONT MONTSERRAT -->
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- CSS UTAMA -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -79,8 +80,13 @@
           <a href="challenge.html" class="tautan-menu"> Challenge </a>
         </div>
         <div class="menu-kanan">
-          <a href="login.html" class="masuk"> Log in </a>
-          <a href="course-list.html" class="tombol"> Start Learning </a>
+          <div class="profile">
+            <img src="./assets/imgs/user-1.png" alt="user profile" />
+            <div class="detail">
+              <h3>Dode Maha</h3>
+              <span>Level 18</span>
+            </div>
+          </div>
         </div>
         <button
           class="tombol-hamburger"
@@ -143,9 +149,15 @@
 
         <div class="garis-sidebar"></div>
 
-        <a href="login.html">Log in</a>
+        <div class="profile">
+          <img src="./assets/imgs/user-1.png" alt="user profile" />
+          <div class="detail">
+            <h3>Dode Maha</h3>
+            <span>Level 18</span>
+          </div>
+        </div>
 
-        <a href="course-list.html" class="tombol-sidebar"> Start Learning </a>
+        <a href="course-list.html" class="tombol-sidebar"> Logout </a>
       </div>
     </aside>
 
@@ -250,28 +262,23 @@
 
               <article class="kartu-lanjut">
                 <div class="gambar-lanjut">
-                  <img
-                    src="https://placehold.co/560x340/e7efff/2563eb?text=Course+Image"
-                    alt="Gambar kursus"
-                  />
-
-                  <span class="label-kursus"> WEB DEVELOPMENT </span>
+                  <img src="./assets/imgs/course-1.png" alt="Gambar kursus" />
                 </div>
 
                 <div class="isi-lanjut">
                   <div class="atas-lanjut">
-                    <span>HTML & CSS</span>
+                    <span>UIUX</span>
 
                     <button class="tombol-tiga" aria-label="More options">
                       <i class="fa-solid fa-ellipsis"></i>
                     </button>
                   </div>
 
-                  <h3>Membuat Website dari Nol</h3>
+                  <h3>UX Design Beginner</h3>
 
                   <p>
-                    Pelajari dasar HTML dan CSS untuk membangun website modern
-                    dari awal.
+                    Pelajari dasar UX Design untuk bekal masa depanmu melawan
+                    AI!
                   </p>
 
                   <div class="progress-lanjut">
@@ -291,10 +298,7 @@
                       4h 20m tersisa
                     </span>
 
-                    <a href="#">
-                      Lanjutkan
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <a href="./course.html"> Lanjutkan </a>
                   </div>
                 </div>
               </article>
@@ -320,21 +324,18 @@
 
                 <article class="kartu-dashboard">
                   <div class="gambar-kartu">
-                    <img
-                      src="https://placehold.co/400x230/e7efff/2563eb?text=HTML+%26+CSS"
-                      alt="HTML CSS"
-                    />
+                    <img src="./assets/imgs/course-1.png" alt="HTML CSS" />
                   </div>
 
                   <div class="isi-kartu">
-                    <span class="kategori-kartu"> DEVELOPMENT </span>
+                    <span class="kategori-kartu"> UIUX Class </span>
 
-                    <h3>HTML & CSS Fundamentals</h3>
+                    <h3>UX Design Beginner</h3>
 
                     <div class="progress-kartu">
                       <div class="teks-progress">
-                        <span>65% selesai</span>
-                        <strong>65%</strong>
+                        <span>Progress</span>
+                        <strong>72%</strong>
                       </div>
 
                       <div class="batang-progress">
@@ -346,20 +347,17 @@
 
                 <article class="kartu-dashboard">
                   <div class="gambar-kartu">
-                    <img
-                      src="https://placehold.co/400x230/e7efff/2563eb?text=Data+%26+AI"
-                      alt="Data AI"
-                    />
+                    <img src="./assets/imgs/course-2.png" alt="Data AI" />
                   </div>
 
                   <div class="isi-kartu">
-                    <span class="kategori-kartu"> TECHNOLOGY </span>
+                    <span class="kategori-kartu"> Technology </span>
 
-                    <h3>Data & Artificial Intelligence</h3>
+                    <h3>Mobile User Experience</h3>
 
                     <div class="progress-kartu">
                       <div class="teks-progress">
-                        <span>42% selesai</span>
+                        <span>Progress</span>
                         <strong>42%</strong>
                       </div>
 
@@ -372,20 +370,17 @@
 
                 <article class="kartu-dashboard">
                   <div class="gambar-kartu">
-                    <img
-                      src="https://placehold.co/400x230/e7efff/2563eb?text=UI+UX+Design"
-                      alt="UI UX"
-                    />
+                    <img src="./assets/imgs/course-3.png" alt="UI UX" />
                   </div>
 
                   <div class="isi-kartu">
-                    <span class="kategori-kartu"> DESIGN </span>
+                    <span class="kategori-kartu"> Design </span>
 
-                    <h3>UI/UX Design Fundamentals</h3>
+                    <h3>Figma Advance</h3>
 
                     <div class="progress-kartu">
                       <div class="teks-progress">
-                        <span>28% selesai</span>
+                        <span>Progress</span>
                         <strong>28%</strong>
                       </div>
 
@@ -511,6 +506,7 @@
     </main>
 
     <!-- JAVASCRIPT -->
-    <script src="./assets/js/dashboard.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

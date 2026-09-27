@@ -24,5 +24,6 @@ formulirLogin?.addEventListener("submit", (event) => {
   setTimeout(() => {
     teksTombol.textContent = "Masuk ke Akun";
     tombolMasuk.disabled = false;
+    location.href = "dashboard.html";
   }, 1000);
 });
