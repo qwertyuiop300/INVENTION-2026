@@ -233,6 +233,8 @@ p {
   gap: 26px;
 
   margin-left: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .navigasi .wadah .menu-kanan .masuk,
@@ -274,6 +276,57 @@ p {
   background-color: #174a9d;
 
   transform: translateY(-2px);
+}
+
+.navigasi .wadah .menu-kanan .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+  height: 100%;
+  padding: 14px 0;
+}
+.navigasi .wadah .menu-kanan .profile img {
+  height: 100%;
+  border: 1px solid #545454;
+  border-radius: 10000px;
+}
+.navigasi .wadah .menu-kanan .profile .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+}
+.navigasi .wadah .menu-kanan .profile .detail h3 {
+  font-size: 16px;
+}
+.navigasi .wadah .menu-kanan .profile .detail span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.sidebar .isi-sidebar .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 12px;
+}
+.sidebar .isi-sidebar .profile img {
+  height: 56px;
+}
+.sidebar .isi-sidebar .profile h3 {
+  font-size: 16px;
+}
+.sidebar .isi-sidebar .profile p {
+  font-size: 14px;
 }
 
 .navigasi .wadah .tombol-hamburger {
