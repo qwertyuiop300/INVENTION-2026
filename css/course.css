@@ -2562,3 +2562,17 @@ img {
     font-size: 11px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .halaman-kursus
+    .bagian-isi
+    .susunan-isi
+    .sisi-kanan
+    .kartu-pembelian
+    .kartu-pembelian__isi
+    .harga-kursus
+    .harga-kursus__utama
+    strong {
+    font-size: 25px;
+  }
+}

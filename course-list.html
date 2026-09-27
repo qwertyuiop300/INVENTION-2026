@@ -81,6 +81,7 @@
          SIDEBAR FILTER
          ========================================== -->
         <aside class="sidebar-nav" id="courseFilter">
+          <div class="overlay"></div>
           <div class="filter-header">
             <div>
               <h3>Temukan Course</h3>
@@ -93,7 +94,15 @@
               id="closeFilter"
               aria-label="Tutup filter"
             >
-              <i class="fa-solid fa-xmark"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
             </button>
           </div>
 
@@ -307,8 +316,16 @@
             </div>
 
             <button type="button" class="btn-open-filter" id="openFilter">
-              <i class="fa-solid fa-sliders"></i>
-              Filter Course
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-funnel"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+                />
+              </svg>
+              <span> Filter Course </span>
             </button>
           </div>
 
@@ -335,15 +352,7 @@
                   alt="UX Design Beginner"
                 />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $12.50 </span>
+                <span class="label-harga"> IDR 150.000 </span>
               </div>
 
               <div class="bagian-konten">
@@ -420,15 +429,7 @@
                   alt="Mobile User Experience"
                 />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $18.15 </span>
+                <span class="label-harga"> IDR 220.000 </span>
               </div>
 
               <div class="bagian-konten">
@@ -502,15 +503,7 @@
               <div class="bagian-gambar">
                 <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $14.60 </span>
+                <span class="label-harga"> IDR 130.000</span>
               </div>
 
               <div class="bagian-konten">
@@ -568,297 +561,34 @@
               </div>
             </a>
 
-            <!-- COURSE 4 -->
+            <!-- COURSE 1 -->
             <a
               href="course.html"
               class="kartu-kursus"
-              data-title="Design Thinking Fundamentals"
-              data-description="Belajar proses design thinking dari empati hingga prototyping"
+              data-title="UX Design Beginner"
+              data-description="Starting with UX design can be both exciting and overwhelming"
               data-category="teknologi"
               data-level="pemula"
-              data-duration="short"
-              data-status="not-started"
-              data-goals="konsep,critical-thinking"
-              data-ai="socratic,recommendation"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-1.png"
-                  alt="Design Thinking Fundamentals"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $9.90 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">Design Thinking Fundamentals</h3>
-
-                <p class="deskripsi-kursus">
-                  Belajar proses design thinking dari empati hingga
-                  prototyping...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    4.5
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    6 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    8 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-1.png"
-                      alt="Mr. Rayhan Putra"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mr. Rayhan Putra </span>
-                  </div>
-
-                  <span class="pengalaman"> (4+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 5 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="Advanced Prototyping with Figma"
-              data-description="Kuasai prototyping interaktif tingkat lanjut menggunakan Figma"
-              data-category="teknologi"
-              data-level="lanjutan"
               data-duration="long"
               data-status="not-started"
-              data-goals="praktik,critical-thinking"
-              data-ai="assessment,recommendation"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-2.png"
-                  alt="Advanced Prototyping with Figma"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $22.00 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">Advanced Prototyping with Figma</h3>
-
-                <p class="deskripsi-kursus">
-                  Kuasai prototyping interaktif tingkat lanjut menggunakan
-                  Figma...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    4.7
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    14 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    20 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-2.png"
-                      alt="Mrs. Indira Sasmita"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mrs. Indira Sasmita </span>
-                  </div>
-
-                  <span class="pengalaman"> (9+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 6 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="User Research Basics"
-              data-description="Pelajari metode riset pengguna untuk mendukung keputusan desain"
-              data-category="teknologi"
-              data-level="pemula"
-              data-duration="medium"
-              data-status="learning"
-              data-goals="konsep,praktik"
-              data-ai="socratic,assessment"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-3.png"
-                  alt="User Research Basics"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $11.20 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">User Research Basics</h3>
-
-                <p class="deskripsi-kursus">
-                  Pelajari metode riset pengguna untuk mendukung keputusan
-                  desain...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    4.2
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    9 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    11 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-3.png"
-                      alt="Mr. Bayu Kurniawan"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mr. Bayu Kurniawan </span>
-                  </div>
-
-                  <span class="pengalaman"> (6+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 7 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="Wireframing Essentials"
-              data-description="Membangun wireframe yang jelas sebelum masuk ke desain visual"
-              data-category="teknologi"
-              data-level="menengah"
-              data-duration="short"
-              data-status="not-started"
-              data-goals="praktik,konsep"
-              data-ai="recommendation"
+              data-goals="konsep,critical-thinking,praktik"
+              data-ai="socratic,assessment,recommendation"
             >
               <div class="bagian-gambar">
                 <img
                   src="./assets/imgs/course-1.png"
-                  alt="Wireframing Essentials"
+                  alt="UX Design Beginner"
                 />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $8.75 </span>
+                <span class="label-harga"> IDR 150.000 </span>
               </div>
 
               <div class="bagian-konten">
-                <h3 class="judul-kursus">Wireframing Essentials</h3>
+                <h3 class="judul-kursus">UX Design Beginner</h3>
 
                 <p class="deskripsi-kursus">
-                  Membangun wireframe yang jelas sebelum masuk ke desain
-                  visual...
+                  Starting with UX design can be both exciting and
+                  overwhelming...
                 </p>
 
                 <div class="metrik-kursus">
@@ -868,7 +598,7 @@
                       alt="Star icon"
                       class="ikon"
                     />
-                    4.0
+                    4.1
                   </span>
 
                   <span class="metrik">
@@ -877,7 +607,7 @@
                       alt="Date Icon"
                       class="ikon"
                     />
-                    5 week
+                    12 week
                   </span>
 
                   <span class="metrik">
@@ -886,7 +616,7 @@
                       alt="Book icon"
                       class="ikon"
                     />
-                    7 Lessons
+                    10 Lessons
                   </span>
                 </div>
 
@@ -896,223 +626,46 @@
                   <div class="info-instruktur">
                     <img
                       src="./assets/imgs/user-1.png"
-                      alt="Miss. Devina Ayu"
+                      alt="Miss. Vanei Carly"
                       class="avatar-instruktur"
                     />
 
-                    <span class="nama-instruktur"> Miss. Devina Ayu </span>
+                    <span class="nama-instruktur"> Miss. Vanei Carly </span>
                   </div>
 
-                  <span class="pengalaman"> (3+ Year Exp) </span>
+                  <span class="pengalaman"> (5+ Year Exp) </span>
                 </div>
               </div>
             </a>
 
-            <!-- COURSE 8 -->
+            <!-- COURSE 2 -->
             <a
               href="course.html"
               class="kartu-kursus"
-              data-title="Design Systems 101"
-              data-description="Membangun dan mengelola design system yang konsisten"
-              data-category="teknologi"
-              data-level="menengah"
-              data-duration="medium"
-              data-status="not-started"
-              data-goals="konsep,praktik"
-              data-ai="socratic,recommendation"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-2.png"
-                  alt="Design Systems 101"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $16.40 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">Design Systems 101</h3>
-
-                <p class="deskripsi-kursus">
-                  Membangun dan mengelola design system yang konsisten...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    4.4
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    10 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    13 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-2.png"
-                      alt="Mr. Arka Wibowo"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mr. Arka Wibowo </span>
-                  </div>
-
-                  <span class="pengalaman"> (7+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 9 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="Interaction Design Patterns"
-              data-description="Pola interaksi yang teruji untuk pengalaman pengguna yang lebih baik"
-              data-category="teknologi"
-              data-level="lanjutan"
-              data-duration="extra-long"
-              data-status="not-started"
-              data-goals="critical-thinking,praktik,ujian"
-              data-ai="assessment"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-3.png"
-                  alt="Interaction Design Patterns"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $25.90 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">Interaction Design Patterns</h3>
-
-                <p class="deskripsi-kursus">
-                  Pola interaksi yang teruji untuk pengalaman pengguna yang
-                  lebih baik...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    4.6
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    20 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    22 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-3.png"
-                      alt="Mrs. Salsabila Putri"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mrs. Salsabila Putri </span>
-                  </div>
-
-                  <span class="pengalaman"> (10+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 10 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="Usability Testing Methods"
-              data-description="Menguji kegunaan produk dengan metode yang tepat dan efisien"
+              data-title="Mobile User Experience"
+              data-description="Designing an exceptional mobile user experience UX involves"
               data-category="teknologi"
               data-level="menengah"
               data-duration="medium"
               data-status="learning"
-              data-goals="praktik,critical-thinking"
+              data-goals="konsep,critical-thinking,praktik"
               data-ai="socratic,assessment"
             >
               <div class="bagian-gambar">
                 <img
-                  src="./assets/imgs/course-1.png"
-                  alt="Usability Testing Methods"
+                  src="./assets/imgs/course-2.png"
+                  alt="Mobile User Experience"
                 />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $13.30 </span>
+                <span class="label-harga"> IDR 220.000 </span>
               </div>
 
               <div class="bagian-konten">
-                <h3 class="judul-kursus">Usability Testing Methods</h3>
+                <h3 class="judul-kursus">Mobile User Experience</h3>
 
                 <p class="deskripsi-kursus">
-                  Menguji kegunaan produk dengan metode yang tepat dan
-                  efisien...
+                  Designing an exceptional mobile user experience (UX)
+                  involves...
                 </p>
 
                 <div class="metrik-kursus">
@@ -1131,7 +684,7 @@
                       alt="Date Icon"
                       class="ikon"
                     />
-                    9 week
+                    8 week
                   </span>
 
                   <span class="metrik">
@@ -1140,92 +693,7 @@
                       alt="Book icon"
                       class="ikon"
                     />
-                    12 Lessons
-                  </span>
-                </div>
-
-                <hr class="garis-pemisah" />
-
-                <div class="bagian-instruktur">
-                  <div class="info-instruktur">
-                    <img
-                      src="./assets/imgs/user-1.png"
-                      alt="Mr. Fadli Ramadhan"
-                      class="avatar-instruktur"
-                    />
-
-                    <span class="nama-instruktur"> Mr. Fadli Ramadhan </span>
-                  </div>
-
-                  <span class="pengalaman"> (5+ Year Exp) </span>
-                </div>
-              </div>
-            </a>
-
-            <!-- COURSE 11 -->
-            <a
-              href="course.html"
-              class="kartu-kursus"
-              data-title="Visual Design Principles"
-              data-description="Dasar-dasar tipografi, warna, dan komposisi untuk desain visual"
-              data-category="teknologi"
-              data-level="pemula"
-              data-duration="short"
-              data-status="not-started"
-              data-goals="konsep,ujian"
-              data-ai="socratic"
-            >
-              <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-2.png"
-                  alt="Visual Design Principles"
-                />
-
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $7.50 </span>
-              </div>
-
-              <div class="bagian-konten">
-                <h3 class="judul-kursus">Visual Design Principles</h3>
-
-                <p class="deskripsi-kursus">
-                  Dasar-dasar tipografi, warna, dan komposisi untuk desain
-                  visual...
-                </p>
-
-                <div class="metrik-kursus">
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/star.png"
-                      alt="Star icon"
-                      class="ikon"
-                    />
-                    3.9
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/date.png"
-                      alt="Date Icon"
-                      class="ikon"
-                    />
-                    4 week
-                  </span>
-
-                  <span class="metrik">
-                    <img
-                      src="./assets/icon/book.png"
-                      alt="Book icon"
-                      class="ikon"
-                    />
-                    6 Lessons
+                    14 Lessons
                   </span>
                 </div>
 
@@ -1235,53 +703,43 @@
                   <div class="info-instruktur">
                     <img
                       src="./assets/imgs/user-2.png"
-                      alt="Miss. Naila Zahra"
+                      alt="Mr. Milian Deon"
                       class="avatar-instruktur"
                     />
 
-                    <span class="nama-instruktur"> Miss. Naila Zahra </span>
+                    <span class="nama-instruktur"> Mr. Milian Deon </span>
                   </div>
 
-                  <span class="pengalaman"> (2+ Year Exp) </span>
+                  <span class="pengalaman"> (8+ Year Exp) </span>
                 </div>
               </div>
             </a>
 
-            <!-- COURSE 12 -->
+            <!-- COURSE 3 -->
             <a
               href="course.html"
               class="kartu-kursus"
-              data-title="Product Design Career Path"
-              data-description="Panduan lengkap membangun karier sebagai product designer"
+              data-title="Figma Advance"
+              data-description="Figma is a powerful and versatile design tool used by UX UI designers"
               data-category="teknologi"
               data-level="lanjutan"
-              data-duration="long"
-              data-status="not-started"
-              data-goals="ujian,critical-thinking"
-              data-ai="recommendation,assessment"
+              data-duration="extra-long"
+              data-status="completed"
+              data-goals="praktik,critical-thinking"
+              data-ai="assessment,recommendation"
             >
               <div class="bagian-gambar">
-                <img
-                  src="./assets/imgs/course-3.png"
-                  alt="Product Design Career Path"
-                />
+                <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
 
-                <button
-                  class="tombol-simpan"
-                  type="button"
-                  aria-label="Simpan course"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-
-                <span class="label-harga"> $19.99 </span>
+                <span class="label-harga"> IDR 130.000</span>
               </div>
 
               <div class="bagian-konten">
-                <h3 class="judul-kursus">Product Design Career Path</h3>
+                <h3 class="judul-kursus">Figma Advance</h3>
 
                 <p class="deskripsi-kursus">
-                  Panduan lengkap membangun karier sebagai product designer...
+                  Figma is a powerful and versatile design tool used by UX/UI
+                  designers...
                 </p>
 
                 <div class="metrik-kursus">
@@ -1291,7 +749,7 @@
                       alt="Star icon"
                       class="ikon"
                     />
-                    4.8
+                    3.8
                   </span>
 
                   <span class="metrik">
@@ -1300,7 +758,7 @@
                       alt="Date Icon"
                       class="ikon"
                     />
-                    13 week
+                    16 week
                   </span>
 
                   <span class="metrik">
@@ -1309,7 +767,7 @@
                       alt="Book icon"
                       class="ikon"
                     />
-                    15 Lessons
+                    18 Lessons
                   </span>
                 </div>
 
@@ -1319,19 +777,474 @@
                   <div class="info-instruktur">
                     <img
                       src="./assets/imgs/user-3.png"
-                      alt="Mr. Galang Prasetyo"
+                      alt="Mrs. Maria Waston"
                       class="avatar-instruktur"
                     />
 
-                    <span class="nama-instruktur"> Mr. Galang Prasetyo </span>
+                    <span class="nama-instruktur"> Mrs. Maria Waston </span>
+                  </div>
+
+                  <span class="pengalaman"> (2+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- COURSE 1 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="UX Design Beginner"
+              data-description="Starting with UX design can be both exciting and overwhelming"
+              data-category="teknologi"
+              data-level="pemula"
+              data-duration="long"
+              data-status="not-started"
+              data-goals="konsep,critical-thinking,praktik"
+              data-ai="socratic,assessment,recommendation"
+            >
+              <div class="bagian-gambar">
+                <img
+                  src="./assets/imgs/course-1.png"
+                  alt="UX Design Beginner"
+                />
+
+                <span class="label-harga"> IDR 150.000 </span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">UX Design Beginner</h3>
+
+                <p class="deskripsi-kursus">
+                  Starting with UX design can be both exciting and
+                  overwhelming...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    4.1
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    12 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    10 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-1.png"
+                      alt="Miss. Vanei Carly"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Miss. Vanei Carly </span>
+                  </div>
+
+                  <span class="pengalaman"> (5+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- COURSE 2 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="Mobile User Experience"
+              data-description="Designing an exceptional mobile user experience UX involves"
+              data-category="teknologi"
+              data-level="menengah"
+              data-duration="medium"
+              data-status="learning"
+              data-goals="konsep,critical-thinking,praktik"
+              data-ai="socratic,assessment"
+            >
+              <div class="bagian-gambar">
+                <img
+                  src="./assets/imgs/course-2.png"
+                  alt="Mobile User Experience"
+                />
+
+                <span class="label-harga"> IDR 220.000 </span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">Mobile User Experience</h3>
+
+                <p class="deskripsi-kursus">
+                  Designing an exceptional mobile user experience (UX)
+                  involves...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    4.3
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    8 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    14 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-2.png"
+                      alt="Mr. Milian Deon"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Mr. Milian Deon </span>
                   </div>
 
                   <span class="pengalaman"> (8+ Year Exp) </span>
                 </div>
               </div>
             </a>
-          </div>
 
+            <!-- COURSE 3 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="Figma Advance"
+              data-description="Figma is a powerful and versatile design tool used by UX UI designers"
+              data-category="teknologi"
+              data-level="lanjutan"
+              data-duration="extra-long"
+              data-status="completed"
+              data-goals="praktik,critical-thinking"
+              data-ai="assessment,recommendation"
+            >
+              <div class="bagian-gambar">
+                <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
+
+                <span class="label-harga"> IDR 130.000</span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">Figma Advance</h3>
+
+                <p class="deskripsi-kursus">
+                  Figma is a powerful and versatile design tool used by UX/UI
+                  designers...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    3.8
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    16 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    18 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-3.png"
+                      alt="Mrs. Maria Waston"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Mrs. Maria Waston </span>
+                  </div>
+
+                  <span class="pengalaman"> (2+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- COURSE 1 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="UX Design Beginner"
+              data-description="Starting with UX design can be both exciting and overwhelming"
+              data-category="teknologi"
+              data-level="pemula"
+              data-duration="long"
+              data-status="not-started"
+              data-goals="konsep,critical-thinking,praktik"
+              data-ai="socratic,assessment,recommendation"
+            >
+              <div class="bagian-gambar">
+                <img
+                  src="./assets/imgs/course-1.png"
+                  alt="UX Design Beginner"
+                />
+
+                <span class="label-harga"> IDR 150.000 </span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">UX Design Beginner</h3>
+
+                <p class="deskripsi-kursus">
+                  Starting with UX design can be both exciting and
+                  overwhelming...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    4.1
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    12 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    10 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-1.png"
+                      alt="Miss. Vanei Carly"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Miss. Vanei Carly </span>
+                  </div>
+
+                  <span class="pengalaman"> (5+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- COURSE 2 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="Mobile User Experience"
+              data-description="Designing an exceptional mobile user experience UX involves"
+              data-category="teknologi"
+              data-level="menengah"
+              data-duration="medium"
+              data-status="learning"
+              data-goals="konsep,critical-thinking,praktik"
+              data-ai="socratic,assessment"
+            >
+              <div class="bagian-gambar">
+                <img
+                  src="./assets/imgs/course-2.png"
+                  alt="Mobile User Experience"
+                />
+
+                <span class="label-harga"> IDR 220.000 </span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">Mobile User Experience</h3>
+
+                <p class="deskripsi-kursus">
+                  Designing an exceptional mobile user experience (UX)
+                  involves...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    4.3
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    8 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    14 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-2.png"
+                      alt="Mr. Milian Deon"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Mr. Milian Deon </span>
+                  </div>
+
+                  <span class="pengalaman"> (8+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- COURSE 3 -->
+            <a
+              href="course.html"
+              class="kartu-kursus"
+              data-title="Figma Advance"
+              data-description="Figma is a powerful and versatile design tool used by UX UI designers"
+              data-category="teknologi"
+              data-level="lanjutan"
+              data-duration="extra-long"
+              data-status="completed"
+              data-goals="praktik,critical-thinking"
+              data-ai="assessment,recommendation"
+            >
+              <div class="bagian-gambar">
+                <img src="./assets/imgs/course-3.png" alt="Figma Advance" />
+
+                <span class="label-harga"> IDR 130.000</span>
+              </div>
+
+              <div class="bagian-konten">
+                <h3 class="judul-kursus">Figma Advance</h3>
+
+                <p class="deskripsi-kursus">
+                  Figma is a powerful and versatile design tool used by UX/UI
+                  designers...
+                </p>
+
+                <div class="metrik-kursus">
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/star.png"
+                      alt="Star icon"
+                      class="ikon"
+                    />
+                    3.8
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/date.png"
+                      alt="Date Icon"
+                      class="ikon"
+                    />
+                    16 week
+                  </span>
+
+                  <span class="metrik">
+                    <img
+                      src="./assets/icon/book.png"
+                      alt="Book icon"
+                      class="ikon"
+                    />
+                    18 Lessons
+                  </span>
+                </div>
+
+                <hr class="garis-pemisah" />
+
+                <div class="bagian-instruktur">
+                  <div class="info-instruktur">
+                    <img
+                      src="./assets/imgs/user-3.png"
+                      alt="Mrs. Maria Waston"
+                      class="avatar-instruktur"
+                    />
+
+                    <span class="nama-instruktur"> Mrs. Maria Waston </span>
+                  </div>
+
+                  <span class="pengalaman"> (2+ Year Exp) </span>
+                </div>
+              </div>
+            </a>
+          </div>
           <!-- ==========================================
            PAGINATION
            ========================================== -->
@@ -1342,7 +1255,15 @@
               disabled
               aria-label="Halaman sebelumnya"
             >
-              <i class="fa-solid fa-chevron-left"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-caret-left-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                />
+              </svg>
             </button>
 
             <button type="button" class="halaman-tombol aktif">1</button>
@@ -1355,7 +1276,15 @@
               class="halaman-tombol halaman-nav"
               aria-label="Halaman selanjutnya"
             >
-              <i class="fa-solid fa-chevron-right"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
             </button>
           </nav>
         </section>
@@ -1382,7 +1311,6 @@
             </p>
             <form class="formulir-berlangganan">
               <div class="input-grup">
-                <span class="ikon-email">✉</span>
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -1406,10 +1334,54 @@
                 think, and learn through meaningful conversations with AI.
               </p>
               <div class="sosial">
-                <a href="#" aria-label="Instagram"> ◎ </a>
-                <a href="#" aria-label="LinkedIn"> in </a>
-                <a href="#" aria-label="YouTube"> ▶ </a>
-                <a href="#" aria-label="X"> 𝕏 </a>
+                <a href="#" aria-label="Instagram">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="facebook">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="X">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-twitter-x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-youtube"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
             <nav class="kolom-tautan" aria-label="Navigasi footer">
