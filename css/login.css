@@ -138,14 +138,14 @@ img {
   display: block;
   margin-bottom: 16px;
   color: var(--warna-biru);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 
 .halaman-login .bagian-form .isi-form .kepala-form h1 {
   color: var(--warna-teks);
-  font-size: clamp(30px, 2.7vw, 42px);
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.6px;
@@ -159,7 +159,7 @@ img {
   max-width: 400px;
   margin-top: 18px;
   color: var(--warna-teks-muda);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
 }
@@ -177,7 +177,7 @@ img {
   display: block;
   margin-bottom: 10px;
   color: #303746;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -224,7 +224,7 @@ img {
   outline: none;
   color: var(--warna-teks);
   background: #ffffff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   transition: var(--transisi);
 }
@@ -301,7 +301,7 @@ img {
   .tautan-lupa {
   margin-bottom: 10px;
   color: var(--warna-biru);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   transition: var(--transisi);
 }
@@ -409,7 +409,7 @@ img {
   gap: 10px;
   margin: 0;
   color: #8c94a1;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -484,13 +484,9 @@ img {
   border: 0;
   border-radius: 10px;
   color: #ffffff;
-  background: linear-gradient(
-    135deg,
-    var(--warna-biru-terang),
-    var(--warna-biru)
-  );
+  background-color: #0d6efd;
   box-shadow: 0 8px 20px rgba(23, 105, 213, 0.16);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   transition: var(--transisi);
 }
@@ -537,7 +533,7 @@ img {
 
 .halaman-login .bagian-form .isi-form .formulir-login .pemisah-login span {
   color: #a3aab5;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -564,7 +560,7 @@ img {
   border-radius: 10px;
   color: #454c59;
   background: #ffffff;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   transition: var(--transisi);
 }
@@ -576,8 +572,8 @@ img {
   .login-sosial
   .tombol-sosial
   svg {
-  width: 17px;
-  height: 17px;
+  width: 28px;
+  height: 28px;
 }
 
 .halaman-login
@@ -595,15 +591,16 @@ img {
 .halaman-login .bagian-form .isi-form .teks-daftar {
   margin-top: 35px;
   color: #9299a5;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
 
 .halaman-login .bagian-form .isi-form .teks-daftar a {
   color: var(--warna-biru);
-  font-weight: 700;
+  font-weight: 600;
   transition: var(--transisi);
+  text-decoration: underline;
 }
 
 .halaman-login .bagian-form .isi-form .teks-daftar a:hover {
@@ -614,7 +611,7 @@ img {
   margin-top: auto;
   padding-top: 35px;
   color: #b5bbc4;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
 }
@@ -627,13 +624,7 @@ img {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    #168ee8 0%,
-    #0789df 35%,
-    #0878e8 68%,
-    #1769d5 100%
-  );
+  background: linear-gradient(105deg, #0d6efd 0%, #0b51cd 55%, #0d6efd 100%);
 }
 
 .halaman-login .bagian-visual .latar-visual {
@@ -717,7 +708,7 @@ img {
 .halaman-login .bagian-visual .isi-visual h2 {
   max-width: 550px;
   color: #ffffff;
-  font-size: clamp(30px, 3vw, 48px);
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.8px;
@@ -731,7 +722,7 @@ img {
   max-width: 470px;
   margin-top: 23px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
 }
@@ -845,7 +836,7 @@ img {
   .isi-statistik
   span {
   color: #9299a5;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
 }
 
@@ -857,7 +848,7 @@ img {
   .isi-statistik
   strong {
   color: var(--warna-teks);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -879,7 +870,7 @@ img {
 .halaman-login .bagian-visual .isi-visual .kutipan-visual p {
   max-width: 390px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -915,7 +906,7 @@ img {
   }
 
   50% {
-    transform: translateY(-7px);
+    transform: translateY(-4px);
   }
 }
 
@@ -952,7 +943,9 @@ img {
 @media (max-width: 768px) {
   .halaman-login .pembungkus-login {
     display: flex;
-    flex-direction: column;
+  }
+  .halaman-login .bagian-visual {
+    display: none;
   }
 
   .halaman-login .bagian-form {
@@ -973,7 +966,7 @@ img {
   }
 
   .halaman-login .bagian-form .isi-form .kepala-form p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .halaman-login .bagian-form .isi-form .hak-cipta {
