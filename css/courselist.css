@@ -5,7 +5,7 @@
 .course-list-page {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--warna-latar);
+  background-color: rgb(249, 250, 254);
 }
 
 /* =========================================================
@@ -32,23 +32,32 @@
 .sidebar-nav {
   width: 230px;
   flex-shrink: 0;
-
   padding: 24px;
-
+  padding-left: 0;
   background-color: #ffffff;
 
-  border: 1px solid var(--warna-garis);
   border-radius: var(--radius-besar);
-
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: calc(100vh - 72px);
   position: sticky;
-  top: 86px;
-
-  max-height: calc(100vh - 124px);
-
-  overflow-y: auto;
-
+  top: 72px;
   scrollbar-width: thin;
   scrollbar-color: #d8dde7 transparent;
+  overflow: visible;
+}
+
+.sidebar-nav .overlay {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  height: calc(100vh - 72px);
+  right: 0;
+  z-index: 1;
+  border-radius: var(--radius-besar);
+  border: 1px solid var(--warna-garis);
 }
 
 /* =========================================================
@@ -66,6 +75,13 @@
   margin-bottom: 22px;
 
   border-bottom: 1px solid var(--warna-garis);
+  position: relative;
+  z-index: 10;
+}
+
+#courseFilterForm {
+  position: relative;
+  z-index: 10;
 }
 
 .filter-eyebrow {
@@ -90,16 +106,14 @@
 
   color: var(--warna-teks);
 
-  font-size: 1.1rem;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .filter-header p {
   margin: 0;
-
   color: var(--warna-teks-lembut);
-
-  font-size: 0.75rem;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -148,12 +162,9 @@
 .filter-group > label,
 .filter-group-title {
   display: block;
-
   margin-bottom: 10px;
-
   color: var(--warna-teks);
-
-  font-size: 0.8rem;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -197,18 +208,13 @@
 
 .filter-search input {
   width: 100%;
-
   padding: 10px 12px;
-
   border: none;
   outline: none;
-
   background-color: transparent;
-
   color: var(--warna-teks);
-
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 14px;
 }
 
 .filter-search input::placeholder {
@@ -250,7 +256,7 @@
   color: var(--warna-teks);
 
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 14px;
 
   cursor: pointer;
 
@@ -295,9 +301,7 @@
 
 .filter-option input {
   position: absolute;
-
   opacity: 0;
-
   pointer-events: none;
 }
 
@@ -345,10 +349,8 @@
 
 .filter-option-text {
   color: #4b5563;
-
-  font-size: 0.78rem;
+  font-size: 16px;
   font-weight: 500;
-
   line-height: 1.4;
 }
 
@@ -383,7 +385,7 @@
 
   font-family: inherit;
 
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
 
   cursor: pointer;
@@ -464,7 +466,7 @@
 
   color: var(--warna-biru);
 
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 700;
 
   letter-spacing: 1px;
@@ -475,7 +477,7 @@
 
   color: var(--warna-teks);
 
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -512,12 +514,15 @@
   color: var(--warna-teks);
 
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
 
   cursor: pointer;
 
   transition: 0.2s ease;
+}
+.btn-open-filter svg {
+  height: 18px;
 }
 
 .btn-open-filter:hover {
@@ -605,15 +610,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 8px;
-
   margin-top: 8px;
 }
 
 .halaman-tombol {
-  min-width: 38px;
-  height: 38px;
+  min-width: 44px;
+  height: 44px;
 
   padding: 0 6px;
 
@@ -629,7 +632,7 @@
   color: var(--warna-teks-lembut);
 
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 16px;
   font-weight: 600;
 
   cursor: pointer;
@@ -656,13 +659,16 @@
 
 .halaman-tombol:disabled {
   opacity: 0.45;
-
   cursor: not-allowed;
 }
 
 .halaman-tombol:disabled:hover {
   border-color: var(--warna-garis);
   color: var(--warna-teks-lembut);
+}
+
+.halaman-nav svg {
+  width: 20px;
 }
 
 /* =========================================================
@@ -781,6 +787,13 @@
 }
 
 @media (max-width: 900px) {
+  .sidebar-nav,
+  .sidebar-nav .overlay {
+    height: 100vh;
+  }
+  .filter-header h3 {
+    font-size: 18px;
+  }
   .dashboard-container {
     display: block;
 
@@ -861,6 +874,12 @@
 }
 
 @media (max-width: 700px) {
+  .filter-group > label,
+  .filter-group-title,
+  .filter-header p,
+  .filter-option-text {
+    font-size: 14px;
+  }
   .course-grid {
     grid-template-columns: 1fr;
   }
@@ -879,6 +898,9 @@
 }
 
 @media (max-width: 576px) {
+  .btn-open-filter span {
+    display: none;
+  }
   .dashboard-container {
     padding: 20px 16px;
   }
