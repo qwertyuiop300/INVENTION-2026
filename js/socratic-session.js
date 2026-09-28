@@ -6,91 +6,98 @@ document.addEventListener("DOMContentLoaded", () => {
   const pertanyaan = {
     easy: [
       {
-        question: "In your own words, what makes a website responsive?",
+        question:
+          "Menurut pemahamanmu sendiri, apa yang membuat sebuah website disebut responsif?",
         context:
-          "Think about how the same page can adapt to different screen sizes.",
+          "Pikirkan bagaimana satu halaman yang sama bisa menyesuaikan diri dengan berbagai ukuran layar.",
       },
       {
         question:
-          "Why would you use semantic HTML instead of only div elements?",
-        context: "Explain the idea as if you were teaching it to a beginner.",
+          "Mengapa kamu perlu menggunakan HTML semantik dibanding hanya elemen div?",
+        context:
+          "Jelaskan idenya seolah-olah kamu sedang mengajarkannya kepada pemula.",
       },
       {
-        question: "What is the purpose of CSS media queries?",
-        context: "Give one simple example of when you would use one.",
-      },
-      {
-        question: "What does a mobile-first approach mean in web design?",
-        context: "Focus on the design process, not a specific framework.",
+        question: "Apa tujuan dari CSS media queries?",
+        context: "Berikan satu contoh sederhana kapan kamu akan menggunakannya.",
       },
       {
         question:
-          "What is one thing you check before calling a webpage responsive?",
-        context: "Choose a practical check that you could perform yourself.",
+          "Apa arti pendekatan mobile-first dalam desain web?",
+        context: "Fokus pada proses desainnya, bukan pada framework tertentu.",
+      },
+      {
+        question:
+          "Apa satu hal yang kamu periksa sebelum menyatakan sebuah halaman web sudah responsif?",
+        context: "Pilih pemeriksaan praktis yang bisa kamu lakukan sendiri.",
       },
     ],
     medium: [
       {
         question:
-          "A layout looks good on desktop but breaks on mobile. How would you diagnose it?",
+          "Sebuah tampilan terlihat bagus di desktop tapi berantakan di mobile. Bagaimana cara kamu mendiagnosisnya?",
         context:
-          "Walk through your reasoning rather than only listing CSS properties.",
-      },
-      {
-        question: "When would you choose CSS Grid over Flexbox for a layout?",
-        context:
-          "Compare the two based on the problem you are trying to solve.",
-      },
-      {
-        question: "How can image choices affect a website's performance?",
-        context: "Connect visual quality with loading experience.",
+          "Jelaskan alur pemikiranmu, bukan hanya menyebutkan daftar properti CSS.",
       },
       {
         question:
-          "A client wants every section to look visually different. How would you keep the design consistent?",
-        context: "Think about reusable design decisions and visual hierarchy.",
+          "Kapan kamu akan memilih CSS Grid dibanding Flexbox untuk sebuah tata letak?",
+        context:
+          "Bandingkan keduanya berdasarkan masalah yang ingin kamu selesaikan.",
       },
       {
         question:
-          "How would you improve a page that feels crowded on a 13-inch laptop?",
-        context: "Explain which design signals you would inspect first.",
+          "Bagaimana pilihan gambar dapat memengaruhi performa sebuah website?",
+        context: "Hubungkan kualitas visual dengan pengalaman waktu muat.",
+      },
+      {
+        question:
+          "Seorang klien ingin setiap bagian terlihat berbeda secara visual. Bagaimana kamu menjaga konsistensi desainnya?",
+        context:
+          "Pikirkan tentang keputusan desain yang dapat digunakan ulang dan hierarki visual.",
+      },
+      {
+        question:
+          "Bagaimana kamu akan memperbaiki halaman yang terasa penuh sesak di laptop berlayar 13 inci?",
+        context: "Jelaskan sinyal desain apa yang akan kamu periksa terlebih dahulu.",
       },
     ],
     hard: [
       {
         question:
-          "A beautiful landing page scores poorly on accessibility. What would you investigate first, and why?",
+          "Sebuah landing page yang indah mendapat skor aksesibilitas yang buruk. Apa yang akan kamu selidiki terlebih dahulu, dan mengapa?",
         context:
-          "Defend your priorities as if you were reviewing the project with a team.",
+          "Pertahankan prioritasmu seolah-olah kamu sedang meninjau proyek tersebut bersama tim.",
       },
       {
         question:
-          "You need to improve page speed without changing the visual design. What trade-offs would you consider?",
+          "Kamu perlu meningkatkan kecepatan halaman tanpa mengubah desain visualnya. Trade-off apa yang akan kamu pertimbangkan?",
         context:
-          "Explain how you would balance performance and visual fidelity.",
+          "Jelaskan bagaimana kamu akan menyeimbangkan performa dan kesetiaan visual.",
       },
       {
         question:
-          "Two responsive layouts are both technically valid. How would you decide which one creates a better user experience?",
-        context: "Use principles rather than personal preference alone.",
+          "Dua tata letak responsif sama-sama valid secara teknis. Bagaimana kamu memutuskan mana yang menciptakan pengalaman pengguna lebih baik?",
+        context: "Gunakan prinsip desain, bukan sekadar preferensi pribadi.",
       },
       {
         question:
-          "A design system has too many components and is slowing the team down. How would you simplify it?",
-        context: "Explain how you would identify what should stay reusable.",
+          "Sebuah design system memiliki terlalu banyak komponen sehingga memperlambat tim. Bagaimana kamu akan menyederhanakannya?",
+        context:
+          "Jelaskan bagaimana kamu akan menentukan komponen mana yang perlu tetap dapat digunakan ulang.",
       },
       {
         question:
-          "How would you explain the difference between a visually consistent interface and a predictable interface?",
-        context: "Use an example from a real product or website.",
+          "Bagaimana kamu menjelaskan perbedaan antara antarmuka yang konsisten secara visual dan antarmuka yang dapat diprediksi?",
+        context: "Gunakan contoh dari produk atau website nyata.",
       },
     ],
   };
 
   const hasilLevel = {
-    easy: "Explorer",
-    medium: "Problem Solver",
-    hard: "Critical Thinker",
+    easy: "Penjelajah",
+    medium: "Pemecah Masalah",
+    hard: "Pemikir Kritis",
   };
 
   const skorLevel = {
@@ -347,8 +354,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tombolRekam.classList.add("aktif");
     gelombangJawaban.classList.add("aktif");
-    statusJawaban.textContent = "Listening...";
-    teksStatusSesi.textContent = "Recording your answer";
+    statusJawaban.textContent = "Mendengarkan...";
+    teksStatusSesi.textContent = "Merekam jawabanmu";
 
     intervalJawaban = setInterval(() => {
       durasi += 1;
@@ -364,9 +371,9 @@ document.addEventListener("DOMContentLoaded", () => {
     tombolRekam.classList.remove("aktif");
     gelombangJawaban.classList.remove("aktif");
 
-    statusJawaban.textContent = "Answer captured";
-    teksStatusSesi.textContent = "Ready for the next question";
-    tombolRekam.querySelector("strong").textContent = "Record again";
+    statusJawaban.textContent = "Jawaban tersimpan";
+    teksStatusSesi.textContent = "Siap untuk pertanyaan berikutnya";
+    tombolRekam.querySelector("strong").textContent = "Rekam lagi";
   }
 
   function resetJawaban() {
@@ -376,10 +383,10 @@ document.addEventListener("DOMContentLoaded", () => {
     tombolRekam.classList.remove("aktif");
     gelombangJawaban.classList.remove("aktif");
 
-    statusJawaban.textContent = "Your turn";
+    statusJawaban.textContent = "Giliranmu";
     durasiJawaban.textContent = "00:00";
-    teksStatusSesi.textContent = "Listening for your answer";
-    tombolRekam.querySelector("strong").textContent = "Hold to answer";
+    teksStatusSesi.textContent = "Mendengarkan jawabanmu";
+    tombolRekam.querySelector("strong").textContent = "Tahan untuk menjawab";
   }
 
   tombolRekam.addEventListener("click", () => {

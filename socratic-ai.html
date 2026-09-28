@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socratic AI — Practice Session</title>
+    <title>Socratic AI — Sesi Latihan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -156,11 +156,15 @@
         <div class="wadah sesi-wadah">
           <div class="sesi-kepala">
             <div>
-              <span class="sub-head-section">Socratic AI Practice</span>
-              <h1>Show what you know.<br /><span>Think out loud.</span></h1>
+              <span class="sub-head-section">Latihan Socratic AI</span>
+              <h1>
+                Tunjukkan apa yang kamu tahu.<br /><span
+                  >Ucapkan pemikiranmu.</span
+                >
+              </h1>
               <p>
-                A conversation-based quiz where Socratic AI asks the questions
-                and you explain your thinking.
+                Kuis berbasis percakapan di mana Socratic AI mengajukan
+                pertanyaan dan kamu menjelaskan pemikiranmu.
               </p>
             </div>
 
@@ -183,19 +187,18 @@
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
               <div>
-                <span class="label-kecil">Ready when you are</span>
-                <h2>Set up your practice</h2>
+                <span class="label-kecil">Siap kapan saja</span>
+                <h2>Atur sesi latihanmu</h2>
                 <p>
-                  Choose a difficulty and session length. You can focus on
-                  explaining ideas rather than selecting multiple-choice
-                  answers.
+                  Pilih tingkat kesulitan dan durasi sesi. Kamu bisa fokus
+                  menjelaskan ide, bukan memilih jawaban pilihan ganda.
                 </p>
               </div>
             </div>
 
             <div class="pengaturan-grid">
               <div class="pilihan-kelompok">
-                <label>Difficulty</label>
+                <label>Tingkat Kesulitan</label>
                 <div class="pilihan-level">
                   <button class="pilihan-level-item aktif" data-level="easy">
                     <span class="level-ikon"
@@ -203,7 +206,7 @@
                     ></span>
                     <span>
                       <strong>Easy</strong>
-                      <small>Recall & explain</small>
+                      <small>Mengingat & menjelaskan</small>
                     </span>
                   </button>
 
@@ -213,7 +216,7 @@
                     ></span>
                     <span>
                       <strong>Medium</strong>
-                      <small>Apply & connect</small>
+                      <small>Menerapkan & menghubungkan</small>
                     </span>
                   </button>
 
@@ -223,21 +226,23 @@
                     ></span>
                     <span>
                       <strong>Hard</strong>
-                      <small>Reason & defend</small>
+                      <small>Bernalar & mempertahankan pendapat</small>
                     </span>
                   </button>
                 </div>
               </div>
 
               <div class="pilihan-kelompok">
-                <label>Session length</label>
+                <label>Durasi Sesi</label>
                 <div class="durasi-pilihan">
-                  <button class="durasi-item" data-duration="180">3 min</button>
+                  <button class="durasi-item" data-duration="180">
+                    3 menit
+                  </button>
                   <button class="durasi-item aktif" data-duration="300">
-                    5 min
+                    5 menit
                   </button>
                   <button class="durasi-item" data-duration="600">
-                    10 min
+                    10 menit
                   </button>
                 </div>
               </div>
@@ -246,20 +251,20 @@
             <div class="aturan-singkat">
               <div>
                 <i class="fa-solid fa-microphone"></i>
-                <span>Speak your answer naturally</span>
+                <span>Ucapkan jawabanmu secara natural</span>
               </div>
               <div>
                 <i class="fa-solid fa-comments"></i>
-                <span>AI asks follow-up questions</span>
+                <span>AI akan memberi pertanyaan lanjutan</span>
               </div>
               <div>
                 <i class="fa-solid fa-chart-simple"></i>
-                <span>Get feedback at the end</span>
+                <span>Dapatkan masukan di akhir sesi</span>
               </div>
             </div>
 
             <button class="tombol-mulai" id="tombolMulai">
-              Start practice
+              Mulai latihan
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -274,7 +279,8 @@
 
               <div class="progres-sesi">
                 <span
-                  >Question <strong id="nomorPertanyaan">1</strong> of 5</span
+                  >Pertanyaan <strong id="nomorPertanyaan">1</strong> dari
+                  5</span
                 >
                 <div class="progres-track">
                   <span id="progresBar"></span>
@@ -283,7 +289,7 @@
 
               <button class="tombol-akhiri" id="tombolAkhiri">
                 <i class="fa-solid fa-stop"></i>
-                End session
+                Akhiri sesi
               </button>
             </div>
 
@@ -292,21 +298,23 @@
               <div class="kamera-kartu">
                 <div class="kamera-status">
                   <span class="status-titik hijau"></span>
-                  <span>You</span>
-                  <span class="kamera-live">Camera on</span>
+                  <span>Anda</span>
+                  <span class="kamera-live">Kamera aktif</span>
                 </div>
 
                 <div class="kamera-area">
                   <video id="videoPengguna" autoplay muted playsinline></video>
 
                   <div class="kamera-fallback" id="kameraFallback">
-                    <div class="avatar-pengguna">Y</div>
-                    <span>Camera preview</span>
-                    <small>Allow camera access for the live experience</small>
+                    <div class="avatar-pengguna">A</div>
+                    <span>Pratinjau kamera</span>
+                    <small
+                      >Izinkan akses kamera untuk pengalaman langsung</small
+                    >
                   </div>
 
                   <div class="kamera-overlay">
-                    <span class="nama-pengguna">You</span>
+                    <span class="nama-pengguna">Anda</span>
                     <span class="status-mikrofon">
                       <i class="fa-solid fa-microphone"></i>
                     </span>
@@ -347,7 +355,7 @@
                     </div>
                     <div>
                       <strong>Socratic AI</strong>
-                      <span>Listening & thinking</span>
+                      <span>Mendengarkan & berpikir</span>
                     </div>
                   </div>
 
@@ -359,21 +367,23 @@
                     <span class="ai-label-ikon">
                       <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </span>
-                    AI asks
+                    AI bertanya
                   </div>
 
                   <h2 id="teksPertanyaan">
-                    In your own words, what makes a website responsive?
+                    Menurut pemahamanmu sendiri, apa yang membuat sebuah website
+                    disebut responsif?
                   </h2>
 
                   <p id="konteksPertanyaan">
-                    Take a moment to think. There is no single perfect answer.
+                    Luangkan waktu sebentar untuk berpikir. Tidak ada satu
+                    jawaban yang paling benar.
                   </p>
 
                   <div
                     class="gelombang-suara"
                     id="gelombangSuara"
-                    aria-label="AI speaking"
+                    aria-label="AI sedang berbicara"
                   >
                     <span></span><span></span><span></span><span></span>
                     <span></span><span></span><span></span><span></span>
@@ -384,13 +394,13 @@
 
                   <div class="ai-berbicara">
                     <span class="titik-berbicara"></span>
-                    <span>AI is speaking...</span>
+                    <span>AI sedang berbicara...</span>
                   </div>
                 </div>
 
                 <div class="jawaban-area">
                   <div class="jawaban-status">
-                    <span id="statusJawaban">Your turn</span>
+                    <span id="statusJawaban">Giliranmu</span>
                     <span id="durasiJawaban">00:00</span>
                   </div>
 
@@ -402,20 +412,20 @@
                       <span></span><span></span><span></span><span></span>
                       <span></span><span></span><span></span><span></span>
                     </div>
-                    <span class="teks-jawaban">Speak your answer</span>
+                    <span class="teks-jawaban">Ucapkan jawabanmu</span>
                   </div>
 
                   <button class="tombol-rekam" id="tombolRekam">
                     <span><i class="fa-solid fa-microphone"></i></span>
-                    <strong>Hold to answer</strong>
+                    <strong>Tahan untuk menjawab</strong>
                   </button>
                 </div>
 
                 <div class="ai-petunjuk">
                   <i class="fa-regular fa-lightbulb"></i>
                   <span>
-                    Tip: explain <strong>why</strong>, not only
-                    <strong>what</strong>.
+                    Tips: jelaskan <strong>mengapa</strong>, bukan hanya
+                    <strong>apa</strong>.
                   </span>
                 </div>
               </aside>
@@ -424,11 +434,11 @@
             <div class="sesi-bawah">
               <div class="indikator-sesi">
                 <span class="indikator-aktif"></span>
-                <span id="teksStatusSesi">Listening for your answer</span>
+                <span id="teksStatusSesi">Mendengarkan jawabanmu</span>
               </div>
 
               <button class="tombol-lewati" id="tombolLanjut">
-                Next question
+                Pertanyaan berikutnya
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
@@ -446,15 +456,24 @@
 
         <div class="hasil-ikon">
           <div class="hasil-ikon-lingkaran">
-            <i class="fa-solid fa-sparkles"></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
           </div>
         </div>
 
-        <span class="label-kecil">Session complete</span>
-        <h2>Nice thinking, <span id="hasilLevel">Explorer</span>.</h2>
+        <span class="label-kecil">Sesi selesai</span>
+        <h2>Pemikiran bagus, <span id="hasilLevel">Explorer</span>.</h2>
         <p class="hasil-intro">
-          Here is a snapshot of how you communicated your ideas during this
-          practice session.
+          Berikut ringkasan bagaimana kamu mengomunikasikan ide-idemu selama
+          sesi latihan ini.
         </p>
 
         <div class="nilai-utama">
@@ -463,8 +482,8 @@
             <small>/100</small>
           </div>
           <div>
-            <strong>Overall score</strong>
-            <span>Great progress in explaining your thinking.</span>
+            <strong>Skor keseluruhan</strong>
+            <span>Kemajuan yang bagus dalam menjelaskan pemikiranmu.</span>
           </div>
         </div>
 
@@ -474,7 +493,7 @@
               <i class="fa-solid fa-bullseye"></i>
             </div>
             <div>
-              <span>Relevance</span>
+              <span>Relevansi</span>
               <strong>92%</strong>
             </div>
           </div>
@@ -484,7 +503,7 @@
               <i class="fa-solid fa-comments"></i>
             </div>
             <div>
-              <span>Clarity</span>
+              <span>Kejelasan</span>
               <strong>85%</strong>
             </div>
           </div>
@@ -494,7 +513,7 @@
               <i class="fa-solid fa-brain"></i>
             </div>
             <div>
-              <span>Reasoning</span>
+              <span>Penalaran</span>
               <strong>82%</strong>
             </div>
           </div>
@@ -504,7 +523,7 @@
               <i class="fa-solid fa-microphone-lines"></i>
             </div>
             <div>
-              <span>Confidence</span>
+              <span>Kepercayaan Diri</span>
               <strong>84%</strong>
             </div>
           </div>
@@ -515,10 +534,10 @@
             <i class="fa-regular fa-message"></i>
           </div>
           <div>
-            <strong>AI feedback</strong>
+            <strong>Masukan AI</strong>
             <p>
-              You explained the core idea clearly. Next time, support your
-              answer with a concrete example or trade-off.
+              Kamu menjelaskan ide utama dengan jelas. Lain kali, dukung
+              jawabanmu dengan contoh konkret atau pertimbangan trade-off.
             </p>
           </div>
         </div>
@@ -526,10 +545,10 @@
         <div class="hasil-tindakan">
           <button class="tombol-sekunder" id="tombolUlangi">
             <i class="fa-solid fa-rotate-right"></i>
-            Practice again
+            Latihan lagi
           </button>
           <button class="tombol-utama" id="tombolLihatProgress">
-            View my progress
+            Lihat progresku
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
