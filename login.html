@@ -11,10 +11,25 @@
     />
 
     <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/page-transition.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Login | Socratic</title>
   </head>
   <body>
+    <div class="page-transisi" id="pageTransisi" aria-hidden="true">
+      <div class="page-transisi-konten">
+        <img
+          src="./assets/imgs/logo-color.png"
+          alt="Socratic"
+          class="page-transisi-logo"
+        />
+        <div class="page-transisi-bar">
+          <span id="pageTransisiBar"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/page-transition.js"></script>
+
     <main class="halaman-login">
       <div class="pembungkus-login">
         <section class="bagian-form">

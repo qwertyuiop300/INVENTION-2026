@@ -23,12 +23,26 @@
 
     <!-- CSS UTAMA -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/page-transition.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/dashboard.css" />
   </head>
 
   <body>
+    <div class="page-transisi" id="pageTransisi" aria-hidden="true">
+      <div class="page-transisi-konten">
+        <img
+          src="./assets/imgs/logo-color.png"
+          alt="Socratic"
+          class="page-transisi-logo"
+        />
+        <div class="page-transisi-bar">
+          <span id="pageTransisiBar"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/page-transition.js"></script>
     <!-- =====================================================
          NAVBAR
          KODE NAVBAR TIDAK DIUBAH
