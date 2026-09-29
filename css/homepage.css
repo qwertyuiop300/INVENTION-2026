@@ -1,3 +1,9 @@
+#about,
+#approach,
+#faq {
+  scroll-margin-top: 90px;
+}
+
 section.bagian-pahlawan {
   width: 100%;
   position: relative;
