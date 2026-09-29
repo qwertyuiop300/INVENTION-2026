@@ -1,0 +1,82 @@
+/* =========================================================
+   PAGE TRANSITION
+   Overlay putih full-screen dengan logo + loading bar,
+   dianimasikan lewat clip-path (wipe atas-bawah).
+   Dipakai di semua halaman lewat page-transition.js.
+========================================================= */
+
+.page-transisi {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: clip-path;
+}
+
+.page-transisi.selesai {
+  clip-path: inset(0 0 100% 0);
+  pointer-events: none;
+}
+
+.page-transisi-konten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-transisi-logo {
+  height: 38px;
+  width: auto;
+}
+
+.page-transisi-bar {
+  width: 200px;
+  height: 4px;
+  margin-top: 26px;
+  border-radius: 10px;
+  background: #e4e7ec;
+  overflow: hidden;
+}
+
+.page-transisi-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  background: #0d6efd;
+  animation: page-transisi-progres 1.3s ease-in-out infinite;
+}
+
+.page-transisi-bar span.selesai {
+  animation: none;
+  width: 100%;
+  transition: width 0.22s ease;
+}
+
+@keyframes page-transisi-progres {
+  0% {
+    width: 0%;
+  }
+  55% {
+    width: 70%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transisi {
+    transition: none;
+  }
+
+  .page-transisi-bar span {
+    animation: none;
+    width: 60%;
+  }
+}
