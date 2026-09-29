@@ -24,6 +24,7 @@
     <!-- CSS UTAMA -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/page-transition.css" />
+    <link rel="stylesheet" href="./css/chatbot.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/dashboard.css" />
@@ -522,5 +523,107 @@
     <!-- JAVASCRIPT -->
     <script src="./js/dashboard.js"></script>
     <script src="./js/main.js"></script>
+
+    <div class="chatbot-widget" id="chatbotWidget">
+      <div class="chatbot-jendela" id="chatbotJendela" aria-hidden="true">
+        <div class="chatbot-header">
+          <div class="chatbot-header-info">
+            <img
+              src="./assets/icon/chatbot-avatar.svg"
+              alt="Socratic Bot"
+              class="chatbot-avatar"
+            />
+            <div class="chatbot-header-teks">
+              <strong>Socratic Bot</strong>
+              <span class="chatbot-status">
+                <span class="titik-online"></span> Online
+              </span>
+            </div>
+          </div>
+
+          <button
+            class="chatbot-tutup"
+            id="chatbotTutup"
+            type="button"
+            aria-label="Tutup chat"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="chatbot-pesan" id="chatbotPesan"></div>
+
+        <div class="chatbot-saran" id="chatbotSaran"></div>
+
+        <form class="chatbot-input" id="chatbotForm">
+          <input
+            type="text"
+            id="chatbotInput"
+            placeholder="Tulis pesan..."
+            autocomplete="off"
+            aria-label="Tulis pesan"
+          />
+          <button
+            type="submit"
+            class="chatbot-kirim"
+            id="chatbotKirim"
+            aria-label="Kirim pesan"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M3.4 20.6 21 12 3.4 3.4v6.2L15 12 3.4 14.4Z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <button
+        class="chatbot-launcher"
+        id="chatbotLauncher"
+        type="button"
+        aria-label="Buka chat bantuan"
+        aria-expanded="false"
+      >
+        <svg
+          class="ikon-chat"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 3C7.03 3 3 6.58 3 11c0 2.08.93 3.97 2.45 5.38-.11 1.02-.5 2.17-1.3 3.24a.5.5 0 0 0 .55.78c1.6-.4 2.96-1.09 3.94-1.77A10.6 10.6 0 0 0 12 19c4.97 0 9-3.58 9-8s-4.03-8-9-8Z"
+          />
+        </svg>
+        <svg
+          class="ikon-tutup"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <span class="chatbot-badge" id="chatbotBadge">1</span>
+      </button>
+    </div>
+    <script src="./js/chatbot.js"></script>
   </body>
 </html>
