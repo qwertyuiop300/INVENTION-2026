@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tantangan belajar Academos untuk menguji pemahaman dan menerapkan pengetahuan."
+      content="Tantangan belajar Socratic untuk menguji pemahaman dan menerapkan pengetahuan."
     />
-    <title>Tantangan Belajar — Academos</title>
+    <title>Tantangan Belajar — Socratic</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,148 +25,132 @@
     <!-- =====================================================
          HEADER
     ====================================================== -->
-    <header>
-      <nav class="navigasi">
-        <div class="wadah">
-          <a href="index.html" class="logo" aria-label="Beranda">
-            <img src="./assets/imgs/logo-color.png" alt="Logo Academos" />
-          </a>
+    <nav class="navigasi">
+      <div class="wadah">
+        <a href="index.html" class="logo">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
 
-          <div class="menu">
-            <a href="course-list.html" class="tautan-menu">Kursus</a>
-            <a href="index.html#how-it-works" class="tautan-menu">Cara Kerja</a>
-            <a href="dashboard.html" class="tautan-menu">Pembelajaran Saya</a>
+        <div class="menu">
+          <a href="course-list.html" class="tautan-menu">Courses</a>
+          <a href="#how-it-works" class="tautan-menu">How It Works</a>
+          <a href="dashboard.html" class="tautan-menu">My Learning</a>
 
-            <div class="menu-dropdown">
-              <a href="#" class="tautan-menu tautan-dropdown">
-                Sumber Belajar <span class="panah">⌄</span>
-              </a>
+          <div class="menu-dropdown">
+            <a href="#" class="tautan-menu tautan-dropdown">
+              Resources <span class="panah">⌄</span>
+            </a>
 
-              <div class="jendela">
-                <div class="isi-jendela">
-                  <div class="kolom-jendela">
-                    <h3>Jelajahi</h3>
-                    <a href="course-list.html">Semua Kursus</a>
-                    <a href="#">Jalur Belajar</a>
-                    <a href="challenge.html">Tantangan</a>
-                  </div>
+            <div class="jendela">
+              <div class="isi-jendela">
+                <div class="kolom-jendela">
+                  <h3>Explore</h3>
+                  <a href="course-list.html">All Courses</a>
+                  <a href="#">Learning Paths</a>
+                  <a href="#">Challenges</a>
+                </div>
 
-                  <div class="kolom-jendela">
-                    <h3>Pelajari</h3>
-                    <a href="index.html#how-it-works">
-                      Cara Kerja Socratic AI
-                    </a>
-                    <a href="#">Panduan Belajar</a>
-                    <a href="#">Pertanyaan Umum</a>
-                  </div>
+                <div class="kolom-jendela">
+                  <h3>Learn</h3>
+                  <a href="#how-it-works">How Socratic AI Works</a>
+                  <a href="#">Learning Guide</a>
+                  <a href="#">FAQ</a>
+                </div>
 
-                  <div class="kolom-jendela">
-                    <h3>Tentang</h3>
-                    <a href="#">Tentang Platform</a>
-                    <a href="#">Pendekatan Kami</a>
-                    <a href="#">Hubungi Kami</a>
-                  </div>
+                <div class="kolom-jendela">
+                  <h3>About</h3>
+                  <a href="#">About Platform</a>
+                  <a href="#">Our Approach</a>
+                  <a href="#">Contact Us</a>
+                </div>
 
-                  <div class="kolom-jendela">
-                    <h3>Pembelajaran Anda</h3>
-                    <a href="dashboard.html">Dasbor</a>
-                    <a href="#">Progres Belajar</a>
-                    <a href="#">Laporan Belajar</a>
-                  </div>
+                <div class="kolom-jendela">
+                  <h3>Your Learning</h3>
+                  <a href="dashboard.html">Dashboard</a>
+                  <a href="#">Learning Progress</a>
+                  <a href="#">Learning Report</a>
                 </div>
               </div>
             </div>
-
-            <a href="index.html#socratic-ai" class="tautan-menu">
-              Socratic AI
-            </a>
-            <a href="challenge.html" class="tautan-menu aktif">Tantangan</a>
           </div>
 
-          <div class="menu-kanan">
-            <a href="login.html" class="masuk">Masuk</a>
-            <a href="course-list.html" class="tombol">Mulai Belajar</a>
-          </div>
+          <a href="#socratic-ai" class="tautan-menu aktif">Socratic AI</a>
+          <a href="challenge.html" class="tautan-menu">Challenge</a>
+        </div>
 
-          <button
-            class="tombol-hamburger"
-            id="tombolHamburger"
-            aria-label="Buka menu"
-            type="button"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-kanan">
+          <a href="login.html" class="masuk">Log in</a>
+          <a href="course-list.html" class="tombol">Start Learning</a>
+        </div>
+
+        <button
+          class="tombol-hamburger"
+          id="tombolHamburger"
+          aria-label="Buka menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="lapisan" id="lapisan"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="kepala-sidebar">
+        <a href="index.html" class="logo-sidebar">
+          <img src="./assets/imgs/logo-color.png" alt="Logo" />
+        </a>
+
+        <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup menu">
+          ×
+        </button>
+      </div>
+
+      <div class="isi-sidebar">
+        <a href="course-list.html">Courses</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="dashboard.html">My Learning</a>
+
+        <div class="dropdown-sidebar">
+          <button class="tombol-dropdown-sidebar" id="tombolDropdownSidebar">
+            Resources <span id="panahSidebar">+</span>
           </button>
-        </div>
-      </nav>
 
-      <div class="lapisan" id="lapisan"></div>
+          <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
+            <h4>Explore</h4>
+            <a href="course-list.html">All Courses</a>
+            <a href="#">Learning Paths</a>
+            <a href="#">Challenges</a>
 
-      <aside class="sidebar" id="sidebar">
-        <div class="kepala-sidebar">
-          <a href="index.html" class="logo-sidebar" aria-label="Beranda">
-            <img src="./assets/imgs/logo-color.png" alt="Logo Academos" />
-          </a>
+            <h4>Learn</h4>
+            <a href="#how-it-works">How Socratic AI Works</a>
+            <a href="#">Learning Guide</a>
+            <a href="#">FAQ</a>
 
-          <button
-            class="tombol-tutup"
-            id="tombolTutup"
-            aria-label="Tutup menu"
-            type="button"
-          >
-            ×
-          </button>
-        </div>
+            <h4>About</h4>
+            <a href="#">About Platform</a>
+            <a href="#">Our Approach</a>
+            <a href="#">Contact Us</a>
 
-        <div class="isi-sidebar">
-          <a href="course-list.html">Kursus</a>
-          <a href="index.html#how-it-works">Cara Kerja</a>
-          <a href="dashboard.html">Pembelajaran Saya</a>
-
-          <div class="dropdown-sidebar">
-            <button
-              class="tombol-dropdown-sidebar"
-              id="tombolDropdownSidebar"
-              type="button"
-            >
-              Sumber Belajar <span id="panahSidebar">+</span>
-            </button>
-
-            <div class="isi-dropdown-sidebar" id="isiDropdownSidebar">
-              <h4>Jelajahi</h4>
-              <a href="course-list.html">Semua Kursus</a>
-              <a href="#">Jalur Belajar</a>
-              <a href="challenge.html">Tantangan</a>
-
-              <h4>Pelajari</h4>
-              <a href="index.html#how-it-works">Cara Kerja Socratic AI</a>
-              <a href="#">Panduan Belajar</a>
-              <a href="#">Pertanyaan Umum</a>
-
-              <h4>Tentang</h4>
-              <a href="#">Tentang Platform</a>
-              <a href="#">Pendekatan Kami</a>
-              <a href="#">Hubungi Kami</a>
-
-              <h4>Pembelajaran Anda</h4>
-              <a href="dashboard.html">Dasbor</a>
-              <a href="#">Progres Belajar</a>
-              <a href="#">Laporan Belajar</a>
-            </div>
+            <h4>Your Learning</h4>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Learning Progress</a>
+            <a href="#">Learning Report</a>
           </div>
-
-          <a href="index.html#socratic-ai">Socratic AI</a>
-          <a href="challenge.html">Tantangan</a>
-
-          <div class="garis-sidebar"></div>
-
-          <a href="login.html">Masuk</a>
-          <a href="#">Hubungi Kami</a>
-          <a href="course-list.html" class="tombol-sidebar">Mulai Belajar</a>
         </div>
-      </aside>
-    </header>
+
+        <a href="#socratic-ai">Socratic AI</a>
+        <a href="challenge.html">Challenge</a>
+
+        <div class="garis-sidebar"></div>
+
+        <a href="login.html">Log in</a>
+        <a href="#">Contact Us</a>
+        <a href="course-list.html" class="tombol-sidebar">Start Learning</a>
+      </div>
+    </aside>
 
     <main>
       <!-- =====================================================
@@ -229,7 +213,7 @@
             </div>
 
             <div class="kartu-melayang kartu-streak">
-              <span>🔥 7</span>
+              <span>100+</span>
               <small>Hari berturut-turut</small>
             </div>
           </div>
@@ -277,10 +261,12 @@
               data-challenge="landing-page"
               tabindex="0"
               role="button"
-              aria-label="Lihat detail tantangan Membuat Landing Page"
+              aria-label="Lihat detail tantangan Dasar-Dasar Landing Page"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-web">&lt;/&gt;</span>
+                <span class="ikon-kategori ikon-web">
+                  <img src="./assets/icon/fire_blue.svg" alt="fire icon" />
+                </span>
                 <span class="status-challenge tersedia">Tersedia</span>
               </div>
 
@@ -290,20 +276,32 @@
                   <span>15 MENIT</span>
                 </div>
 
-                <h3>Membuat Landing Page</h3>
+                <h3>Dasar-Dasar Landing Page</h3>
                 <p>
-                  Susun struktur landing page yang jelas dan jelaskan alasan di
-                  balik setiap bagian yang kamu pilih.
+                  Uji pemahamanmu tentang struktur dan elemen penting sebuah
+                  landing page lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Menengah</span>
                   <span>250 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
               <button class="tombol-detail" type="button">
-                Lihat Tantangan <span>→</span>
+                Lihat Tantangan
               </button>
             </article>
 
@@ -313,10 +311,12 @@
               data-challenge="explain-ai"
               tabindex="0"
               role="button"
-              aria-label="Lihat detail tantangan Menjelaskan AI dengan sederhana"
+              aria-label="Lihat detail tantangan Dasar-Dasar Kecerdasan Buatan"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-ai">✦</span>
+                <span class="ikon-kategori ikon-web">
+                  <img src="./assets/icon/fire_blue.svg" alt="fire icon" />
+                </span>
                 <span class="status-challenge tersedia">Tersedia</span>
               </div>
 
@@ -326,34 +326,49 @@
                   <span>20 MENIT</span>
                 </div>
 
-                <h3>Jelaskan AI dengan Sederhana</h3>
+                <h3>Dasar-Dasar Kecerdasan Buatan</h3>
                 <p>
-                  Jelaskan cara kerja AI kepada pemula tanpa bergantung pada
-                  istilah teknis yang sulit dipahami.
+                  Uji pemahamanmu tentang konsep dasar AI dan cara kerjanya
+                  lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Mudah</span>
                   <span>200 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
               <button class="tombol-detail" type="button">
-                Lihat Tantangan <span>→</span>
+                Lihat Tantangan
               </button>
             </article>
 
             <article
-              class="kartu-challenge"
+              class="kartu-challenge kartu-terkunci"
               data-kategori="Desain"
               data-challenge="ux-audit"
-              tabindex="0"
-              role="button"
-              aria-label="Lihat detail tantangan Memperbaiki antarmuka"
+              aria-disabled="true"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-design">◌</span>
-                <span class="status-challenge tersedia">Tersedia</span>
+                <span class="ikon-kategori ikon-web ikon-kunci">
+                  <img
+                    src="./assets/icon/padlock_orange.svg"
+                    alt="padlock icon"
+                  />
+                </span>
+                <span class="status-challenge terkunci">Terkunci</span>
               </div>
 
               <div class="kartu-konten">
@@ -362,21 +377,37 @@
                   <span>25 MENIT</span>
                 </div>
 
-                <h3>Perbaiki Antarmuka yang Membingungkan</h3>
+                <h3>Dasar-Dasar UI/UX Design</h3>
                 <p>
-                  Temukan masalah pengalaman pengguna dan jelaskan perubahan
-                  yang akan kamu lakukan.
+                  Uji pemahamanmu tentang prinsip UX/UI dan cara memperbaiki
+                  antarmuka lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Sulit</span>
                   <span>350 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
-              <button class="tombol-detail" type="button">
-                Lihat Tantangan <span>→</span>
-              </button>
+              <div class="kartu-alert-kunci">
+                <p>
+                  Untuk mengikuti ini, selesaikan kursus
+                  <a href="course.html">Dasar-Dasar UX/UI Design</a>
+                  terlebih dahulu.
+                </p>
+              </div>
             </article>
 
             <article
@@ -385,10 +416,12 @@
               data-challenge="product-pitch"
               tabindex="0"
               role="button"
-              aria-label="Lihat detail tantangan Presentasi ide produk"
+              aria-label="Lihat detail tantangan Dasar-Dasar Bisnis Digital"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-business">↗</span>
+                <span class="ikon-kategori ikon-web">
+                  <img src="./assets/icon/fire_blue.svg" alt="fire icon" />
+                </span>
                 <span class="status-challenge tersedia">Tersedia</span>
               </div>
 
@@ -398,34 +431,46 @@
                   <span>15 MENIT</span>
                 </div>
 
-                <h3>Presentasikan Ide Produk</h3>
+                <h3>Dasar-Dasar Bisnis Digital</h3>
                 <p>
-                  Sampaikan ide produk, tentukan pengguna sasaran, dan jelaskan
-                  masalah yang ingin diselesaikan.
+                  Uji pemahamanmu tentang cara menyusun dan menyampaikan ide
+                  produk lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Menengah</span>
                   <span>250 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
               <button class="tombol-detail" type="button">
-                Lihat Tantangan <span>→</span>
+                Lihat Tantangan
               </button>
             </article>
 
             <article
-              class="kartu-challenge"
+              class="kartu-challenge kartu-terkunci"
               data-kategori="Pengembangan Web"
               data-challenge="debug-javascript"
-              tabindex="0"
-              role="button"
-              aria-label="Lihat detail tantangan Berpikir seperti debugger"
+              aria-disabled="true"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-web">JS</span>
-                <span class="status-challenge tersedia">Tersedia</span>
+                <span class="ikon-kategori ikon-web ikon-kunci">
+                  <img src="./assets/icon/padlock_orange.svg" alt="lock" />
+                </span>
+                <span class="status-challenge terkunci">Terkunci</span>
               </div>
 
               <div class="kartu-konten">
@@ -434,21 +479,37 @@
                   <span>20 MENIT</span>
                 </div>
 
-                <h3>Berpikir Seperti Debugger</h3>
+                <h3>Dasar-Dasar JavaScript</h3>
                 <p>
-                  Analisis interaksi yang rusak dan jelaskan proses berpikirmu
-                  untuk menemukan penyebab utamanya.
+                  Uji pemahamanmu tentang logika debugging dan alur eksekusi
+                  JavaScript lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Sulit</span>
                   <span>400 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
-              <button class="tombol-detail" type="button">
-                Lihat Tantangan <span>→</span>
-              </button>
+              <div class="kartu-alert-kunci">
+                <p>
+                  Untuk mengikuti ini, selesaikan kursus
+                  <a href="course.html">Fundamental JavaScript</a>
+                  terlebih dahulu.
+                </p>
+              </div>
             </article>
 
             <article
@@ -457,11 +518,13 @@
               data-challenge="ai-ethics"
               tabindex="0"
               role="button"
-              aria-label="Lihat detail tantangan Pengambilan keputusan dengan AI"
+              aria-label="Lihat detail tantangan Etika dan Kebijakan AI"
             >
               <div class="kartu-atas">
-                <span class="ikon-kategori ikon-ai">◎</span>
-                <span class="status-challenge selesai">Selesai</span>
+                <span class="ikon-kategori ikon-web">
+                  <img src="./assets/icon/fire_blue.svg" alt="fire icon" />
+                </span>
+                <span class="status-challenge tersedia">Tersedia</span>
               </div>
 
               <div class="kartu-konten">
@@ -470,21 +533,169 @@
                   <span>15 MENIT</span>
                 </div>
 
-                <h3>Haruskah AI Mengambil Keputusan?</h3>
+                <h3>Etika dan Kebijakan AI</h3>
                 <p>
-                  Bahas skenario AI di dunia nyata dan sampaikan alasanmu dengan
-                  pemikiran yang terstruktur.
+                  Uji pemahamanmu tentang etika, bias, dan tanggung jawab dalam
+                  penggunaan AI lewat 10 pertanyaan pilihan ganda.
                 </p>
 
                 <div class="tag-challenge">
                   <span>Menengah</span>
                   <span>250 XP</span>
                 </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>⏱ Batas Waktu</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
               </div>
 
-              <button class="tombol-detail" type="button">
-                Lihat Detail <span>→</span>
-              </button>
+              <button class="tombol-detail" type="button">Lihat Detail</button>
+            </article>
+
+            <article
+              class="kartu-challenge kartu-akan-datang"
+              data-kategori="Pengembangan Web"
+              aria-disabled="true"
+              data-siklus-jam="40"
+            >
+              <div class="kartu-atas">
+                <span class="ikon-kategori ikon-web ikon-kunci">
+                  <img src="./assets/icon/clock_silver.svg" alt="clock icon" />
+                </span>
+                <span class="status-challenge akan-datang">Akan Datang</span>
+              </div>
+
+              <div class="kartu-konten">
+                <div class="meta-challenge">
+                  <span>PENGEMBANGAN WEB</span>
+                  <span>15 MENIT</span>
+                </div>
+
+                <h3>Dasar-Dasar Python</h3>
+                <p>
+                  Uji pemahamanmu tentang sintaks dan logika dasar Python lewat
+                  10 pertanyaan pilihan ganda.
+                </p>
+
+                <div class="tag-challenge">
+                  <span>Mudah</span>
+                  <span>200 XP</span>
+                </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>Akan Hadir Dalam</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tombol-nonaktif">Belum Tersedia</div>
+            </article>
+
+            <article
+              class="kartu-challenge kartu-akan-datang"
+              data-kategori="Bisnis"
+              aria-disabled="true"
+              data-siklus-jam="58"
+            >
+              <div class="kartu-atas">
+                <span class="ikon-kategori ikon-business ikon-kunci">
+                  <img src="./assets/icon/clock_silver.svg" alt="clock icon" />
+                </span>
+                <span class="status-challenge akan-datang">Akan Datang</span>
+              </div>
+
+              <div class="kartu-konten">
+                <div class="meta-challenge">
+                  <span>BISNIS</span>
+                  <span>15 MENIT</span>
+                </div>
+
+                <h3>Strategi Pemasaran Digital</h3>
+                <p>
+                  Uji pemahamanmu tentang dasar strategi dan kanal pemasaran
+                  digital lewat 10 pertanyaan pilihan ganda.
+                </p>
+
+                <div class="tag-challenge">
+                  <span>Menengah</span>
+                  <span>250 XP</span>
+                </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>Akan Hadir Dalam</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tombol-nonaktif">Belum Tersedia</div>
+            </article>
+
+            <article
+              class="kartu-challenge kartu-akan-datang"
+              data-kategori="Desain"
+              aria-disabled="true"
+              data-siklus-jam="68"
+            >
+              <div class="kartu-atas">
+                <span class="ikon-kategori ikon-design ikon-kunci">
+                  <img src="./assets/icon/clock_silver.svg" alt="clock icon" />
+                </span>
+                <span class="status-challenge akan-datang">Akan Datang</span>
+              </div>
+
+              <div class="kartu-konten">
+                <div class="meta-challenge">
+                  <span>DESAIN</span>
+                  <span>20 MENIT</span>
+                </div>
+
+                <h3>Dasar-Dasar Motion Design</h3>
+                <p>
+                  Uji pemahamanmu tentang prinsip animasi dan motion design
+                  lewat 10 pertanyaan pilihan ganda.
+                </p>
+
+                <div class="tag-challenge">
+                  <span>Menengah</span>
+                  <span>250 XP</span>
+                </div>
+
+                <div class="batas-waktu">
+                  <div class="batas-waktu-head">
+                    <span>Akan Hadir Dalam</span>
+                    <strong data-batas-waktu-teks
+                      >-- jam -- menit -- detik</strong
+                    >
+                  </div>
+                  <div class="batas-waktu-track">
+                    <span data-batas-waktu-bar style="width: 0%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tombol-nonaktif">Belum Tersedia</div>
             </article>
           </div>
         </div>
@@ -505,20 +716,33 @@
         <div class="popup-detail-scroll">
           <div class="popup-detail-kepala">
             <button
-              class="tombol-kembali"
+              class="tombol-tutup-detail"
               id="tombolTutupDetail"
               type="button"
-              aria-label="Kembali ke daftar tantangan"
+              aria-label="Tutup"
             >
-              ← <span>Kembali ke tantangan</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
             </button>
-
-            <span class="popup-label">DETAIL TANTANGAN</span>
           </div>
 
           <div class="popup-detail-isi">
             <div class="popup-intro">
-              <div class="popup-ikon" id="popupIkon">✦</div>
+              <div class="popup-ikon" id="popupIkon">
+                <img src="./assets/icon/fire_blue.svg" alt="fire icon" />
+              </div>
 
               <div class="popup-intro-teks">
                 <div class="meta-challenge">
@@ -541,102 +765,232 @@
               </div>
             </div>
 
-            <div class="popup-grid">
-              <div class="popup-kolom-utama">
-                <section class="blok-detail">
-                  <span class="nomor-blok">01</span>
-                  <div>
-                    <h3>Tantanganmu</h3>
-                    <p id="popupTugas"></p>
-                  </div>
-                </section>
-
-                <section class="blok-detail">
-                  <span class="nomor-blok">02</span>
-                  <div>
-                    <h3>Apa yang perlu dilakukan</h3>
-                    <ul id="popupAktivitas"></ul>
-                  </div>
-                </section>
-
-                <section class="blok-detail">
-                  <span class="nomor-blok">03</span>
-                  <div>
-                    <h3>Yang akan dinilai</h3>
-
-                    <div class="penilaian-list">
-                      <div class="penilaian-item">
-                        <div>
-                          <strong>Kejelasan</strong>
-                          <span>Seberapa jelas kamu menyampaikan ide.</span>
-                        </div>
-                        <span>30%</span>
-                      </div>
-
-                      <div class="penilaian-item">
-                        <div>
-                          <strong>Pemahaman</strong>
-                          <span
-                            >Seberapa baik kamu memahami konsep yang
-                            digunakan.</span
-                          >
-                        </div>
-                        <span>30%</span>
-                      </div>
-
-                      <div class="penilaian-item">
-                        <div>
-                          <strong>Penalaran</strong>
-                          <span
-                            >Seberapa runtut kamu menjelaskan alasan dan
-                            keputusan.</span
-                          >
-                        </div>
-                        <span>25%</span>
-                      </div>
-
-                      <div class="penilaian-item">
-                        <div>
-                          <strong>Penerapan</strong>
-                          <span
-                            >Seberapa tepat kamu menerapkan materi pada
-                            konteks.</span
-                          >
-                        </div>
-                        <span>15%</span>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+            <div class="popup-ringkasan">
+              <div class="ringkasan-item">
+                <span class="ringkasan-ikon">
+                  <img src="./assets/icon/document.svg" alt="document icon" />
+                </span>
+                <div>
+                  <span>Jumlah Soal</span>
+                  <strong id="popupJumlahSoal">10 Soal Pilihan Ganda</strong>
+                </div>
               </div>
 
-              <aside class="popup-sidebar">
-                <div class="info-card">
-                  <span>Tingkat</span>
-                  <strong id="sidebarLevel">Menengah</strong>
-                  <p>Sesuaikan dengan pengalamanmu.</p>
+              <div class="ringkasan-item">
+                <span class="ringkasan-ikon">
+                  <img src="./assets/icon/time.svg" alt="time icon" />
+                </span>
+                <div>
+                  <span>Estimasi Waktu</span>
+                  <strong id="popupEstimasiWaktu">15 menit</strong>
                 </div>
+              </div>
 
-                <div class="info-card">
-                  <span>Durasi</span>
-                  <strong id="sidebarDurasi">15 menit</strong>
-                  <p>Selesaikan sebelum waktu habis.</p>
-                </div>
-
-                <div class="info-card">
+              <div class="ringkasan-item">
+                <span class="ringkasan-ikon">
+                  <img src="./assets/icon/crown.svg" alt="crown icon" />
+                </span>
+                <div>
                   <span>Hadiah</span>
-                  <strong id="sidebarXp">250 XP</strong>
-                  <p>Tambahkan XP ke progres belajarmu.</p>
+                  <strong id="popupHadiah">250 XP</strong>
                 </div>
+              </div>
 
-                <button class="tombol-mulai" id="tombolMulai" type="button">
-                  Mulai Tantangan <span>→</span>
-                </button>
-              </aside>
+              <div class="ringkasan-item">
+                <span class="ringkasan-ikon">
+                  <img src="./assets/icon/graduate.svg" alt="graduate icon" />
+                </span>
+                <div>
+                  <span>Kursus Minimal</span>
+                  <strong id="popupKursusMinimal">
+                    Tidak ada syarat khusus
+                  </strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-kunci" id="infoKunci" hidden>
+              <span class="info-kunci-judul">🔒 Terkunci</span>
+              <p id="infoKunciTeks">
+                Selesaikan progres kursus terkait untuk membuka tantangan ini.
+              </p>
+              <div class="info-kunci-progress">
+                <div class="info-kunci-track">
+                  <span id="infoKunciBar"></span>
+                </div>
+                <small id="infoKunciPersen">0% dari 0%</small>
+              </div>
+              <a href="course-list.html" class="tombol-lanjut-kursus">
+                Lanjutkan Kursus
+              </a>
+            </div>
+
+            <button class="tombol-mulai" id="tombolMulai" type="button">
+              Mulai Tantangan
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           KUIS TANTANGAN (PILIHAN GANDA)
+           SENGAJA HIDDEN DI HTML
+      ====================================================== -->
+      <div
+        class="lapisan-detail"
+        id="lapisanKuis"
+        aria-hidden="true"
+        hidden
+      ></div>
+
+      <section class="popup-kuis" id="popupKuis" aria-hidden="true" hidden>
+        <div class="popup-kuis-scroll">
+          <div class="kuis-kepala">
+            <div class="kuis-topik">
+              <span class="kuis-judul" id="kuisJudul"
+                >Membuat Landing Page</span
+              >
+            </div>
+
+            <div class="kuis-kepala-kanan">
+              <div class="kuis-waktu" id="kuisWaktuWrapper">
+                Waktu:
+                <strong id="kuisTimer">10:00</strong>
+              </div>
+
+              <button
+                class="tombol-akhiri-kuis"
+                id="tombolKeluarKuis"
+                type="button"
+              >
+                Akhiri & Lihat Hasil
+              </button>
+            </div>
+          </div>
+
+          <div class="kuis-navigasi" id="kuisNavigasi"></div>
+
+          <div class="kuis-body">
+            <span class="kuis-label">PERTANYAAN</span>
+            <h2 id="kuisTeksSoal">Teks pertanyaan akan muncul di sini.</h2>
+
+            <div class="kuis-opsi-list" id="kuisOpsiList"></div>
+          </div>
+
+          <div class="kuis-footer">
+            <button
+              class="tombol-kuis-sekunder"
+              id="tombolSoalSebelumnya"
+              type="button"
+            >
+              Sebelumnya
+            </button>
+
+            <div class="kuis-footer-kanan">
+              <button
+                class="tombol-kuis-sekunder"
+                id="tombolSelesaikanKuis"
+                type="button"
+                hidden
+              >
+                Selesaikan
+              </button>
+              <button
+                class="tombol-kuis-utama"
+                id="tombolSoalSelanjutnya"
+                type="button"
+              >
+                Selanjutnya
+              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- =====================================================
+           HASIL KUIS
+      ====================================================== -->
+      <div
+        class="modal-hasil-lapisan"
+        id="modalHasilKuis"
+        aria-hidden="true"
+        hidden
+      >
+        <div class="modal-hasil-kuis">
+          <button
+            class="modal-hasil-tutup"
+            id="tombolTutupHasil"
+            type="button"
+            aria-label="Tutup"
+          >
+            ×
+          </button>
+
+          <div class="hasil-kuis-ikon">✦</div>
+
+          <span class="popup-label">TANTANGAN SELESAI</span>
+          <h2>Kerja bagus, <span id="hasilKuisNama">Explorer</span>!</h2>
+          <p class="hasil-kuis-intro">
+            Berikut ringkasan performamu dalam tantangan ini.
+          </p>
+
+          <div class="hasil-kuis-utama">
+            <div class="hasil-kuis-lingkaran">
+              <span id="hasilKuisSkor">80</span>
+            </div>
+            <div>
+              <strong>Skor Akhir</strong>
+              <span id="hasilKuisKeterangan"
+                >Pemahamanmu sudah cukup baik.</span
+              >
+            </div>
+          </div>
+
+          <div class="hasil-kuis-grid">
+            <div class="hasil-kuis-kartu">
+              <span>Jawaban Benar</span>
+              <strong id="hasilKuisBenar">8</strong>
+            </div>
+            <div class="hasil-kuis-kartu">
+              <span>Jawaban Salah</span>
+              <strong id="hasilKuisSalah">2</strong>
+            </div>
+            <div class="hasil-kuis-kartu">
+              <span>Akurasi</span>
+              <strong id="hasilKuisAkurasi">80%</strong>
+            </div>
+            <div class="hasil-kuis-kartu">
+              <span>Waktu Pengerjaan</span>
+              <strong id="hasilKuisWaktu">04:12</strong>
+            </div>
+          </div>
+
+          <div class="hasil-kuis-masukan">
+            <strong>Catatan</strong>
+            <p id="hasilKuisMasukan">
+              Kamu sudah memahami sebagian besar konsep. Ulangi bagian yang
+              masih salah untuk memperkuat pemahamanmu.
+            </p>
+          </div>
+
+          <div class="hasil-kuis-aksi">
+            <button
+              class="tombol-kuis-sekunder"
+              id="tombolUlangiKuis"
+              type="button"
+            >
+              Coba Lagi
+            </button>
+            <button
+              class="tombol-kuis-utama"
+              id="tombolKembaliTantangan"
+              type="button"
+            >
+              Kembali ke Tantangan
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- =====================================================
@@ -648,104 +1002,128 @@
           <div class="berlangganan-ilustrasi">
             <img
               src="./assets/imgs/footer_dode.png"
-              alt="Ilustrasi pembelajaran"
+              alt="Learning illustration"
             />
           </div>
-
           <div class="berlangganan-informasi">
             <h2>
-              Terus belajar dengan <br class="desktop" />
-              pendidikan bertenaga AI
+              Keep learning with <br class="desktop" />
+              AI-powered education
             </h2>
-
             <p>
-              Dapatkan tips belajar, kursus baru, dan informasi terbaru tentang
-              pengalaman belajar berbasis AI.
+              Get learning tips, new courses, and updates about our AI learning
+              experience.
             </p>
-
             <form class="formulir-berlangganan">
               <div class="input-grup">
-                <span class="ikon-email">✉</span>
                 <input
                   type="email"
-                  placeholder="Masukkan email kamu"
+                  placeholder="Enter your email"
                   aria-label="Alamat email"
                   required
                 />
-                <button type="submit">Berlangganan</button>
+                <button type="submit">Subscribe</button>
               </div>
             </form>
           </div>
         </section>
-
         <section class="bagian-utama">
           <div class="overlay"></div>
-
           <div class="cover">
             <div class="identitas">
-              <a class="logo" href="index.html" aria-label="Beranda">
-                <img src="./assets/imgs/logo-color.png" alt="Logo Academos" />
+              <a class="logo" href="index.html" aria-label="Homepage">
+                <img src="./assets/imgs/logo-color.png" alt="Logo" />
               </a>
-
               <p>
-                Platform pembelajaran berbasis AI yang membantu kamu memahami,
-                berpikir, dan belajar melalui percakapan bermakna dengan AI.
+                An AI-powered learning platform that helps you understand,
+                think, and learn through meaningful conversations with AI.
               </p>
-
               <div class="sosial">
-                <a href="#" aria-label="Instagram">◎</a>
-                <a href="#" aria-label="LinkedIn">in</a>
-                <a href="#" aria-label="YouTube">▶</a>
-                <a href="#" aria-label="X">𝕏</a>
+                <a href="#" aria-label="Instagram">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="facebook">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="X">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-twitter-x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#111827"
+                    class="bi bi-youtube"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
-
             <nav class="kolom-tautan" aria-label="Navigasi footer">
               <div class="kelompok-tautan">
                 <h3>Platform</h3>
-                <a href="course-list.html">Kursus</a>
-                <a href="dashboard.html">Pembelajaran Saya</a>
-                <a href="challenge.html">Tantangan</a>
-                <a href="index.html#socratic-ai">Socratic AI</a>
+                <a href="course-list.html"> Courses </a>
+                <a href="dashboard.html"> My Learning </a>
+                <a href="challenge.html"> Challenges </a>
+                <a href="#"> Socratic AI </a>
               </div>
-
               <div class="kelompok-tautan">
-                <h3>Belajar</h3>
-                <a href="index.html#how-it-works">Cara Kerja</a>
-                <a href="#">Panduan Belajar</a>
-                <a href="#">Pertanyaan Umum</a>
-                <a href="#">Laporan Belajar</a>
+                <h3>Learn</h3>
+                <a href="#"> How It Works </a> <a href="#"> Learning Guide </a>
+                <a href="#"> FAQ </a> <a href="#"> Learning Report </a>
               </div>
-
               <div class="kelompok-tautan">
-                <h3>Tentang</h3>
-                <a href="#">Tentang Kami</a>
-                <a href="#">Pendekatan Kami</a>
-                <a href="#">Hubungi Kami</a>
-                <a href="#">Komunitas</a>
+                <h3>About</h3>
+                <a href="#"> About Us </a> <a href="#"> Our Approach </a>
+                <a href="#"> Contact Us </a> <a href="#"> Community </a>
               </div>
-
               <div class="kelompok-tautan">
-                <h3>Akun</h3>
-                <a href="login.html">Masuk</a>
-                <a href="dashboard.html">Dasbor</a>
-                <a href="#">Progres</a>
-                <a href="#">Pengaturan</a>
+                <h3>Account</h3>
+                <a href="login.html"> Log in </a>
+                <a href="dashboard.html"> Dashboard </a>
+                <a href="#"> Progress </a> <a href="#"> Settings </a>
               </div>
             </nav>
           </div>
         </section>
       </div>
-
       <div class="paling-bawah">
         <div class="wadah paling-bawah-isi">
-          <p>© 2026 Hak cipta dilindungi.</p>
-
+          <p>© 2026 All rights reserved.</p>
           <div class="tautan-legal">
-            <a href="#">Kebijakan Privasi</a>
-            <a href="#">Ketentuan Penggunaan</a>
-            <a href="#">Kebijakan AI & Pembelajaran</a>
-            <a href="#">Aksesibilitas</a>
+            <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use </a>
+            <a href="#"> AI & Learning Policy </a>
+            <a href="#"> Accessibility </a>
           </div>
         </div>
       </div>
